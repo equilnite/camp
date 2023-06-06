@@ -1,0 +1,76 @@
+project:
+  output-dir: docs
+  preview:
+    port: 4200
+    browser: false
+  type: website
+  resources:
+   - "/llab/"
+   - "/prog/"
+   - "/img/"
+
+website:
+  title: "CS Maker Camp"
+  page-navigation: true
+  page-footer: |
+    The curriculum and text on this website is adapted from [The Beauty and Joy of Computing](https://bjc.edc.org/bjc-r/)
+    by University of California, Berkeley and Education Development Center, Inc. which is licensed
+    under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Snap<em>!</em>"
+        href: https://snap.berkeley.edu/snap/snap.html
+      - text: "Labs"
+        menu:
+          - text: "Lab 1: Click Alonzo"
+            file: lab-1/index.qmd
+          - text: "Lab 2: Gossip"
+            file: lab-2/index.qmd
+          - text: "Lab 3: Number Guessing Game"
+            file: lab-3/index.qmd
+          - text: "Lab 4: Pong"
+            file: lab-4/index.qmd
+          - text: "Lab 5: Song Player"
+            file: lab-5/index.qmd
+          - text: "Lab 6: Squaral"
+            file: lab-6/index.qmd
+          - text: "Lab 7: Polygon"
+            file: lab-7/index.qmd
+
+  sidebar:
+    - title: "Lab 1: Click Alonzo"
+      style: "docked"
+      contents: lab-1
+    - title: "Lab 2: Gossip"
+      style: "docked"
+      contents: lab-2
+    - title: "Lab 3: Number Guessing Game"
+      style: "docked"
+      contents: lab-3
+    - title: "Lab 4: Pong"
+      style: "docked"
+      contents: lab-4
+    - title: "Lab 5: Song Player"
+      style: "docked"
+      contents: lab-5
+    - title: "Lab 6: Squaral"
+      style: "docked"
+      contents: lab-6
+    - title: "Lab 7: Polygon"
+      style: "docked"
+      contents: lab-7
+
+format:
+  html:
+    css: /css/bjc.css
+    toc: true
+    theme:
+      light: cosmo
+      dark: [cosmo, theme-dark.scss]
+    include-in-header:
+      - text: |
+          <script type="text/javascript" src="/llab/loader.js"></script>

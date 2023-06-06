@@ -1,0 +1,4 @@
+# Introduction {.unnumbered}
+
+Welcome to the 2023 Maker Camp, in this session, you'll learn basic computer science skills culminating in a project
+

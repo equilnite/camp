@@ -1,0 +1,5 @@
+---
+title: "Gossip"
+---
+
+In this lab we'll.....
