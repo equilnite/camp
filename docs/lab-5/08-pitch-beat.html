@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp – pitch-beat</title>
+<title>CS Maker Camp - Songs with Pitches and Beats</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/08-pitch-beat.html">08 Pitch Beat</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/08-pitch-beat.html">Songs with Pitches <em>and</em> Beats</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -164,55 +164,55 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Song Player, Activity 1</span></a>
+ <span class="menu-text">Playing Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 Visualizing Loops</span></a>
+ <span class="menu-text">Visualizing Loops</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">03 Programming Styles</span></a>
+ <span class="menu-text">Programming Styles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Mystery Song Game</span></a>
+ <span class="menu-text">Mystery Song Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Beat Repeat</span></a>
+ <span class="menu-text">Beat Repeat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">06 Storing Songs</span></a>
+ <span class="menu-text">Storing Songs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">07 Song Mapper</span></a>
+ <span class="menu-text">Song <code>Map</code>per</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">08 Pitch Beat</span></a>
+ <span class="menu-text">Songs with Pitches <em>and</em> Beats</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">09 Map Pitch Beat</span></a>
+ <span class="menu-text"><code>Map</code>ping over Pitches and Beats</span></a>
   </div>
 </li>
       </ul>
@@ -228,113 +228,150 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Songs with Pitches <em>and</em> Beats</h1>
+<p class="subtitle lead">Lab 5, Page 8</p>
+</div>
 
 
-<pre><code>    &lt;title&gt;Unit 2 Lab 1: Song Player, Activity 8&lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-    &lt;h2&gt;Songs with Pitches &lt;em&gt;and&lt;/em&gt; Beats&lt;/h2&gt;
+<div class="quarto-title-meta">
 
-    &lt;div class="todo"&gt;Consider that students don't always have to download a new XML; they could just import blocks into existing projects. --MF &lt;/div&gt;
     
-    &lt;div class="learn"&gt;In this activity, you will learn to store and play songs with both pitch and length of each note.&lt;/div&gt;
-    &lt;p&gt;
-        So far, you've been using a &lt;code&gt;play song&lt;/code&gt; block that only lets you control the pitch of each note (by giving it a list of pitches as input). The number of beats was the same based on whatever you typed into the &lt;code&gt;play ♪&lt;/code&gt; block inside your &lt;code&gt;play song&lt;/code&gt; block (for example, 0.5 in the image below).&lt;br /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/play-song-definition.png" alt="play song (pitches) {
-for each (pitche) in (pitches) {
-    play ♪ pitch: (pitch) beats: (0.5)
-}</code></pre>
-}” title=“/img/U2/lab01/play-song-definition.png” alt=“play song (pitches) { for each (pitche) in (pitches) { play ♪ pitch: (pitch) beats: (0.5) } }” /&gt;
-<p></p>
-<pre><code>    &lt;p&gt;
-        You can use a table to store the data for every note and then use &lt;code&gt;play song with pitches and beats&lt;/code&gt;, which expects music data &lt;em&gt;in a table&lt;/em&gt;, to play the song. Each item in the list below is a new block: &lt;img class="inline nopadtb" src="/img/U2/lab01/note-pitch-beats.png" alt="♪ pitch: () beats: ()" title="♪ pitch: () beats: ()" /&gt;. It looks like the &lt;code&gt;play ♪&lt;/code&gt; command, but it's a reporter that reports the pitch and beat.&lt;br /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/set-mario-beats.png" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" /&gt;
-        &lt;img class="indent noshadow" src="/img/U2/lab01/mario-beats-watcher.png" alt="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The rows contain the value pairs: (76, 0.25), (76, 0.25), (0, 0.25), (76, 0.25), (0, 0.25), (72, 0.25), (76, 0.25), (0, 0.25), (79, 0.25), (0, 0.75), (67, 0.25)" title="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The rows contain the value pairs: (76, 0.25), (76, 0.25), (0, 0.25), (76, 0.25), (0, 0.25), (72, 0.25), (76, 0.25), (0, 0.25), (79, 0.25), (0, 0.75), (67, 0.25)" /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/play-song-beats-mario.png" alt="play song with pitches and beats ('Mario Theme (with beats)')" title="play song with pitches and beats ('Mario Theme (with beats)')" /&gt;
-    &lt;/p&gt;
-    &lt;div class="todo"&gt;
-        &lt;p&gt;The introduction of an ADT that's used throughout this activity can't be inside a hint inside a yellow "optional" box!  Also, they've seen abstract data types before, no?  If so, there should be a reference back to their introduction.  If this &lt;em&gt;is&lt;/em&gt; their introduction, it needs much more explicit calling out as a Big Idea. --bh 3/3/22&lt;/p&gt;
-        &lt;p&gt;We've agreed not to &lt;em&gt;teach&lt;/em&gt; ADTs at all in this course. We are only &lt;em&gt;using&lt;/em&gt; them here (with the option to learn more). You can reopen this decision if you like, of course, but that has been the agreement so far. --MF, 3/6/22&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="endnote"&gt;
-        &lt;p&gt;&lt;a href="#hint-play-beats" data-toggle="collapse" title="How does the PLAY SONG WITH PITCHES AND BEATS block work?"&gt;How does the &lt;code&gt;play song with pitches and beats&lt;/code&gt; block work?&lt;/a&gt;&lt;/p&gt;
-        &lt;div id="hint-play-beats" class="collapse"&gt;
-            &lt;p&gt;
-                This block takes a table of pitch and beat values as input, and for each note in the song, it plays the pitch and beat values for that note:&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/play-song-beats-definition.png" alt="play song with pitches and beats (song) {
-for each (♪) in (song) {
-    play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
-}</code></pre>
-}” title=“play song with pitches and beats (song) { for each (♪) in (song) { play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪)) } }” /&gt;
-<p></p>
-<pre><code>            &lt;p&gt;
-                &lt;a href="#hint-block-vars" data-toggle="collapse" title="Which part of the data is the song and which part is the ♪?"&gt;Which part is the &lt;var&gt;song&lt;/var&gt; and which part is the &lt;var&gt;♪&lt;/var&gt;?&lt;/a&gt;&lt;/p&gt;
-                &lt;div id="hint-block-vars" class="collapse"&gt;
-                &lt;img class="noshadow indent" src="/img/U2/lab01/mario-beats-watcher-labeled.gif" alt="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The entire table is labeled 'song' and a single row is labeled '♪'. An animation cycles through the rows showing each row labeled '♪' one after another." title="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The entire table is labeled 'song' and a single row is labeled '♪'. An animation cycles through the rows showing each row labeled '♪' one after another." /&gt;
-            &lt;/div&gt;
-            &lt;p&gt;
-                The data about each note is loaded in to a table using the &lt;code&gt;♪ pitch beats&lt;/code&gt; block, which takes a pitch and number of beats as input and reports a list with those two values:&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/note-pitch-beats-definition.png" alt="♪ pitch: (pitch) beats: (beats) {
-    report (list (pitch) (beats))
-}" title="♪ pitch: (pitch) beats: (beats) {
-    report (list (pitch) (beats))
-}" /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/note-pitch-beats-reporting.png" alt="♪ pitch: (64) beats: (0.25) reporting the list 64, 0.25" title="♪ pitch: (64) beats: (0.25) reporting the list 64, 0.25" /&gt;
-                &lt;p&gt;&lt;a href="#hint-loading" data-toggle="collapse" title="How is the data loaded into a table with the ♪ PITCH BEATS block?"&gt;How is the data loaded into a table with the &lt;code&gt;♪ pitch beats&lt;/code&gt; block?&lt;/a&gt;&lt;/p&gt;
-                &lt;div id="hint-loading" class="collapse"&gt;
-                    &lt;img class="indent" src="/img/U2/lab01/set-mario-beats.png" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" /&gt;
-                &lt;/div&gt;
-            &lt;/p&gt;
-            &lt;p&gt;
-                Each note (&lt;var&gt;♪&lt;/var&gt;) in the song now has both pitch and beat information, and &lt;code&gt;play ♪&lt;/code&gt; needs to receive those data in separate input slots. The &lt;img class="inline nopadtb" src="/img/U2/lab01/pitch.png" alt="pitch from ♪" title="pitch from ♪" /&gt; and &lt;img class="inline nopadtb" src="/img/U2/lab01/beats.png" alt="beats from ♪" title="beats from ♪" /&gt; blocks each take a note (&lt;var&gt;♪&lt;/var&gt;) as input and report only one piece of information to the &lt;code&gt;play ♪&lt;/code&gt; block.&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/pitch-definition.png" alt="pitch (♪) {
-    report (item (1) of (♪))
-}" title="pitch (♪) {
-    report (item (1) of (♪))
-}" /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/beats-definition.png" alt="beats (♪) {
-    report (item (2) of (♪))
-}" title="beats (♪) {
-    report (item (2) of (♪))
-}" /&gt;
-            &lt;/p&gt;
-            &lt;p&gt;
-                So, &lt;code&gt;play song with pitches and beats&lt;/code&gt; takes a table of song data with pitches and beats as input (&lt;code&gt;song&lt;/code&gt;), and it plays each note (&lt;var&gt;♪&lt;/var&gt;) at the specified pitch for the specified number of beats.&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/play-song-beats-definition.png" alt="play song with pitches and beats (song) {
-for each (♪) in (song) {
-    play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
-}</code></pre>
-<p>}” title=“play song with pitches and beats (song) { for each (♪) in (song) { play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪)) } }” /&gt;</p>
-<pre><code>            &lt;/p&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class="todo"&gt;
-        &lt;p&gt;MARY TODO: I need to do add this block to the previous XML projects and give it help text. When I do, I should take it from the MARIO MAPPED EXMAPLE because that version has the help text as a comment on the hat block. --MF, 2/27/22&lt;/p&gt;
-        &lt;p&gt;MARY TODO: The original 'Mary Had a Little Lamb' (MHALL) XML has no extra sound blocks hidden in it. And both the map MHALL and map TWINKLE don't either and also they might need help text on the play song block. Also I reminded students how to put help text on a block in 2.1.5#6, but perhaps we should on page 2.1.3 between #4 and #5 also... --MF, 2/27/22&lt;/p&gt;
-    &lt;/div&gt;
+  
+    
+  </div>
+  
 
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol&gt;
-            &lt;li&gt;Open this &lt;a class="js-run snap-project" href="/prog/U2/lab01/song-player-pitches-beats.xml" title="Song Player - Pitches and Beats - Snap! project" target="_blank"&gt;Song Player - Pitches and Beats&lt;/a&gt; project, and save it to your account.&lt;/li&gt;
-            &lt;li&gt;
-                &lt;div class="sidenote"&gt;You learned how to create a global variable in &lt;a href="/student-pages/U2/L1/06-storing-songs.html?topic=sparks%2F2-sequencing-iteration.topic&amp;course=middle-school.html" title="Unit 2 Lab 1 Activity 6: Storing Songs"&gt;Unit 2 Lab 1 Activity 6: Storing Songs&lt;/a&gt;.&lt;/div&gt;
-                Create a new global variable to store a song with both pitch and beat information.&lt;/li&gt;
-            &lt;li&gt;
-                Use the &lt;img class="inline nopadtb" src="/img/U2/lab01/note-pitch-beats.png" alt="♪ pitch: () beats: ()" title="♪ pitch: () beats: ()" /&gt; reporter to input each note in your list.
-                &lt;img class="indent" src="/img/U2/lab01/set-mario-beats.png" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" /&gt;
-            &lt;/li&gt;
-            &lt;li&gt;Play your song by dragging your new variable (with both pitch and beat data) into the input slot of the &lt;code&gt;play song with pitches and beats&lt;/code&gt; block and clicking it.&lt;/li&gt;
-            &lt;li&gt;Fix any problems with your project.&lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;div class="ifTime show"&gt;
-        &lt;ol start="7"&gt;
-            &lt;li&gt;Build another song with pitch and beat information, store it in another global variable, and  play that using the &lt;code&gt;play song with pitches and beats&lt;/code&gt; block also.&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;div class="learn"&gt;In this activity, you learned how to create a table of song data containing both pitch and length data.&lt;/div&gt;</code></pre>
+</header>
+
+<div class="todo">
+<p>Consider that students don’t always have to download a new XML; they could just import blocks into existing projects. –MF</p>
+</div>
+<div class="learn">
+<p>In this activity, you will learn to store and play songs with both pitch and length of each note.</p>
+</div>
+<p>
+So far, you’ve been using a <code>play song</code> block that only lets you control the pitch of each note (by giving it a list of pitches as input). The number of beats was the same based on whatever you typed into the <code>play ♪</code> block inside your <code>play song</code> block (for example, 0.5 in the image below).<br> <img src="../img/U2/lab01/play-song-definition.png" title="/img/U2/lab01/play-song-definition.png" alt="play song (pitches) {
+for each (pitche) in (pitches) {
+play ♪ pitch: (pitch) beats: (0.5)
+}
+}" class="indent">
+</p>
+<p>
+You can use a table to store the data for every note and then use <code>play song with pitches and beats</code>, which expects music data <em>in a table</em>, to play the song. Each item in the list below is a new block: <img src="../img/U2/lab01/note-pitch-beats.png" title="♪ pitch: () beats: ()" alt="♪ pitch: () beats: ()" class="inline nopadtb">. It looks like the <code>play ♪</code> command, but it’s a reporter that reports the pitch and beat.<br> <img src="../img/U2/lab01/set-mario-beats.png" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" class="indent"> <img src="../img/U2/lab01/mario-beats-watcher.png" title="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The rows contain the value pairs: (76, 0.25), (76, 0.25), (0, 0.25), (76, 0.25), (0, 0.25), (72, 0.25), (76, 0.25), (0, 0.25), (79, 0.25), (0, 0.75), (67, 0.25)" alt="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The rows contain the value pairs: (76, 0.25), (76, 0.25), (0, 0.25), (76, 0.25), (0, 0.25), (72, 0.25), (76, 0.25), (0, 0.25), (79, 0.25), (0, 0.75), (67, 0.25)" class="indent noshadow"> <img src="../img/U2/lab01/play-song-beats-mario.png" title="play song with pitches and beats ('Mario Theme (with beats)')" alt="play song with pitches and beats ('Mario Theme (with beats)')" class="indent">
+</p>
+<div class="todo">
+<p>
+The introduction of an ADT that’s used throughout this activity can’t be inside a hint inside a yellow “optional” box! Also, they’ve seen abstract data types before, no? If so, there should be a reference back to their introduction. If this <em>is</em> their introduction, it needs much more explicit calling out as a Big Idea. –bh 3/3/22
+</p>
+<p>
+We’ve agreed not to <em>teach</em> ADTs at all in this course. We are only <em>using</em> them here (with the option to learn more). You can reopen this decision if you like, of course, but that has been the agreement so far. –MF, 3/6/22
+</p>
+</div>
+<div class="endnote">
+<p>
+<a href="#hint-play-beats" data-toggle="collapse" title="How does the PLAY SONG WITH PITCHES AND BEATS block work?">How does the <code>play song with pitches and beats</code> block work?</a>
+</p>
+<div id="hint-play-beats" class="collapse">
+<p>
+This block takes a table of pitch and beat values as input, and for each note in the song, it plays the pitch and beat values for that note:<br> <img src="../img/U2/lab01/play-song-beats-definition.png" title="play song with pitches and beats (song) {
+for each (♪) in (song) {
+play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
+}
+}" alt="play song with pitches and beats (song) {
+for each (♪) in (song) {
+play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
+}
+}" class="indent">
+</p>
+<p>
+<a href="#hint-block-vars" data-toggle="collapse" title="Which part of the data is the song and which part is the ♪?">Which part is the <var>song</var> and which part is the <var>♪</var>?</a>
+</p>
+<div id="hint-block-vars" class="collapse">
+<p><img src="../img/U2/lab01/mario-beats-watcher-labeled.gif" title="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The entire table is labeled 'song' and a single row is labeled '♪'. An animation cycles through the rows showing each row labeled '♪' one after another." alt="watcher for the 'Mario Theme (with beats)' variable showing a table with two columns and eleven rows. The entire table is labeled 'song' and a single row is labeled '♪'. An animation cycles through the rows showing each row labeled '♪' one after another." class="noshadow indent"></p>
+</div>
+<p>
+</p><p>The data about each note is loaded in to a table using the <code>♪ pitch beats</code> block, which takes a pitch and number of beats as input and reports a list with those two values:<br> <img src="../img/U2/lab01/note-pitch-beats-definition.png" title="♪ pitch: (pitch) beats: (beats) {
+report (list (pitch) (beats))
+}" alt="♪ pitch: (pitch) beats: (beats) {
+report (list (pitch) (beats))
+}" class="indent"> <img src="../img/U2/lab01/note-pitch-beats-reporting.png" title="♪ pitch: (64) beats: (0.25) reporting the list 64, 0.25" alt="♪ pitch: (64) beats: (0.25) reporting the list 64, 0.25" class="indent"></p>
+<p>
+<a href="#hint-loading" data-toggle="collapse" title="How is the data loaded into a table with the ♪ PITCH BEATS block?">How is the data loaded into a table with the <code>♪ pitch beats</code> block?</a>
+</p>
+<div id="hint-loading" class="collapse">
+<p><img src="../img/U2/lab01/set-mario-beats.png" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" class="indent"></p>
+</div>
+<p></p>
+<p>
+Each note (<var>♪</var>) in the song now has both pitch and beat information, and <code>play ♪</code> needs to receive those data in separate input slots. The <img src="../img/U2/lab01/pitch.png" title="pitch from ♪" alt="pitch from ♪" class="inline nopadtb"> and <img src="../img/U2/lab01/beats.png" title="beats from ♪" alt="beats from ♪" class="inline nopadtb"> blocks each take a note (<var>♪</var>) as input and report only one piece of information to the <code>play ♪</code> block.<br> <img src="../img/U2/lab01/pitch-definition.png" title="pitch (♪) {
+report (item (1) of (♪))
+}" alt="pitch (♪) {
+report (item (1) of (♪))
+}" class="indent"> <img src="../img/U2/lab01/beats-definition.png" title="beats (♪) {
+report (item (2) of (♪))
+}" alt="beats (♪) {
+report (item (2) of (♪))
+}" class="indent">
+</p>
+<p>
+So, <code>play song with pitches and beats</code> takes a table of song data with pitches and beats as input (<code>song</code>), and it plays each note (<var>♪</var>) at the specified pitch for the specified number of beats.<br> <img src="../img/U2/lab01/play-song-beats-definition.png" title="play song with pitches and beats (song) {
+for each (♪) in (song) {
+play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
+}
+}" alt="play song with pitches and beats (song) {
+for each (♪) in (song) {
+play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
+}
+}" class="indent">
+</p>
+</div>
+</div>
+<div class="todo">
+<p>
+MARY TODO: I need to do add this block to the previous XML projects and give it help text. When I do, I should take it from the MARIO MAPPED EXMAPLE because that version has the help text as a comment on the hat block. –MF, 2/27/22
+</p>
+<p>
+MARY TODO: The original ‘Mary Had a Little Lamb’ (MHALL) XML has no extra sound blocks hidden in it. And both the map MHALL and map TWINKLE don’t either and also they might need help text on the play song block. Also I reminded students how to put help text on a block in 2.1.5#6, but perhaps we should on page 2.1.3 between #4 and #5 also… –MF, 2/27/22
+</p>
+</div>
+<div class="forYouToDo">
+<ol>
+<li>
+Open this <a class="js-run snap-project" href="../prog/U2/lab01/song-player-pitches-beats.xml" title="Song Player - Pitches and Beats - Snap! project" target="_blank">Song Player - Pitches and Beats</a> project, and save it to your account.
+</li>
+<li>
+<div class="sidenote">
+<p>You learned how to create a global variable in <a href="../lab-5/06-storing-songs.html" title="Lab 5 Page 6: Storing Songs">Lab 5 Page 6: Storing Songs</a>.</p>
+</div>
+<p>Create a new global variable to store a song with both pitch and beat information.</p>
+</li>
+<li>
+Use the <img src="../img/U2/lab01/note-pitch-beats.png" title="♪ pitch: () beats: ()" alt="♪ pitch: () beats: ()" class="inline nopadtb"> reporter to input each note in your list. <img src="../img/U2/lab01/set-mario-beats.png" title="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" alt="set ('Mario Theme (with beats)') to (list (♪ pitch: (76) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (72) beats: (0.25)) (♪ pitch: (76) beats: (0.25)) (♪ pitch: (0) beats: (0.25)) (♪ pitch: (79) beats: (0.25)) (♪ pitch: (0) beats: (0.75)) (♪ pitch: (67) beats: (0.25)))" class="indent">
+</li>
+<li>
+Play your song by dragging your new variable (with both pitch and beat data) into the input slot of the <code>play song with pitches and beats</code> block and clicking it.
+</li>
+<li>
+Fix any problems with your project.
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+</div>
+<div class="ifTime show">
+<ol start="7">
+<li>
+Build another song with pitch and beat information, store it in another global variable, and play that using the <code>play song with pitches and beats</code> block also.
+</li>
+</ol>
+</div>
+<div class="learn">
+<p>In this activity, you learned how to create a table of song data containing both pitch and length data.</p>
+</div>
 
 
 
@@ -690,12 +727,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-5/07-song-mapper.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">07 Song Mapper</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Song <code>Map</code>per</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-5/09-map-pitch-beat.html" class="pagination-link">
-        <span class="nav-page-text">09 Map Pitch Beat</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><code>Map</code>ping over Pitches and Beats</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp – song-mapper</title>
+<title>CS Maker Camp - Song Mapper</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/07-song-mapper.html">07 Song Mapper</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/07-song-mapper.html">Song <code>Map</code>per</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -164,55 +164,55 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Song Player, Activity 1</span></a>
+ <span class="menu-text">Playing Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 Visualizing Loops</span></a>
+ <span class="menu-text">Visualizing Loops</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">03 Programming Styles</span></a>
+ <span class="menu-text">Programming Styles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Mystery Song Game</span></a>
+ <span class="menu-text">Mystery Song Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Beat Repeat</span></a>
+ <span class="menu-text">Beat Repeat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">06 Storing Songs</span></a>
+ <span class="menu-text">Storing Songs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">07 Song Mapper</span></a>
+ <span class="menu-text">Song <code>Map</code>per</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">08 Pitch Beat</span></a>
+ <span class="menu-text">Songs with Pitches <em>and</em> Beats</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">09 Map Pitch Beat</span></a>
+ <span class="menu-text"><code>Map</code>ping over Pitches and Beats</span></a>
   </div>
 </li>
       </ul>
@@ -228,76 +228,122 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Song <code>Map</code>per</h1>
+<p class="subtitle lead">Lab 5, Page 7</p>
+</div>
 
 
-<pre><code>    &lt;title&gt;Unit 2 Lab 1: Song Player, Activity 7&lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-    &lt;h2&gt;Song &lt;code&gt;Map&lt;/code&gt;per&lt;/h2&gt;
-    &lt;div class="todo"&gt;MARY TODO: add a reminder about how the blank in the functional input to MAP works. --MF, 2/27/22&lt;/div&gt;
-    &lt;div class="learn"&gt;In this activity, you will use the &lt;code&gt;map&lt;/code&gt; block to transpose (shift) all the pitches in your song.&lt;/div&gt;
-    &lt;div class="todo"&gt;
-        &lt;p&gt;Pamela, I debated whether to teach the ADT first so they can traverse a 2D list or to show them how to use MAP to transpose first. I went with MAP first and letting 2D lists/ADTs be a later optional page (perhaps not even to be written now or perhaps just a "Take It Further" on the last page) since the goal of the course is functional, and MAP would align with that. There is no real need to teach ADTs although the context does naturally inspire it. --MF, 2/12/22&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="todo"&gt;&lt;p&gt;When transposing a song, it's  especially important not to call MIDI note numbers "pitch."  The actual pitches are in a geometric progression, not a linear one, and when you transpose by &lt;i&gt;n&lt;/i&gt; steps you're actually &lt;em&gt;multiplying&lt;/em&gt; the pitches by &lt;span class="katex"&gt;(\sqrt[12]{2})^n&lt;/span&gt;. --bh 3/3/22&lt;/p&gt;&lt;p&gt;I agree to rename the variable for next year. --MF, 3/6/22&lt;/p&gt;&lt;/div&gt;
-    &lt;p&gt;
-        Another advantage of using a list to store your notes is that you can use higher order functions to process your list. You can use &lt;code&gt;map&lt;/code&gt; to play a song higher or lower than the original pitches.&lt;br /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/map-plus-3-over-notes-list.png" alt="map (( ) + (3)) over (list ((64) (62) (60) (62) (64) (64) (64))) reporting the list 67, 65, 63, 65, 67, 67, 67" title="map (( ) + (3)) over (list ((64) (62) (60) (62) (64) (64) (64))) reporting the list 67, 65, 63, 65, 67, 67, 67" /&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        If you store the list of pitches in a variable, you can use &lt;code&gt;play song&lt;/code&gt; together with &lt;code&gt;map&lt;/code&gt; to play the same song several times in different ways.&lt;br /&gt;
-        &lt;a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-mary-lamb-map.xml" title="Sample Song Player: Mary Had a Little Lamb MAP example - Snap! project" target="_blank"&gt;
-            &lt;img class="indent" src="/img/U2/lab01/mary-lamb-map-script.png" alt="set ('Mary Had a Little Lamb') to list ((64) (62) (60) (62) (64) (64) (64))</code></pre>
-play song (Mary Had a Little Lamb) play song (map (( ) + (3)) over (Mary Had a Little Lamb))” title=“set (‘Mary Had a Little Lamb’) to list ((64) (62) (60) (62) (64) (64) (64)) play song (Mary Had a Little Lamb) play song (map (( ) + (3)) over (Mary Had a Little Lamb))” /&gt; 
-<p></p>
-<pre><code>    &lt;div class="forYouToDo"&gt;
-        &lt;ol&gt;
-            &lt;li&gt;
-                &lt;img class="imageRight" src="/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" /&gt;
-                Open this &lt;a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-mary-lamb-map.xml" title="Sample Song Player: Mary Had a Little Lamb MAP example - Snap! project" target="_blank"&gt;Mary Had a Little Lamb &lt;code&gt;map&lt;/code&gt; example&lt;/a&gt;. Click each block to: set the variable, play the song, and then play the transposed (shifted) song.
-            &lt;/li&gt;
-            &lt;li&gt;Try changing the &lt;em&gt;shift&lt;/em&gt; (the second input to the &lt;code&gt;+&lt;/code&gt; function in the &lt;code&gt;map&lt;/code&gt; block) from 3 to some other integer. (You can make it any integer&amp;mdash;positive or negative&amp;mdash;but if it's too high or low, you won't be able to hear the song).&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;div class="comment"&gt;Do they know the word "apply" in this sense? -bh&lt;p&gt;See 1.4.4. --MF, 3/6/22&lt;/p&gt;&lt;/div&gt;
-    &lt;p&gt;The &lt;code&gt;map&lt;/code&gt; block takes two inputs: a function (in this case &lt;img class="inline nopadtb" src="/img/U2/lab01/plus-3.png" alt="( ) + (3)" title="( ) + (3)" /&gt;) and a list, applies the function to each item in the list, and reports a new list of the results.&lt;/p&gt;
+<div class="quarto-title-meta">
 
-    &lt;div class="vocabFullWidth"&gt;
-        &lt;p&gt;Recall, a function that takes a function as input (like &lt;code&gt;map&lt;/code&gt;) is called a &lt;strong&gt;higher order function&lt;/strong&gt;.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol start="3"&gt;
-            &lt;li&gt;
-                Open this &lt;a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-twinkle-twinkle-map.xml" title="Sample Song Player: Twinkle Twinkle Little Star MAP example - Snap! project" target="_blank"&gt;Twinkle Twinkle Little Star &lt;code&gt;map&lt;/code&gt; example&lt;/a&gt;, and play the song.&lt;br /&gt;
-            &lt;/li&gt;
-            &lt;div class="endnote"&gt;Remember, you can turn on Visible Stepping (&lt;img class="inline nopadtb" src="/img/2-complexity/visible-stepping.png" alt="Visible Stepping button with two footprints" title="Visible Stepping button with two footprints" /&gt;) to see which block is running as it runs.&lt;/div&gt;
-            &lt;li&gt;Modify this song by adding additional &lt;code&gt;play song&lt;/code&gt; blocks, changing the shift values in the &lt;code&gt;map&lt;/code&gt; blocks, or changing the pitches in the song.&lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;div class="ifTime show"&gt;
-        &lt;ol start="6"&gt;
-            &lt;li&gt;
-                &lt;img class="imageRight" src="/img/icons/save-mini.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;
-          &lt;div class="todo"&gt;"Your latest project" should be more specific. -bh 3/3/22&lt;/div&gt;
-                Open your latest project in Snap&lt;em&gt;!&lt;/em&gt;, and use &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;play song&lt;/code&gt; together with one of the variables that you used to store your pitches to make your song more complex.
-            &lt;/li&gt;
-            &lt;li&gt;Add additional variables to store different verses, and create more interesting music.&lt;/li&gt;</code></pre>
+    
+  
+    
+  </div>
+  
+
+</header>
+
 <div class="todo">
-I’m not sure what this bullet (“additional variables”) is suggesting I do. Add more verses? -pf 3/6/22
+<p>MARY TODO: add a reminder about how the blank in the functional input to MAP works. –MF, 2/27/22</p>
+</div>
+<div class="learn">
+<p>In this activity, you will use the <code>map</code> block to transpose (shift) all the pitches in your song.</p>
+</div>
+<div class="todo">
+<p>
+Pamela, I debated whether to teach the ADT first so they can traverse a 2D list or to show them how to use MAP to transpose first. I went with MAP first and letting 2D lists/ADTs be a later optional page (perhaps not even to be written now or perhaps just a “Take It Further” on the last page) since the goal of the course is functional, and MAP would align with that. There is no real need to teach ADTs although the context does naturally inspire it. –MF, 2/12/22
+</p>
+</div>
+<div class="todo">
+<p>
+When transposing a song, it’s especially important not to call MIDI note numbers “pitch.” The actual pitches are in a geometric progression, not a linear one, and when you transpose by <i>n</i> steps you’re actually <em>multiplying</em> the pitches by <span class="katex">()^n</span>. –bh 3/3/22
+</p>
+<p>
+I agree to rename the variable for next year. –MF, 3/6/22
+</p>
+</div>
+<p>
+Another advantage of using a list to store your notes is that you can use higher order functions to process your list. You can use <code>map</code> to play a song higher or lower than the original pitches.<br> <img src="../img/U2/lab01/map-plus-3-over-notes-list.png" title="map (( ) + (3)) over (list ((64) (62) (60) (62) (64) (64) (64))) reporting the list 67, 65, 63, 65, 67, 67, 67" alt="map (( ) + (3)) over (list ((64) (62) (60) (62) (64) (64) (64))) reporting the list 67, 65, 63, 65, 67, 67, 67" class="indent">
+</p>
+<p>
+If you store the list of pitches in a variable, you can use <code>play song</code> together with <code>map</code> to play the same song several times in different ways.<br> <a class="js-run snap-project" href="../prog/U2/lab01/sample-song-player-mary-lamb-map.xml" title="Sample Song Player: Mary Had a Little Lamb MAP example - Snap! project" target="_blank"> <img src="../img/U2/lab01/mary-lamb-map-script.png" title="set ('Mary Had a Little Lamb') to list ((64) (62) (60) (62) (64) (64) (64))
+play song (Mary Had a Little Lamb)
+play song (map (( ) + (3)) over (Mary Had a Little Lamb))" alt="set ('Mary Had a Little Lamb') to list ((64) (62) (60) (62) (64) (64) (64))
+play song (Mary Had a Little Lamb)
+play song (map (( ) + (3)) over (Mary Had a Little Lamb))" class="indent"> </a>
+</p>
+<div class="forYouToDo">
+<ol>
+<li>
+<img src="../img/icons/headphones-mini.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="imageRight"> Open this <a class="js-run snap-project" href="../prog/U2/lab01/sample-song-player-mary-lamb-map.xml" title="Sample Song Player: Mary Had a Little Lamb MAP example - Snap! project" target="_blank">Mary Had a Little Lamb <code>map</code> example</a>. Click each block to: set the variable, play the song, and then play the transposed (shifted) song.
+</li>
+<li>
+Try changing the <em>shift</em> (the second input to the <code>+</code> function in the <code>map</code> block) from 3 to some other integer. (You can make it any integer—positive or negative—but if it’s too high or low, you won’t be able to hear the song).
+</li>
+</ol>
+</div>
+<div class="comment">
+<p>Do they know the word “apply” in this sense? -bh</p>
+<p>
+See 1.4.4. –MF, 3/6/22
+</p>
+</div>
+<p>
+The <code>map</code> block takes two inputs: a function (in this case <img src="../img/U2/lab01/plus-3.png" title="( ) + (3)" alt="( ) + (3)" class="inline nopadtb">) and a list, applies the function to each item in the list, and reports a new list of the results.
+</p>
+<div class="vocabFullWidth">
+<p>
+Recall, a function that takes a function as input (like <code>map</code>) is called a <strong>higher order function</strong>.
+</p>
+</div>
+<div class="forYouToDo">
+<ol start="3">
+<li>
+Open this <a class="js-run snap-project" href="../prog/U2/lab01/sample-song-player-twinkle-twinkle-map.xml" title="Sample Song Player: Twinkle Twinkle Little Star MAP example - Snap! project" target="_blank">Twinkle Twinkle Little Star <code>map</code> example</a>, and play the song.<br>
+</li>
+<div class="endnote">
+<p>Remember, you can turn on Visible Stepping (<img src="../img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline nopadtb">) to see which block is running as it runs.</p>
+</div>
+<li>
+Modify this song by adding additional <code>play song</code> blocks, changing the shift values in the <code>map</code> blocks, or changing the pitches in the song.
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+</div>
+<div class="ifTime show">
+<ol start="6">
+<li>
+<p><img src="../img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="imageRight"></p>
+<div class="todo">
+<p>“Your latest project” should be more specific. -bh 3/3/22</p>
+</div>
+<p>Open your latest project in Snap<em>!</em>, and use <code>map</code> and <code>play song</code> together with one of the variables that you used to store your pitches to make your song more complex.</p>
+</li>
+<li>
+Add additional variables to store different verses, and create more interesting music.
+</li>
+<div class="todo">
+<p>I’m not sure what this bullet (“additional variables”) is suggesting I do. Add more verses? -pf 3/6/22</p>
 <p>
 Better? –MF, 3/7/22
 </p>
 </div>
-<pre><code>            &lt;li&gt;
-                In this activity, you changed the pitches by adding or subtracting, but you could also multiply or divide. Try it and see what happens!
-                &lt;div class="endnote"&gt;You can pull the &lt;code&gt;map&lt;/code&gt; block out of the &lt;code&gt;play song with pitches and beats&lt;/code&gt; block temporarily and then click it to see what values it reports.&lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-
-    &lt;div class="learn"&gt;In this activity, you used the higher order function &lt;code&gt;map&lt;/code&gt; to transpose  lists of pitches stored in variables and create more complex music.&lt;/div&gt;</code></pre>
+<li>
+<p>In this activity, you changed the pitches by adding or subtracting, but you could also multiply or divide. Try it and see what happens!</p>
+<div class="endnote">
+<p>You can pull the <code>map</code> block out of the <code>play song with pitches and beats</code> block temporarily and then click it to see what values it reports.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="learn">
+<p>In this activity, you used the higher order function <code>map</code> to transpose lists of pitches stored in variables and create more complex music.</p>
+</div>
 
 
 
@@ -653,12 +699,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-5/06-storing-songs.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">06 Storing Songs</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Storing Songs</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-5/08-pitch-beat.html" class="pagination-link">
-        <span class="nav-page-text">08 Pitch Beat</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Songs with Pitches <em>and</em> Beats</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

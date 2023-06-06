@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp – mystery-song-game</title>
+<title>CS Maker Camp - Mystery Song Game</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/04-mystery-song-game.html">04 Mystery Song Game</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/04-mystery-song-game.html">Mystery Song Game</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -164,55 +164,55 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Song Player, Activity 1</span></a>
+ <span class="menu-text">Playing Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 Visualizing Loops</span></a>
+ <span class="menu-text">Visualizing Loops</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">03 Programming Styles</span></a>
+ <span class="menu-text">Programming Styles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">04 Mystery Song Game</span></a>
+ <span class="menu-text">Mystery Song Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Beat Repeat</span></a>
+ <span class="menu-text">Beat Repeat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">06 Storing Songs</span></a>
+ <span class="menu-text">Storing Songs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">07 Song Mapper</span></a>
+ <span class="menu-text">Song <code>Map</code>per</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">08 Pitch Beat</span></a>
+ <span class="menu-text">Songs with Pitches <em>and</em> Beats</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">09 Map Pitch Beat</span></a>
+ <span class="menu-text"><code>Map</code>ping over Pitches and Beats</span></a>
   </div>
 </li>
       </ul>
@@ -228,139 +228,166 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mystery Song Game</h1>
+<p class="subtitle lead">Lab 5, Page 4</p>
+</div>
 
 
-<pre><code>    &lt;title&gt;Unit 2 Lab 1: Song Player, Activity 4&lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-    &lt;h2&gt;Mystery Song Game&lt;/h2&gt;
-    &lt;div class="learn"&gt;In this activity, you will use your &lt;code&gt;mystery song&lt;/code&gt; block to create a game.&lt;/div&gt;
+<div class="quarto-title-meta">
+
     
-    &lt;p&gt;
-        There are command block versions of two blocks you've already seen:
-        &lt;ul&gt;
-            &lt;li&gt;
-                You've used the &lt;img class="inline nopadtb" src="/img/blocks/reporter-if.png" alt="if 'predicate input slot' then () else ()" title="if 'predicate input slot' then () else ()" /&gt; reporter. Snap&lt;em&gt;!&lt;/em&gt; also    has a built-in command version: 
-                &lt;img class="inline" src="/img/blocks/if-else-full-size.png" alt="if 'predicate input slot' then 'C-shaped input slot' else 'C-shaped input slot'" title="if 'predicate input slot' then 'C-shaped input slot' else 'C-shaped input slot'" /&gt;
-                &lt;div class="endnote"&gt;
-                    &lt;a href="#hint-if" data-toggle="collapse" title="Learn more about the difference between the reporter IF THEN ELSE and the command IF ELSE."&gt;Learn more about the difference between the reporter &lt;code&gt;if then else&lt;/code&gt; and the command &lt;code&gt;if else&lt;/code&gt;.&lt;/a&gt;
-                &lt;div id="hint-if" class="collapse"&gt;
-                  &lt;div class="todo"&gt;"what the computer should report."  What does that mean?  It's not "the computer" that's reporting; it's a particular block, namely the IF THEN ELSE block.  If what this means is that IF THEN ELSE appears in a custom reporter and decides what the reporter should report, that's the case only if the IF THEN ELSE is directly the input to a REPORT, rather than part of a larger computation.  I think I'd say "... to choose one of two possible values to report."  That makes it IF THEN ELSE itself that's reporting.  "... what the computer should do" is more defensible, but pretty vague.  I'd rather see "to decide which of two scripts to run." --bh 3/3/22&lt;br&gt;</code></pre>
-I like “to choose one of two possible values to report” or “what the block should report.” I don’t like ‘scripts’ as I get confused about what scripts mean. - pf 3/3/22
-</main></div>
-<pre><code>                        &lt;p&gt;
-                            In &lt;a href="/student-pages/U1/L6/02-l33t-text.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 6 Activity 2: L33t Text"&gt;Unit 1 Lab 6 Activity 2: L33t Text&lt;/a&gt;, you used &lt;img class="inline" src="/img/blocks/reporter-if.png" alt="if 'predicate input slot' then () else ()" title="if 'predicate input slot' then () else ()" /&gt; to decide what the computer should &lt;em&gt;report&lt;/em&gt;. You can use the command version to decide what the computer should &lt;em&gt;do&lt;/em&gt;. Like the reporter version, the command &lt;code&gt;if else&lt;/code&gt; block takes three inputs:
-                            &lt;ol&gt;
-                                &lt;li&gt;A testing condition (such as &lt;img class="inline nopadtb" src="/img/U2/lab01/answer-equals-stronger.png" alt="(answer) = ('Stronger')" title="(answer) = ('Stronger')" /&gt;)&lt;/li&gt;
-                                &lt;li&gt;What to do if it's true&lt;/li&gt;
-                                &lt;li&gt;What to do if it's false&lt;/li&gt;
-                            &lt;/ol&gt;
-                        &lt;/p&gt;
-                            &lt;p&gt;The command block, however, performs a set of commands depending on the result of the condition rather than reporting an output.&lt;/p&gt;
-                            &lt;div class="todo"&gt;I think a specific example, with a picture of an IF ELSE &lt;em&gt;instruction&lt;/em&gt; (inputs filled in), would help. -bh 3/3/22 +1 -pf 3/3/22&lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;/li&gt;
-                &lt;div class="todo"&gt;When they used the ASK reporter, were they told that it &lt;em&gt;isn't&lt;/em&gt; a Snap&lt;i&gt;!&lt;/i&gt; primitive?  If not, the implicit revelation below should be made explicit, or they'll be confused, and even more so if they click the hint box. Also, what's the virtue of teaching ASK AND WAIT?  Even in an imperative project, I'd rather use a reporter that connects the question with the answer so you can't have bugs from being confused about what's the most recently asked question.  ASK AND WAIT is a kludge, inherited from Scratch in the days when they really didn't much like reporters.  I wish ASK were the primitive! --bh 3/3/22&lt;p&gt;I don't disagree with anything you are saying in principle, but in this unit, we are trying to begin preparing them for Snap&lt;em&gt;!&lt;/em&gt; as it exists in the wild, and that doesn't have &lt;code&gt;ask&lt;/code&gt;. We could go back and make sure they were told that &lt;em&gt;everything&lt;/em&gt; they've learned that isn't a primitive isn't a primitive, but instead, we've opted for the to-be-created end-of-unit blocks list that will make the distinction. --MF, 3/6/22&lt;/div&gt;
-            &lt;li&gt;
-                You've used the &lt;img class="inline" src="/img/U1/lab07/ask.png" alt="ask ()" title="ask ()" /&gt; reporter. Snap&lt;em&gt;!&lt;/em&gt; has a built-in command version: 
-                &lt;img class="inline nopadtb" src="/img/blocks/ask-empty-full-size.png" alt="ask () and wait" title="ask () and wait" /&gt;, which uses 
-                &lt;img class="inline nopadtb" src="/img/blocks/answer-full-size.png" alt="answer" title="answer" /&gt; to report the user's response.
-                &lt;div class="endnote"&gt;
-                    &lt;p&gt;&lt;a href="#hint-ask" data-toggle="collapse" title="Learn more about the difference between the reporter ASK and the built-in pair ASK AND WAIT and ANSWER."&gt;Learn more about the difference between the reporter &lt;code&gt;ask&lt;/code&gt; and the built-in pair &lt;code&gt;ask and wait&lt;/code&gt; and &lt;code&gt;answer&lt;/code&gt;.&lt;/a&gt;&lt;/p&gt;
-                    &lt;div id="hint-ask" class="collapse"&gt;
-                        &lt;p&gt;
-                            In &lt;a href="/student-pages/U1/L7/03-collecting-data.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 7 Activity 3: Collecting Your Data"&gt;Unit 1 Lab 7 Activity 3: Collecting Your Data&lt;/a&gt;, you used &lt;img class="inline" src="/img/U1/lab07/ask.png" alt="ask ()" title="ask ()" /&gt; to ask the user a question and report the user's response. To use Snap&lt;em&gt;!&lt;/em&gt;'s built-in version, first use the command &lt;img class="inline nopadtb" src="/img/blocks/ask-empty-full-size.png" alt="ask () and wait" title="ask () and wait" /&gt; to ask the user your question and then use the reporter &lt;img class="inline nopadtb" src="/img/blocks/answer-full-size.png" alt="answer" title="answer" /&gt; to access the answer stored the last time &lt;code&gt;ask and wait&lt;/code&gt; was run.
-                        &lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;div class="todo"&gt;Again, a code example would help, a short two-line script that does something with the answer to a question. --bh 3/3/22&lt;br&gt; agreed, especially as its not obvious how to use a command and a reporter together. -pf 3/3/22&lt;p&gt;There is an example embedded in the fourth hint. You are looking for something here too? --MF, 3/7/22&lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/p&gt;
+  
+    
+  </div>
+  
 
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol&gt;
-            &lt;li&gt;If your project isn't open already, log in to Snap&lt;i&gt;!&lt;/i&gt;, and open your "Song Player" project.&lt;/li&gt;</code></pre>
+</header>
+
+<div class="learn">
+<p>In this activity, you will use your <code>mystery song</code> block to create a game.</p>
+</div>
+<p>
+</p><p>There are command block versions of two blocks you’ve already seen:</p>
+<ul>
+<li>
+<p>You’ve used the <img src="../img/blocks/reporter-if.png" title="if 'predicate input slot' then () else ()" alt="if 'predicate input slot' then () else ()" class="inline nopadtb"> reporter. Snap<em>!</em> also has a built-in command version: <img src="../img/blocks/if-else-full-size.png" title="if 'predicate input slot' then 'C-shaped input slot' else 'C-shaped input slot'" alt="if 'predicate input slot' then 'C-shaped input slot' else 'C-shaped input slot'" class="inline"></p>
+</li>
+<li>
+<p>You’ve used the <img src="../img/U1/lab07/ask.png" title="ask ()" alt="ask ()" class="inline"> reporter. Snap<em>!</em> has a built-in command version: <img src="../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb">, which uses <img src="../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"> to report the user’s response.</p>
+</li>
+</ul>
+<p></p>
+<div class="forYouToDo">
+
+<ol>
+<li>
+If your project isn’t open already, log in to Snap<i>!</i>, and open your “Song Player” project.
+</li>
 <div class="comment">
+
 <p>
 I cant find the ask block :( I think it has to be in the song player project blocks microworld. -pf 3/3/22
 </p>
 <p>
-This needs to be fixed in all XML files, but for now, I fixed the starter file and added this takeNote box to help anyone who has already saved the problem project. –MF, 3/6/22 <br> I now realize it’s missing the “say” block(s). I also think it’d be nice to have the “When flag clicked” block so a student can share a code-less version of the project (otherwise you can see the answer in the code on the left). -pf 3/6/22
-</p></div>
-<pre><code>            &lt;li&gt;
-                Create a script that plays your mystery song, asks the user what song they think it is, and then tells them whether they are right or wrong.
-                &lt;div class="takeNote"&gt;
-                    &lt;p&gt;&lt;a href="#hint-mistake" data-toggle="collapse" title="Is your project missing the 'say,' 'ask () and wait' and 'answer' blocks?"&gt;Is your project missing the &lt;img class="nopadtb" src="/img/blocks/say-empty-full-size.png" alt="say ()" title="say ()" /&gt;, &lt;img class="inline nopadtb" src="/img/blocks/ask-empty-full-size.png" alt="ask () and wait" title="ask () and wait" /&gt; and &lt;img class="inline nopadtb" src="/img/blocks/answer-full-size.png" alt="answer" title="answer" /&gt; blocks?&lt;/a&gt;&lt;/p&gt;
-                    &lt;div id="hint-mistake" class="collapse"&gt;
-                        &lt;p&gt;
-                            There was a mistake! If these blocks are not in your project, go back to &lt;a href="/student-pages/U2/L1/01-playing-notes.html?topic=sparks%2F2-sequencing-iteration.topic&amp;course=middle-school.html" title="the first activity: for recovering the missing 'say,' 'ask () and wait' and 'answer' blocks"&gt;the first activity&lt;/a&gt;, press and hold the shift key while you reload the page, open the project in exercise #2, choose "Save As..." from the Snap&lt;em&gt;!&lt;/em&gt; File menu, and save &lt;em&gt;with a new name&lt;/em&gt; (so you don't lose your prior work).
-                        &lt;/p&gt;
-                    &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;div class="todo"&gt;I think this is a little tricky. How's the following for scaffolding? At the last focus group, we got the message that some kids do better with more scaffolding than we are giving &lt;em&gt;and&lt;/em&gt; that teachers' CS goals for middle school prioritize engagement over formal CS content which will occur in HS if we hook them now. They were convincing, and I added a final hint here.  --MF, 2/11/22&lt;/div&gt;
-
-                &lt;div class="endnote"&gt;
-                &lt;div class="todo"&gt;
-                    &lt;p&gt;Here you talk about SAY, but in the third hint the picture uses SAY FOR __ SECS.  You should decide which.  I think plain SAY is fine for this purpose. --bh 3/3/22&lt;/p&gt;
-                    &lt;p&gt;Agreed. To resolve next year. --MF, 3/6/22&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;p&gt;You can use &lt;code&gt;ask and wait&lt;/code&gt; to ask the user a question (and store their response), and you can use &lt;img class="nopadtb" src="/img/blocks/say-empty-full-size.png" alt="say ()" title="say ()" /&gt; to tell the user something that isn't a question.&lt;/p&gt;
-                    &lt;p&gt;&lt;a href="#hint-guessing-hint1" data-toggle="collapse" title="Click for another hint about building the song-guessing-script."&gt;Click for another hint.&lt;/a&gt;&lt;/p&gt;
-                    &lt;div id="hint-guessing-hint1" class="collapse"&gt;
-                        &lt;p&gt;
-                            The script for your game needs to do three things:
-                            &lt;ol style="list-style-type: lower-roman;"&gt;
-                                &lt;li&gt;Play your mystery song&lt;/li&gt;
-                                &lt;li&gt;Ask the user to guess the song&lt;/li&gt;
-                                &lt;li&gt;Tell the player whether the guess is correct&lt;/li&gt;
-                            &lt;/ol&gt;
-                        &lt;/p&gt;
-                        &lt;p&gt;&lt;a href="#hint-guessing-hint3" data-toggle="collapse" title="Click for a third hint about building the song-guessing-script."&gt;Click for a third hint.&lt;/a&gt;&lt;/p&gt;
-                        &lt;div id="hint-guessing-hint3" class="collapse"&gt;
-                            &lt;p&gt;Use the &lt;code&gt;if else&lt;/code&gt; command block to test whether the guess is correct with a predicate like &lt;img class="inline nopadtb" src="/img/U2/lab01/answer-equals-stronger.png" alt="(answer) = ('Stronger')" title="(answer) = ('Stronger')" /&gt;. If the guess is correct, then use &lt;code&gt;say&lt;/code&gt; to tell the user they are correct; if it's not correct, then use &lt;code&gt;say&lt;/code&gt; to tell them that.&lt;/p&gt;
-                            &lt;p&gt;&lt;a href="#hint-guessing-hint4" data-toggle="collapse" title="Click for a fourth hint about building the song-guessing-script."&gt;Click for a fourth hint.&lt;/a&gt;&lt;/p&gt;
-                            &lt;div id="hint-guessing-hint4" class="collapse"&gt;
-                                &lt;p&gt;
-                                    Try making code that's something like this:&lt;br /&gt;
-                                    &lt;img class="indent" src="/img/U2/lab01/ask-if-example.png" alt="partial script with the code:</code></pre>
-ask (‘What was that song?’) and wait if ((answer) = (‘Twinkle Twinkle Little Star’)) { say (‘Correct!’) for (2) secs } else { say (‘Try again!’) for (2) secs }” title=“partial script with the code: ask (‘What was that song?’) and wait if ((answer) = (‘Twinkle Twinkle Little Star’)) { say (‘Correct!’) for (2) secs } else { say (‘Try again!’) for (2) secs }” /&gt;
+</p><p>This needs to be fixed in all XML files, but for now, I fixed the starter file and added this takeNote box to help anyone who has already saved the problem project. –MF, 3/6/22 <br> I now realize it’s missing the “say” block(s). I also think it’d be nice to have the “When flag clicked” block so a student can share a code-less version of the project (otherwise you can see the answer in the code on the left). -pf 3/6/22</p>
+</div>
+<li>
+<p>Create a script that plays your mystery song, asks the user what song they think it is, and then tells them whether they are right or wrong.</p>
+<div class="takeNote">
+<p>
+<a href="#hint-mistake" data-toggle="collapse" title="Is your project missing the 'say,' 'ask () and wait' and 'answer' blocks?">Is your project missing the <img src="../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()" class="nopadtb">, <img src="../img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"> and <img src="../img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"> blocks?</a>
+</p>
+<div id="hint-mistake" class="collapse">
+<p>
+There was a mistake! If these blocks are not in your project, go back to <a href="../lab-5/01-playing-notes.html" title="the first activity: for recovering the missing 'say,' 'ask () and wait' and 'answer' blocks">the first activity</a>, press and hold the shift key while you reload the page, open the project in exercise #2, choose “Save As…” from the Snap<em>!</em> File menu, and save <em>with a new name</em> (so you don’t lose your prior work).
+</p>
+</div>
+</div>
+<div class="endnote">
+<p>
+You can use <code>ask and wait</code> to ask the user a question (and store their response), and you can use <img src="../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()" class="nopadtb"> to tell the user something that isn’t a question.
+</p>
+<p>
+<a href="#hint-guessing-hint1" data-toggle="collapse" title="Click for another hint about building the song-guessing-script.">Click for another hint.</a>
+</p>
+<div id="hint-guessing-hint1" class="collapse">
+<p>
+</p><p>The script for your game needs to do three things:</p>
+<ol style="list-style-type: lower-roman;">
+<li>
+Play your mystery song
+</li>
+<li>
+Ask the user to guess the song
+</li>
+<li>
+Tell the player whether the guess is correct
+</li>
+</ol>
 <p></p>
-<pre><code>                            &lt;/div&gt;
-                        &lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-            
-    &lt;div class="todo"&gt;
-        &lt;p&gt;Cut for now. I believe some of this was here at Dan's request, so I'm not cutting without more attention. --MF, 3/6/22&lt;/p&gt;
-    &lt;div class="takeItFurther"&gt;
-      &lt;div class="todo"&gt;
-          &lt;p&gt;I'm not sure what you expect them to do here.  If the idea is that they nest another IF ELSE in the else clause of the first one, that's a whole new idea, and one students find hard, not appropriate for an ITIT. I'm not sure this is salvageable, but it might be with a serious rewriting. --bh 3/3/22&lt;/p&gt;
-          &lt;p&gt;I assumed it was just using an or. Maybe should explicitly suggest using the or block. You can also say "to allow the user to be correct with different variations on the song title", which is different from having to implement a spell checker (a quite difficult task, as 61A students will attest this semester!). -pf 3/3/22&lt;/p&gt;
-          &lt;p&gt;I made this a TIF for now. (And then I cut it.) ;) --MF, 3/6/22&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;ol type="A"&gt;
-            &lt;li&gt;Use a second &lt;code&gt;if else&lt;/code&gt; block and predicate (hexagonal testing function) to allow the user to be correct even with a different variation of the spelling of the song. For example, you might want the game to approve either "The Alphabet Song" or "Alphabet."&lt;/li&gt;
-            &lt;li&gt;If you created two mystery songs, you could make a new command block that randomly chooses which one to play by using &lt;code&gt;random&lt;/code&gt; together with &lt;code&gt;if else&lt;/code&gt;. &lt;/li&gt;
-            &lt;div class="todo"&gt;&lt;p&gt;I like this idea, but I don't see a way to do more than two mystery songs with the blocks they know at this point (e.g., not global or script variables---globals are taught later in this lab). Am I missing anything? --MF, 2/10/22&lt;/p&gt;
-            &lt;p&gt;I don't understand the question.  How can they do even two songs?  Presumably by putting the two song scripts in the slots of the IF ELSE.  Well, if they can do that, they can nest two IF ELSE blocks, as in the ITIT above, and that gives them three slots for songs, etc. --bh 3/3/22&lt;/p&gt;
-                            &lt;p&gt;I also don't know how to do this without using some variable to track which song they ended up picking and asking about, since we need that to happen before the if/else that checks the answer. Ah okay well I guess you can have the if condition be a random number between 1 and length of songs, and then inside the if/else clause, it plays the song and asks them for their guess, but then I bet they'll end up repeating all that ask-code and it'll be gross. I feel like doing this cleanly is hard. --pf 3/3/22&lt;/p&gt;</code></pre>
+<p>
+<a href="#hint-guessing-hint3" data-toggle="collapse" title="Click for a third hint about building the song-guessing-script.">Click for a third hint.</a>
+</p>
+<div id="hint-guessing-hint3" class="collapse">
+<p>
+Use the <code>if else</code> command block to test whether the guess is correct with a predicate like <img src="../img/U2/lab01/answer-equals-stronger.png" title="(answer) = ('Stronger')" alt="(answer) = ('Stronger')" class="inline nopadtb">. If the guess is correct, then use <code>say</code> to tell the user they are correct; if it’s not correct, then use <code>say</code> to tell them that.
+</p>
+<p>
+<a href="#hint-guessing-hint4" data-toggle="collapse" title="Click for a fourth hint about building the song-guessing-script.">Click for a fourth hint.</a>
+</p>
+<div id="hint-guessing-hint4" class="collapse">
+<p>
+Try making code that’s something like this:<br> <img src="../img/U2/lab01/ask-if-example.png" title="partial script with the code:
+ask ('What was that song?') and wait
+if ((answer) = ('Twinkle Twinkle Little Star')) {
+say ('Correct!') for (2) secs
+} else {
+say ('Try again!') for (2) secs
+}" alt="partial script with the code:
+ask ('What was that song?') and wait
+if ((answer) = ('Twinkle Twinkle Little Star')) {
+say ('Correct!') for (2) secs
+} else {
+say ('Try again!') for (2) secs
+}" class="indent">
+</p>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+</div>
+<div class="todo">
+<p>
+Cut for now. I believe some of this was here at Dan’s request, so I’m not cutting without more attention. –MF, 3/6/22
+</p>
+<div class="takeItFurther">
+<div class="todo">
+<p>
+I’m not sure what you expect them to do here. If the idea is that they nest another IF ELSE in the else clause of the first one, that’s a whole new idea, and one students find hard, not appropriate for an ITIT. I’m not sure this is salvageable, but it might be with a serious rewriting. –bh 3/3/22
+</p>
+<p>
+I assumed it was just using an or. Maybe should explicitly suggest using the or block. You can also say “to allow the user to be correct with different variations on the song title”, which is different from having to implement a spell checker (a quite difficult task, as 61A students will attest this semester!). -pf 3/3/22
+</p>
+<p>
+I made this a TIF for now. (And then I cut it.) ;) –MF, 3/6/22
+</p>
+</div>
+<ol type="A">
+<li>
+Use a second <code>if else</code> block and predicate (hexagonal testing function) to allow the user to be correct even with a different variation of the spelling of the song. For example, you might want the game to approve either “The Alphabet Song” or “Alphabet.”
+</li>
+<li>
+If you created two mystery songs, you could make a new command block that randomly chooses which one to play by using <code>random</code> together with <code>if else</code>.
+</li>
+<div class="todo">
+<p>
+I like this idea, but I don’t see a way to do more than two mystery songs with the blocks they know at this point (e.g., not global or script variables—globals are taught later in this lab). Am I missing anything? –MF, 2/10/22
+</p>
+<p>
+I don’t understand the question. How can they do even two songs? Presumably by putting the two song scripts in the slots of the IF ELSE. Well, if they can do that, they can nest two IF ELSE blocks, as in the ITIT above, and that gives them three slots for songs, etc. –bh 3/3/22
+</p>
+<p>
+I also don’t know how to do this without using some variable to track which song they ended up picking and asking about, since we need that to happen before the if/else that checks the answer. Ah okay well I guess you can have the if condition be a random number between 1 and length of songs, and then inside the if/else clause, it plays the song and asks them for their guess, but then I bet they’ll end up repeating all that ask-code and it’ll be gross. I feel like doing this cleanly is hard. –pf 3/3/22
+</p>
+</div>
+</ol>
+</div>
+</div>
+<div class="learn">
+<p>In this activity, you used the command <code>if else</code> to control what the game says to the player.</p>
+</div>
 
-<pre><code>        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;/div&gt;
-
-    &lt;div class="learn"&gt;In this activity, you used the command &lt;code&gt;if else&lt;/code&gt; to control what the game says to the player.&lt;/div&gt;</code></pre>
 
 
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -712,16 +739,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-5/03-programming-styles.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">03 Programming Styles</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Programming Styles</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-5/05-beat-repeat.html" class="pagination-link">
-        <span class="nav-page-text">05 Beat Repeat</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Beat Repeat</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

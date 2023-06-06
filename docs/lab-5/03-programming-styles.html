@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp – programming-styles</title>
+<title>CS Maker Camp - Programming Styles</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/03-programming-styles.html">03 Programming Styles</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/03-programming-styles.html">Programming Styles</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -164,55 +164,55 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Song Player, Activity 1</span></a>
+ <span class="menu-text">Playing Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 Visualizing Loops</span></a>
+ <span class="menu-text">Visualizing Loops</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">03 Programming Styles</span></a>
+ <span class="menu-text">Programming Styles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Mystery Song Game</span></a>
+ <span class="menu-text">Mystery Song Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Beat Repeat</span></a>
+ <span class="menu-text">Beat Repeat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">06 Storing Songs</span></a>
+ <span class="menu-text">Storing Songs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">07 Song Mapper</span></a>
+ <span class="menu-text">Song <code>Map</code>per</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">08 Pitch Beat</span></a>
+ <span class="menu-text">Songs with Pitches <em>and</em> Beats</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">09 Map Pitch Beat</span></a>
+ <span class="menu-text"><code>Map</code>ping over Pitches and Beats</span></a>
   </div>
 </li>
       </ul>
@@ -228,127 +228,145 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Programming Styles</h1>
+<p class="subtitle lead">Lab 5, Page 3</p>
+</div>
 
 
-<pre><code>    &lt;title&gt;Unit 2 Lab 1: Song Player, Activity 3&lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-    &lt;h2&gt;Programming Styles&lt;/h2&gt;
-    &lt;div class="learn"&gt;In this activity, you'll learn about the difference between programming by nesting reporter blocks inside each other and programming by stacking command blocks top to bottom.&lt;/div&gt;
+<div class="quarto-title-meta">
 
-    &lt;h3&gt;Commands Versus Reporters&lt;/h3&gt;
-    &lt;p&gt;Before this unit, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as &lt;em&gt;functional programming&lt;/em&gt;, and in Snap&lt;em&gt;!&lt;/em&gt;, it uses &lt;em&gt;reporter&lt;/em&gt; blocks. A reporter computes a value and reports it (to you or to other blocks).&lt;br /&gt;
-    &lt;img class="indent" src="/img/U2/lab01/emoji-example.png" alt="songify (emojify (uppercase ('They love soccer so much that it's funny'))) reporting '🎶 THEY ❤️ ⚽️ SO MUCH THAT IT'S 😂  🎶'" title="songify (emojify (uppercase ('They love soccer so much that it's funny'))) reporting '🎶 THEY ❤️ ⚽️ SO MUCH THAT IT'S 😂  🎶'" /&gt;
-    &lt;/p&gt;
-    &lt;p&gt;
-        In this unit, you've been stacking blocks that carry out &lt;em&gt;actions,&lt;/em&gt; such as playing a note. This style of programming is called &lt;em&gt;imperative programming&lt;/em&gt;. In Snap&lt;em&gt;!&lt;/em&gt;, imperative programming uses &lt;em&gt;command&lt;/em&gt; blocks. A command tells the computer to do something, (play a sound, draw, move, change something, etc.). Commands have &lt;em&gt;effects.&lt;/em&gt;&lt;br /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/fur-elise-snippet.png" alt="repeat (2) {
-play ♪ pitch: (64) beats: (0.5)
-play ♪ pitch: (63) beats: (0.5)</code></pre>
-} play ♪ pitch: (64) beats: (0.5) play ♪ pitch: (59) beats: (0.5) ” title=“” /&gt;
-<p></p>
-<pre><code>    &lt;p&gt;The shapes of the blocks go with the shapes of the places where you can use them.  Reporters are round, and they go into round slots in a block.  Commands are more rectangular, and they have a tab at the bottom that fits into the gap at the top of another command block.  Snap&lt;em&gt;!&lt;/em&gt; won't let you put a reporter in a stack of commands or put a command in a round slot.&lt;/p&gt;
-
-    &lt;div class="vocabFullWidth"&gt;
-        &lt;div class="sidenote"&gt;You learned about reporters in &lt;a href="/student-pages/U1/L1/04-say-hello-to-snap.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 1 Activity 4: Say Hello to Snap!"&gt;Unit 1 Lab 1 Activity 4: Say Hello to Snap&lt;em&gt;!&lt;/em&gt;&lt;/a&gt;.&lt;/div&gt;
-        &lt;p&gt;
-            A &lt;strong&gt;reporter&lt;/strong&gt; block does a calculation and reports the result. Reporters have an oval shape. &lt;br /&gt;
-            &lt;img class="indent" src="/img/blocks/item.png" alt="item () of 'list input slot'" title="item () of 'list input slot'" /&gt;
-            &lt;img class="indent" src="/img/blocks/join.png" alt="join () ()" title="join () ()" /&gt;
-            &lt;img class="indent" src="/img/blocks/reporter-if.png" alt="if 'predicate input slot' then () else ()" title="if 'predicate input slot' then () else ()" /&gt;
-        &lt;/p&gt;
-        &lt;div class="sidenote"&gt;You learned about predicates in &lt;a href="/student-pages/U1/L6/02-l33t-text.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 6 Activity 2: L33t Text"&gt;Unit 1 Lab 6 Activity 2: L33t Text&lt;/a&gt;.&lt;/div&gt;
-        &lt;p&gt;
-            A &lt;strong&gt;predicate&lt;/strong&gt; is a special kind of reporter that asks a true/false question and reports either true or false. Predicates have a hexagon shape.&lt;br /&gt;
-             &lt;img class="indent" src="/img/blocks/is-a-list.png" alt="What does IS () A (LIST)? do?" title="What does IS () A (LIST)? do?" /&gt;
-            &lt;img class="indent" src="/img/blocks/mouse-down-full-size.png" alt="mouse down?" title="mouse down?" /&gt;
-            &lt;img class="indent" src="/img/blocks/equal.png" alt="() = ()" title="() = ()" /&gt;
-        &lt;/p&gt;
-        &lt;div class="sidenote"&gt;You'll use commands much more in Unit 2.&lt;/div&gt;
-        &lt;p&gt;
-            A &lt;strong&gt;command&lt;/strong&gt; block tells the computer to do something &lt;em&gt;without reporting a value&lt;/em&gt;. Commands have a puzzle shape and can be snapped together one after another. &lt;br /&gt;
-            &lt;img class="indent" src="/img/blocks/set-tempo-to-60-bpm.png" alt="set tempo to () bpm" title="set tempo to () bpm" /&gt;
-            &lt;img class="indent" src="/img/blocks/repeat.png" alt="repeat () {}" title="repeat () {}" /&gt;
-            &lt;img class="indent" src="/img/blocks/delete-empty.png" alt="delete () from 'list input slot'" title="delete () from 'list input slot'" /&gt;
-        &lt;/p&gt;
-        &lt;div class="endnote" style="clear: right;"&gt;Unlike reporters, a command block doesn't report anything, so you can't use its result as the input to another block&amp;mdash;its result is an action, not a value!&lt;/div&gt;
-    &lt;/div&gt;
     
-    &lt;h3&gt;Creating a Command Block&lt;/h3&gt;
-    &lt;p&gt;You've created a reporter block before. You can create a command block in almost exactly the same way.&lt;/p&gt;
-    &lt;div class="endnote"&gt;&lt;div class="comment"&gt;Note to Mary for later: Check this link next year after the 1.2 page has been split up. --MF, 2/5/22&lt;/div&gt;You learned how to create a reporter in &lt;a href="/student-pages/U1/L2/02-refining-the-story.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 2 Activity 2: Refining the Story"&gt;Unit 1 Lab 2 Activity 2: Refining the Story&lt;/a&gt;.&lt;/div&gt;
+  
+    
+  </div>
+  
 
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol&gt;
-          &lt;div class="comment"&gt;&lt;p&gt;Note to Mary for later: Older instantiations of this image in &lt;a href="/student-pages/U1/L2/02-refining-the-story.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 2 Activity 2: Refining the Story"&gt;Sparks 1.2.2&lt;/a&gt; and &lt;a href="/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html?topic=nyc_bjc%2F1-intro-loops.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment"&gt;CSP 1.2.4&lt;/a&gt; need to be updated for the new palette list ordering. Also the "text box label 'Type a title for your block'" and "label 'Select a shape'" are both gone now. And "with no label of which 'for all sprites' is selected" could be deleted. --MF, 2/9/22&lt;/p&gt;
-          &lt;p&gt;No, it's this picture that should change.  The "new ordering" was a bug, now fixed.  Also, should this picture be made at zoom level 1 instead of 1.5 so that it looks the way students will see it (with the category chooser centered etc.)?  --bh 3/3/22&lt;/p&gt;&lt;/div&gt;
-          &lt;img class="imageRight noshadow" src="/img/U2/lab01/make-a-block-mystery-song-labels.png" alt="image of 'Make a block' dialog box with 10 palette menus (Motion, Looks, Sound, Pen, Other, Control, Sensing, Operators, Variables, Lists) of which Sound is selected; a text box in which 'mystery song' has been written; three block shape options (puzzle-shaped/'Command', oval/'Reporter', and hexagonal/'Predicate') of which 'Command' is selected; two radio boxes ('for all sprites', which is checked, and 'for this sprite only', which is not checked); and two buttons ('OK' and 'Cancel')" title="image of 'Make a block' dialog box with 10 palette menus (Motion, Looks, Sound, Pen, Other, Control, Sensing, Operators, Variables, Lists) of which Sound is selected; a text box in which 'mystery song' has been written; three block shape options (puzzle-shaped/'Command', oval/'Reporter', and hexagonal/'Predicate') of which 'Command' is selected; two radio boxes ('for all sprites', which is checked, and 'for this sprite only', which is not checked); and two buttons ('OK' and 'Cancel')" /&gt;
-            
-            &lt;div class="todo"&gt;I wonder if we should have them save this as a separate project called "Mystery Song". --MF, 2/27/22&lt;br&gt;</code></pre>
-I don’t feel strongly either way, or at least not so far. Not sure if I’ll change my mind when I go through rest of lab. -PF 3/3/22
-</main></div>
-<pre><code>            &lt;li&gt;If your project isn't open already, log in to Snap&lt;em&gt;!&lt;/em&gt;, and open your "Song Player" project.&lt;/li&gt;
-            &lt;div class="todo"&gt;We should have a pic of &lt;img class="inline" src="/img/U2/lab01/mystery-song.png" alt="mystery song" title="mystery song" /&gt; somewhere around here. --MF, 4/11/22&lt;/div&gt;
-            &lt;li&gt;
-                Create a new command block called &lt;code&gt;mystery song&lt;/code&gt;.
-                &lt;ol&gt;
-                    &lt;li&gt;
-                        Right-click in an empty spot in the Scripts area and choose "make a block..." &lt;br /&gt;
-                        &lt;img class="indent" src="/img/1-introduction/make-a-block.jpg" alt="make a block option" title="make a block option" /&gt;
-                    &lt;/li&gt;
-                    &lt;li&gt;Choose the palette for your block: Sound.&lt;/li&gt;
-                    &lt;div class="todo"&gt;This should be "choose a palette" instead of "choose a color," right Brian? Need to change in &lt;a href="/student-pages/U1/L2/02-refining-the-story.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 2 Activity 2: Refining the Story"&gt;Sparks 1.2.2&lt;/a&gt; and &lt;a href="/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html?topic=nyc_bjc%2F1-intro-loops.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment"&gt;CSP 1.2.4&lt;/a&gt;. --MF, 2/9/22&lt;br /&gt; &lt;br /&gt;
-                      I'm confused by this red box comment.  Each attribute of a block has a &lt;em&gt;meaning&lt;/em&gt; and a visual &lt;em&gt;representation.&lt;/em&gt;  So:&lt;br /&gt;</code></pre>
-color : palette :: shape : report behavior<br> You seem happy to use the representation as the name for Shape, so why not be consistent and use the representation for Color too? Or else change both of them (after inventing a good name for the meaning of the shape; mentally I call it “range” as in “domain and,” but that’s a stretch. -bh 2/15/22<br><br> P.S. Apparently all this time Jens (following Scratch usage) uses “Palette” to mean that whole left column of the screen, all colors, and uses “Category” to mean what I’ve been calling the palette. I don’t know why he didn’t tell me that right at the beginning! My feeling is that changing our vocabulary is too horrible to contemplate. Oh well.
+</header>
+
+<div class="learn">
+<p>In this activity, you’ll learn about the difference between programming by nesting reporter blocks inside each other and programming by stacking command blocks top to bottom.</p>
+</div>
+<h3 class="anchored">
+Commands Versus Reporters
+</h3>
 <p>
-BRIAN, would you be happy with “Category” both in the pic and in the text? For example: “Choose the category for your block: Sound. … Select the shape for your block: Command.” I understand your point about correlation, but something someone once told me about hobgoblins comes to mind. ;) I think “category” and “shape” will be more helpful to students than “Choose the color for your block: Sound.” or “Select the report behavior [or ”range”] for your block: Command.” even if the two I suggest are a bit mis-matched. Thanks for reviewing this! –MF, 2/18/22<br><br> I’m happy as it is! I just commented because you asked. I think we probably shouldn’t change it to “category” here unless we’re going to do that systematically through the curriculum, both curricula actually, and that’s probably not on. -bh 2/21/22
+Before this unit, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as <em>functional programming</em>, and in Snap<em>!</em>, it uses <em>reporter</em> blocks. A reporter computes a value and reports it (to you or to other blocks).<br> <img src="../img/U2/lab01/emoji-example.png" title="songify (emojify (uppercase ('They love soccer so much that it's funny'))) reporting '🎶 THEY ❤️ ⚽️ SO MUCH THAT IT'S 😂  🎶'" alt="songify (emojify (uppercase ('They love soccer so much that it's funny'))) reporting '🎶 THEY ❤️ ⚽️ SO MUCH THAT IT'S 😂  🎶'" class="indent">
 </p>
+<p>
+In this unit, you’ve been stacking blocks that carry out <em>actions,</em> such as playing a note. This style of programming is called <em>imperative programming</em>. In Snap<em>!</em>, imperative programming uses <em>command</em> blocks. A command tells the computer to do something, (play a sound, draw, move, change something, etc.). Commands have <em>effects.</em><br> <img src="../img/U2/lab01/fur-elise-snippet.png" alt="repeat (2) {
+play ♪ pitch: (64) beats: (0.5)
+play ♪ pitch: (63) beats: (0.5)
+}
+play ♪ pitch: (64) beats: (0.5)
+play ♪ pitch: (59) beats: (0.5)
+" class="indent">
+</p>
+<p>
+The shapes of the blocks go with the shapes of the places where you can use them. Reporters are round, and they go into round slots in a block. Commands are more rectangular, and they have a tab at the bottom that fits into the gap at the top of another command block. Snap<em>!</em> won’t let you put a reporter in a stack of commands or put a command in a round slot.
+</p>
+<div class="vocabFullWidth">
+<div class="sidenote">
+<p>You learned about reporters in <a href="../student-pages/U1/L1/04-say-hello-to-snap.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 1 Activity 4: Say Hello to Snap!">Unit 1 Lab 1 Activity 4: Say Hello to Snap<em>!</em></a>.</p>
+</div>
+<p>
+A <strong>reporter</strong> block does a calculation and reports the result. Reporters have an oval shape. <br> <img src="../img/blocks/item.png" title="item () of 'list input slot'" alt="item () of 'list input slot'" class="indent"> <img src="../img/blocks/join.png" title="join () ()" alt="join () ()" class="indent"> <img src="../img/blocks/reporter-if.png" title="if 'predicate input slot' then () else ()" alt="if 'predicate input slot' then () else ()" class="indent">
+</p>
+<p>
+A <strong>predicate</strong> is a special kind of reporter that asks a true/false question and reports either true or false. Predicates have a hexagon shape.<br> <img src="../img/blocks/is-a-list.png" title="What does IS () A (LIST)? do?" alt="What does IS () A (LIST)? do?" class="indent"> <img src="../img/blocks/mouse-down-full-size.png" title="mouse down?" alt="mouse down?" class="indent"> <img src="../img/blocks/equal.png" title="() = ()" alt="() = ()" class="indent">
+</p>
+<div class="sidenote">
+<p>You’ll use commands much more in Unit 2.</p>
+</div>
+<p>
+A <strong>command</strong> block tells the computer to do something <em>without reporting a value</em>. Commands have a puzzle shape and can be snapped together one after another. <br> <img src="../img/blocks/set-tempo-to-60-bpm.png" title="set tempo to () bpm" alt="set tempo to () bpm" class="indent"> <img src="../img/blocks/repeat.png" title="repeat () {}" alt="repeat () {}" class="indent"> <img src="../img/blocks/delete-empty.png" title="delete () from 'list input slot'" alt="delete () from 'list input slot'" class="indent">
+</p>
+<div class="endnote" style="clear: right;">
+<p>Unlike reporters, a command block doesn’t report anything, so you can’t use its result as the input to another block—its result is an action, not a value!</p>
+</div>
+</div>
+<h3 class="anchored">
+Creating a Command Block
+</h3>
+<p>
+You’ve created a reporter block before. You can create a command block in almost exactly the same way.
+</p>
+<div class="forYouToDo">
+<ol>
+<p><img src="../img/U2/lab01/make-a-block-mystery-song-labels.png" title="image of 'Make a block' dialog box with 10 palette menus (Motion, Looks, Sound, Pen, Other, Control, Sensing, Operators, Variables, Lists) of which Sound is selected; a text box in which 'mystery song' has been written; three block shape options (puzzle-shaped/'Command', oval/'Reporter', and hexagonal/'Predicate') of which 'Command' is selected; two radio boxes ('for all sprites', which is checked, and 'for this sprite only', which is not checked); and two buttons ('OK' and 'Cancel')" alt="image of 'Make a block' dialog box with 10 palette menus (Motion, Looks, Sound, Pen, Other, Control, Sensing, Operators, Variables, Lists) of which Sound is selected; a text box in which 'mystery song' has been written; three block shape options (puzzle-shaped/'Command', oval/'Reporter', and hexagonal/'Predicate') of which 'Command' is selected; two radio boxes ('for all sprites', which is checked, and 'for this sprite only', which is not checked); and two buttons ('OK' and 'Cancel')" class="imageRight noshadow"></p>
+<li>
+If your project isn’t open already, log in to Snap<em>!</em>, and open your “Song Player” project.
+</li>
+<li>
+<p>Create a new command block called <code>mystery song</code>.</p>
+<ol>
+<li>
+Right-click in an empty spot in the Scripts area and choose “make a block…” <br> <img src="../img/1-introduction/make-a-block.jpg" title="make a block option" alt="make a block option" class="indent">
+</li>
+<li>
+Choose the palette for your block: Sound.
+</li>
+<li>
+Type the title (name) for your block: <code>mystery song</code>.
+</li>
+<li>
+Select the shape for your block: Command.
+</li>
+<li>
+Click “OK.”
+</li>
+</ol>
+</li>
+</ol>
+<p style="clear: both; height: 0px;">
+</p>
+</div>
+<p>
+When you create a reporter, the block editor opens with <img src="../img/blocks/report.png" title="report" alt="report" class="inline-block"> attached to the hat block, and whatever input you give to <code>report</code> will be the value reported by the new reporter. When you create a command, the block editor opens with only the hat block, and the blocks attached below it will run (one at a time) when the new command is run.
+</p>
+<div class="forYouToDo">
+<ol start="3">
+<div class="vocab">
+<p><strong>: Abstraction</strong></p>
+<p>
+Hiding away the details of how code works (such as by moving it inside a new block) is a form of <em>abstraction</em>.
+</p>
+</div>
+<li>
+Inside the <code>mystery song</code> block, either build a new song for someone else to guess or drag in a song you have already created and attach it to the <code>mystery song</code> hat block.
+</li>
+<div class="todo">
+<p>Note to Mary for later: An animation of dragging in a song would be nice here. –MF, 2/9/22</p>
+</div>
+<li>
+<p>Play your mystery song for someone else, and see if they can guess what it is. Then guess someone else’s song.</p>
+<div class="endnote">
+<p>You can find your newly created block at the end of the Sound blocks in the sidebar, and drag it out to the scripting area.</p>
+</div>
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+<p style="clear: both; height: 0px;">
+</p>
+</div>
+<div class="ifTime show">
+<ol start="6">
+<li>
+Create additional command blocks with different mystery songs.
+</li>
+</ol>
+</div>
+<div class="learn">
+<p>In this activity, you created a command block to store a sequence of commands.</p>
+</div>
 
-<pre><code>                    &lt;li&gt;Type the title (name) for your block: &lt;code&gt;mystery song&lt;/code&gt;.&lt;/li&gt;
-                    &lt;li&gt;Select the shape for your block: Command.&lt;/li&gt;
-                    &lt;li&gt;Click "OK."&lt;/li&gt;
-                &lt;/ol&gt;
-            &lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;p style="clear: both; height: 0px;"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-
-    &lt;div class="todo"&gt;
-        &lt;p&gt;By the way, I always try to get people to distinguish between a &lt;em&gt;command,&lt;/em&gt; which is a block you find in the palette, and an &lt;em&gt;instruction,&lt;/em&gt; which is a command with its input slots filled in.  This is parallel to the distinction between a &lt;em&gt;reporter&lt;/em&gt; and an &lt;em&gt;expression.&lt;/em&gt;  I'm not suggesting we teach kids to obsess over this, but I'd be happier if we just modeled that use of language so students who are reading closely might pick up on it. --bh 3/3/22&lt;/p&gt;
-        &lt;p&gt;Are you making a suggestion for this text here or a general remark. Please feel free to remove this comment and address as you see fit. --MF, 3/6/22&lt;/p&gt;
-        &lt;/div&gt;
-    
-    &lt;p&gt;When you create a reporter, the block editor opens with &lt;img class="inline-block" src="/img/blocks/report.png" alt="report" title="report" /&gt; attached to the hat block, and whatever input you give to &lt;code&gt;report&lt;/code&gt; will be the value reported by the new reporter. When you create a command, the block editor opens with only the hat block, and the blocks attached below it will run (one at a time) when the new command is run.&lt;/p&gt;
-
-    &lt;div class="forYouToDo"&gt;
-        &lt;ol start="3"&gt;
-            &lt;div class="vocab"&gt;&lt;strong&gt;: Abstraction&lt;/strong&gt;
-                &lt;p&gt;Hiding away the details of how code works (such as by moving it inside a new block) is a form of &lt;em&gt;abstraction&lt;/em&gt;.&lt;/p&gt;
-            &lt;/div&gt;
-            &lt;li&gt;Inside the &lt;code&gt;mystery song&lt;/code&gt; block, either build a new song for someone else to guess or drag in a song you have already created and attach it to the &lt;code&gt;mystery song&lt;/code&gt; hat block.&lt;/li&gt;
-            &lt;div class="todo"&gt;Note to Mary for later: An animation of dragging in a song would be nice here. --MF, 2/9/22&lt;/div&gt;
-            &lt;li&gt;
-                Play your mystery song for someone else, and see if they can guess what it is.  Then guess someone else's song.
-                &lt;div class="endnote"&gt;You can find your newly created block at the end of the Sound blocks in the sidebar, and drag it out to the scripting area.&lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;p style="clear: both; height: 0px;"&gt;&lt;/p&gt;
-    &lt;/div&gt;
-    
-    
-    &lt;div class="ifTime show"&gt;
-        &lt;ol start="6"&gt;
-            &lt;li&gt;Create additional command blocks with different mystery songs.&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-
-    &lt;div class="learn"&gt;In this activity, you created a command block to store a sequence of commands.&lt;/div&gt;</code></pre>
 
 
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -700,16 +718,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-5/02-visualizing-loops.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">02 Visualizing Loops</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Visualizing Loops</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-5/04-mystery-song-game.html" class="pagination-link">
-        <span class="nav-page-text">04 Mystery Song Game</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Mystery Song Game</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

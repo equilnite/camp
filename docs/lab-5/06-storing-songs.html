@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp – storing-songs</title>
+<title>CS Maker Camp - Storing Songs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/06-storing-songs.html">06 Storing Songs</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-5/06-storing-songs.html">Storing Songs</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -164,55 +164,55 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Song Player, Activity 1</span></a>
+ <span class="menu-text">Playing Notes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">02 Visualizing Loops</span></a>
+ <span class="menu-text">Visualizing Loops</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">03 Programming Styles</span></a>
+ <span class="menu-text">Programming Styles</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">04 Mystery Song Game</span></a>
+ <span class="menu-text">Mystery Song Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">05 Beat Repeat</span></a>
+ <span class="menu-text">Beat Repeat</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">06 Storing Songs</span></a>
+ <span class="menu-text">Storing Songs</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">07 Song Mapper</span></a>
+ <span class="menu-text">Song <code>Map</code>per</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">08 Pitch Beat</span></a>
+ <span class="menu-text">Songs with Pitches <em>and</em> Beats</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">09 Map Pitch Beat</span></a>
+ <span class="menu-text"><code>Map</code>ping over Pitches and Beats</span></a>
   </div>
 </li>
       </ul>
@@ -228,97 +228,130 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Storing Songs</h1>
+<p class="subtitle lead">Lab 5, Page 6</p>
+</div>
 
 
-<pre><code>    &lt;title&gt;Unit 2 Lab 1: Song Player, Activity 6&lt;/title&gt;
-&lt;/head&gt;
 
-&lt;body&gt;
-    &lt;h2&gt;Storing Songs&lt;/h2&gt;
-    &lt;div class="todo"&gt;In the future, there could be an optional exercise at the end of this page to go back and modify their mystery song project to make it tally correct responses and perhaps even deduct points for wrong answers. --MF, 2/27/22&lt;/div&gt;
-    &lt;div class="learn"&gt;In this activity, you will use a variable to store a list of notes.&lt;/div&gt;
-    &lt;p&gt;
-        In the &lt;a href="/student-pages/U1/L2/03-creating-editing-blocks.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 2: Super Short Stories, Activity 3: Creating and Editing Blocks" target="_blank"&gt;Super Short Stories&lt;/a&gt; lab, you began using &lt;em&gt;local variables&lt;/em&gt; to access the inputs to a block you were editing. Those variables were only available within that block.&lt;br /&gt;
-        &lt;img class="indent" src="/img/U1/lab02/super-short-story-block-editor.png" alt="Super Short Story, feeling: (feeling) job: (job) action: (action 1) place: (place) action: (action 2) number: (number #) color: (color) plural animal: (animals) food: (food): {report (join words ('The') (feeling) (job) (action 1) ('through') (place) ('and') (action 2) ('over') (number) (color) (animals) ('eating') (food))}" title="Super Short Story, feeling: (feeling) job: (job) action: (action 1) place: (place) action: (action 2) number: (number #) color: (color) plural animal: (animals) food: (food): {report (join words ('The') (feeling) (job) (action 1) ('through') (place) ('and') (action 2) ('over') (number) (color) (animals) ('eating') (food))}" /&gt;&lt;br /&gt;
-        When you need a variable to be available &lt;em&gt;anywhere&lt;/em&gt; in your project, you can use a &lt;em&gt;global variable&lt;/em&gt;.
-    &lt;/p&gt;
-    &lt;div class="vocabFullWidth"&gt;: &lt;strong&gt;Global Variable&lt;/strong&gt;
-        &lt;p&gt;A &lt;strong&gt;global variable&lt;/strong&gt; is a variable that is usable by all scripts in the program.&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;p&gt;
-        For example, you can use a global variable to store the pitches of a song.&lt;br /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/set-mary-lamb.png" alt="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" title="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" /&gt;
-        &lt;img class="indent" src="/img/U2/lab01/play-song-mary-lamb.png" alt="play song (Mary Had a Little Lamb)" title="play song (Mary Had a Little Lamb)" /&gt;
-    &lt;/p&gt;
-    &lt;div class="forYouToDo"&gt;
-      &lt;ol&gt;
-        &lt;div class="todo"&gt;The "your latest project" below
-    has to be changed to go along with whatever decision
-    was made on the previous page about what project they
-    should work in. -bh 3/3/22&lt;/div&gt;
-            &lt;li&gt;If your latest project isn't open already, log in to Snap&lt;i&gt;!&lt;/i&gt;, and open it.&lt;/li&gt;
-            &lt;li&gt;
-                Create a global variable to store your song. Here's how...
-                &lt;div class="narrower"&gt;
-                    &lt;h4&gt;&lt;strong&gt;Making a Global Variable&lt;/strong&gt;&lt;/h4&gt;
-                    &lt;ol type="a"&gt;
-                        &lt;li&gt;Click &lt;img class="inline" src="/img/1-introduction/make-a-variable.png" alt="make a variable button" title="make a variable button" /&gt;  in the Variables palette. (It's not a block; you can't drag it into the scripting area.)&lt;/li&gt;
-                        &lt;li&gt;Type the name for your variable. (Use the name of the song or something else to help you remember it. Don't forget that the name can have spaces in it—it doesn't have to be just one word.)&lt;/li&gt;
-                        &lt;li&gt;Click "OK."&lt;/li&gt;
-                    &lt;/ol&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                Set your global variable to store your song. Here's how...
-                &lt;div class="narrower"&gt;
-                    &lt;h4&gt;&lt;strong&gt;Setting a Global Variable&lt;/strong&gt;&lt;/h4&gt;
-                    &lt;ol type="a"&gt;
-                        &lt;li&gt;Drag the &lt;code&gt;set variable&lt;/code&gt; block out of the Variables palette and into the scripting area.&lt;/li&gt;
-                        &lt;li&gt;In the first input slot, select the name of your global variable by clicking the triangle (▼) to open the menu.&lt;/li&gt;
-                        &lt;li&gt;Drag the &lt;code&gt;list&lt;/code&gt; block with your song pitches into the second input slot.&lt;/li&gt;
-                        &lt;li&gt;Click the &lt;code&gt;set variable&lt;/code&gt; block to run it.&lt;/li&gt;
-                        &lt;li&gt;
-                            Notice that a watcher containing the pitches to your song appears on the Snap&lt;em&gt;!&lt;/em&gt; stage.&lt;br /&gt;
-                            &lt;img class="indent" src="/img/U2/lab01/set-mary-lamb.png" alt="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" title="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" /&gt;
-                            &lt;div class="endnote"&gt;You learned about watchers on &lt;a href="/student-pages/U1/L7/02-setting-up.html?topic=sparks%2F1-functions-data.topic&amp;course=middle-school.html" title="Unit 1 Lab 7 Activity 2: Setting Up Your Survey"&gt;Unit 1 Lab 7 Activity 2: Setting Up Your Survey&lt;/a&gt;.&lt;/div&gt;
-                        &lt;/li&gt;
-                    &lt;/ol&gt;
-                &lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                Use your global variable as the input to your &lt;code&gt;play song&lt;/code&gt; block, and make sure that it works.&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/play-song-mary-lamb.png" alt="play song (Mary Had a Little Lamb)" title="play song (Mary Had a Little Lamb)" /&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                Create another global variable and make it store a different song.&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/set-twinkle-twinkle.png" alt="set ('Twinkle Twinkle Little Star') to (list (60) (60) (67) (67) (69) (69) (67) (0) (65) (65) (64) (64) (62) (62) (60)))" title="set ('Twinkle Twinkle Little Star') to (list (60) (60) (67) (67) (69) (69) (67) (0) (65) (65) (64) (64) (62) (62) (60)))" /&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-                Try out your second variable in your &lt;code&gt;play song&lt;/code&gt; block, and check that it works too.&lt;br /&gt;
-                &lt;img class="indent" src="/img/U2/lab01/play-song-twinkle-twinkle.png" alt="play song (Twinkle Twinkle Little Star)" title="play song (Twinkle Twinkle Little Star)" /&gt;
-            &lt;/li&gt;
-            &lt;li&gt;
-            Your global variables will appear in &lt;em&gt;watchers&lt;/em&gt; on the Snap&lt;em&gt;!&lt;/em&gt; stage. You can use the &lt;img class="inline nopadtb" src="/img/blocks/show-variable-full-size.png" alt="show variable" title="show variable" /&gt; and &lt;img class="inline nopadtb" src="/img/blocks/hide-variable-full-size.png" alt="hide variable" title="hide variable" /&gt; blocks to control whether your variables show on the stage. Try showing and hiding your song variables.&lt;br /&gt;
-                &lt;img class="indent noshadow" src="/img/U2/lab01/song-watchers.png" alt="two watchers showing on the Snap! stage: one for 'Mary Had a Little Lamb' showing a list with the elements 64, 62, 60, ... and one for 'Twinkle Twinkle Little Star' showing a list with the elements 60, 60, 67, ..." title="two watchers showing on the Snap! stage: one for 'Mary Had a Little Lamb' showing a list with the elements 64, 62, 60, ... and one for 'Twinkle Twinkle Little Star' showing a list with the elements 60, 60, 67, ..." /&gt;
-                &lt;div class="endnote"&gt;Recall that you can also show or hide a watcher by using its checkbox in the palette on the left of the Snap&lt;em&gt;!&lt;/em&gt; window.&lt;/div&gt;
-            &lt;/li&gt;
-            &lt;li&gt;&lt;img class="inline" src="/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;&lt;/li&gt;
-        &lt;/ol&gt;
-    &lt;/div&gt;
-    &lt;div class="ifTime show"&gt;
-        &lt;ol start="9"&gt;
-            &lt;li&gt;
-                &lt;img class="imageRight" src="/img/icons/save-mini.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /&gt;
-          &lt;div class="comment"&gt;For example...&lt;/div&gt;
-                You can use variables to store pieces of a song and then snap several &lt;code&gt;play song&lt;/code&gt; blocks together to play the same parts of a song more than once. Try building a more complicated song that way.
-            &lt;/li&gt;
-        &lt;/ol&gt;
-        &lt;p style="clear: both; height: 0px;"&gt;&lt;/p&gt;
-    &lt;/div&gt;
+<div class="quarto-title-meta">
 
-    &lt;div class="learn"&gt;In this activity, you stored lists of pitches in variables and used your &lt;code&gt;play song&lt;/code&gt; block to play them.&lt;/div&gt;
     
-    </code></pre>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="todo">
+<p>In the future, there could be an optional exercise at the end of this page to go back and modify their mystery song project to make it tally correct responses and perhaps even deduct points for wrong answers. –MF, 2/27/22</p>
+</div>
+<div class="learn">
+<p>In this activity, you will use a variable to store a list of notes.</p>
+</div>
+<p>
+When you need a value to be available <em>anywhere</em> in your project, you use a <em>global variable</em>.
+</p>
+<div class="vocabFullWidth">
+<p>: <strong>Global Variable</strong></p>
+<p>
+A <strong>global variable</strong> is a variable that is usable by all scripts in the program.
+</p>
+</div>
+<p>
+For example, you can use a global variable to store the pitches of a song.<br> <img src="../img/U2/lab01/set-mary-lamb.png" title="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" alt="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" class="indent"> <img src="../img/U2/lab01/play-song-mary-lamb.png" title="play song (Mary Had a Little Lamb)" alt="play song (Mary Had a Little Lamb)" class="indent">
+</p>
+<div class="forYouToDo">
+<ol>
+<div class="todo">
+<p>The “your latest project” below has to be changed to go along with whatever decision was made on the previous page about what project they should work in. -bh 3/3/22</p>
+</div>
+<li>
+If your latest project isn’t open already, log in to Snap<i>!</i>, and open it.
+</li>
+<li>
+<p>Create a global variable to store your song. Here’s how…</p>
+<div class="narrower">
+<h4 class="anchored">
+<strong>Making a Global Variable</strong>
+</h4>
+<ol type="a">
+<li>
+Click <img src="../img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline"> in the Variables palette. (It’s not a block; you can’t drag it into the scripting area.)
+</li>
+<li>
+Type the name for your variable. (Use the name of the song or something else to help you remember it. Don’t forget that the name can have spaces in it—it doesn’t have to be just one word.)
+</li>
+<li>
+Click “OK.”
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Set your global variable to store your song. Here’s how…</p>
+<div class="narrower">
+<h4 class="anchored">
+<strong>Setting a Global Variable</strong>
+</h4>
+<ol type="a">
+<li>
+Drag the <code>set variable</code> block out of the Variables palette and into the scripting area.
+</li>
+<li>
+In the first input slot, select the name of your global variable by clicking the triangle (▼) to open the menu.
+</li>
+<li>
+Drag the <code>list</code> block with your song pitches into the second input slot.
+</li>
+<li>
+Click the <code>set variable</code> block to run it.
+</li>
+<li>
+<p>Notice that a watcher containing the pitches to your song appears on the Snap<em>!</em> stage.<br> <img src="../img/U2/lab01/set-mary-lamb.png" title="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" alt="set ('Mary Had a Little Lamb') to (list (64) (62) (60) (62) (64) (64) (64) (0) (62) (62) (62) (0) (64) (67) (67)))" class="indent"></p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+Use your global variable as the input to your <code>play song</code> block, and make sure that it works.<br> <img src="../img/U2/lab01/play-song-mary-lamb.png" title="play song (Mary Had a Little Lamb)" alt="play song (Mary Had a Little Lamb)" class="indent">
+</li>
+<li>
+Create another global variable and make it store a different song.<br> <img src="../img/U2/lab01/set-twinkle-twinkle.png" title="set ('Twinkle Twinkle Little Star') to (list (60) (60) (67) (67) (69) (69) (67) (0) (65) (65) (64) (64) (62) (62) (60)))" alt="set ('Twinkle Twinkle Little Star') to (list (60) (60) (67) (67) (69) (69) (67) (0) (65) (65) (64) (64) (62) (62) (60)))" class="indent">
+</li>
+<li>
+Try out your second variable in your <code>play song</code> block, and check that it works too.<br> <img src="../img/U2/lab01/play-song-twinkle-twinkle.png" title="play song (Twinkle Twinkle Little Star)" alt="play song (Twinkle Twinkle Little Star)" class="indent">
+</li>
+<li>
+<p>Your global variables will appear in <em>watchers</em> on the Snap<em>!</em> stage. You can use the <img src="../img/blocks/show-variable-full-size.png" title="show variable" alt="show variable" class="inline nopadtb"> and <img src="../img/blocks/hide-variable-full-size.png" title="hide variable" alt="hide variable" class="inline nopadtb"> blocks to control whether your variables show on the stage. Try showing and hiding your song variables.<br> <img src="../img/U2/lab01/song-watchers.png" title="two watchers showing on the Snap! stage: one for 'Mary Had a Little Lamb' showing a list with the elements 64, 62, 60, ... and one for 'Twinkle Twinkle Little Star' showing a list with the elements 60, 60, 67, ..." alt="two watchers showing on the Snap! stage: one for 'Mary Had a Little Lamb' showing a list with the elements 64, 62, 60, ... and one for 'Twinkle Twinkle Little Star' showing a list with the elements 60, 60, 67, ..." class="indent noshadow"></p>
+<div class="endnote">
+<p>Recall that you can also show or hide a watcher by using its checkbox in the palette on the left of the Snap<em>!</em> window.</p>
+</div>
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+</div>
+<div class="ifTime show">
+<ol start="9">
+<li>
+<p><img src="../img/icons/save-mini.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="imageRight"></p>
+<div class="comment">
+<p>For example…</p>
+</div>
+<p>You can use variables to store pieces of a song and then snap several <code>play song</code> blocks together to play the same parts of a song more than once. Try building a more complicated song that way.</p>
+</li>
+</ol>
+<p style="clear: both; height: 0px;">
+</p>
+</div>
+<div class="learn">
+<p>In this activity, you stored lists of pitches in variables and used your <code>play song</code> block to play them.</p>
+</div>
 
 
 
@@ -674,12 +707,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-5/05-beat-repeat.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">05 Beat Repeat</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Beat Repeat</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-5/07-song-mapper.html" class="pagination-link">
-        <span class="nav-page-text">07 Song Mapper</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Song <code>Map</code>per</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
