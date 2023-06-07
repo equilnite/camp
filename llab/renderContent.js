@@ -59,7 +59,7 @@ getSnapRunURL = function(targeturl, options) {
         finalurl = snapRunURLBaseVersion.replace('VERSION', options.version);
     }
 
-    var currdom = "https://csp.echa.ng";
+    var currdom = "https://camp.echa.ng";
     if (currdom == "localhost") {
         currdom = 'http://' + currdom + ":" + window.location.port;
         // finalurl = finalurl.replace('https://snap', 'http://extensions.snap');
