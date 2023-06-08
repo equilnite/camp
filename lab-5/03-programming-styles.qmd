@@ -23,7 +23,7 @@ play ♪ pitch: (59) beats: (0.5)
 
 ::: vocabFullWidth
 ::: sidenote
-You learned about reporters in <a href="/student-pages/U1/L1/04-say-hello-to-snap.html?topic=sparks%2F1-functions-data.topic&course=middle-school.html" title="Unit 1 Lab 1 Activity 4: Say Hello to Snap!">Unit 1 Lab 1 Activity 4: Say Hello to Snap<em>!</em></a>.
+You learned about reporters in <a href="/lab-2/4-making-a-new-block.html" title="Lab 2 Page 4: Making Your Own Block">Lab 2 Page 4: Making Your Own Block</a>.
 :::
 
 <p>A <strong>reporter</strong> block does a calculation and reports the result. Reporters have an oval shape. <br /> <img src="/img/blocks/item.png" title="item () of &apos;list input slot&apos;" alt="item () of &apos;list input slot&apos;" class="indent"/> <img src="/img/blocks/join.png" title="join () ()" alt="join () ()" class="indent"/> <img src="/img/blocks/reporter-if.png" title="if &apos;predicate input slot&apos; then () else ()" alt="if &apos;predicate input slot&apos; then () else ()" class="indent"/></p>
