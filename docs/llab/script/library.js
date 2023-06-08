@@ -11,7 +11,7 @@ llab.loaded = llab.loaded || {};
 
 
 /////////////////
-llab.hostDomain = "https://bjc.echa.ng"
+llab.hostDomain = "https://camp.echa.ng"
 llab.snapRunURLBase = "https://snap.berkeley.edu/snap/snap.html#open:";
 llab.snapRunURLBaseVersion = "https://snap.berkeley.edu/versions/VERSION/snap.html#open:";
 
