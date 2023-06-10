@@ -1,5 +1,5 @@
 ---
-title: "Mystery Song Game"
+title: "Page 4: Mystery Song Game"
 subtitle: "Lab 5, Page 4"
 ---
 

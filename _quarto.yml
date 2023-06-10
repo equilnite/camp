@@ -36,7 +36,7 @@ website:
             file: lab-4/index.qmd
           - text: "Lab 5: Song Player"
             file: lab-5/index.qmd
-          - text: "Lab 6: Squaral"
+          - text: "Lab 6: Squiral"
             file: lab-6/index.qmd
           - text: "Lab 7: Polygon"
             file: lab-7/index.qmd
@@ -44,7 +44,7 @@ website:
   sidebar:
     - title: "Lab 1: Click Alonzo"
       style: "docked"
-      contents: lab-1
+      contents: lab-1/
     - title: "Lab 2: Gossip"
       style: "docked"
       contents: lab-2
@@ -57,7 +57,7 @@ website:
     - title: "Lab 5: Song Player"
       style: "docked"
       contents: lab-5
-    - title: "Lab 6: Squaral"
+    - title: "Lab 6: Squiral"
       style: "docked"
       contents: lab-6
     - title: "Lab 7: Polygon"
@@ -74,3 +74,6 @@ format:
     include-in-header:
       - text: |
           <script type="text/javascript" src="/llab/loader.js"></script>
+    link-external-newwindow: true
+    link-external-filter: ^(?:http:|https:)\/\/camp\.echa\.ng\/custom
+

@@ -1,5 +1,5 @@
 ---
-title: "<code>Map</code>ping over Pitches and Beats"
+title: "Page 9: <code>Map</code>ping over Pitches and Beats"
 subtitle: "Lab 5, Page 9"
 ---
 

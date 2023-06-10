@@ -1,6 +1,6 @@
 ---
-title: "Choosing a Costume"
-subtitle: "Unit 2, Lab 1, Page 5"
+title: "Page 5: Choosing a Costume"
+subtitle: "Lab 3, Page 5"
 order: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Blocks with Inputs"
-subtitle: "Unit 1, Lab 3, Page 3"
+title: "Page 3: Blocks with Inputs"
+subtitle: "Lab 7, Page 3"
 order: 3
 ---
 

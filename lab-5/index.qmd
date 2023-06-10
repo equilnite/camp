@@ -1,5 +1,5 @@
 ---
-title: "Click Alonso"
+title: "Lab 5: Song Player"
 ---
 
-In this lab we'll.....
+In this lab, we'll...

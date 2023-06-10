@@ -1,6 +1,6 @@
 ---
-title: "Giving the Player Feedback"
-subtitle: "Unit 1, Lab 1, Page 4"
+title: "Page 4: Giving the Player Feedback"
+subtitle: "Lab 1, Page 4"
 order: 4
 ---
 

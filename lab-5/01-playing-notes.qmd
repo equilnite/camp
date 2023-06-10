@@ -1,6 +1,6 @@
 ---
-title: "Playing Notes"
-subtitle: "Unit 2 Lab 1, Page 1"
+title: "Page 1: Playing Notes"
+subtitle: "Lab 5, Page 1"
 ---
 
 ::: todo

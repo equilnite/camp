@@ -1,5 +1,5 @@
 ---
-title: "Song <code>Map</code>per"
+title: "Page 7: Song <code>Map</code>per"
 subtitle: "Lab 5, Page 7"
 ---
 

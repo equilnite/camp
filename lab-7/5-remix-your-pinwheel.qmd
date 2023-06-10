@@ -1,6 +1,6 @@
 ---
-title: "Using <code>Pinwheel</code> to Make <code>Polygon</code>"
-subtitle: "Unit 1, Lab 3, Page 5"
+title: "Page 5: Using <code>Pinwheel</code> to Make <code>Polygon</code>"
+subtitle: "Lab 7, Page 5"
 order: 5
 ---
 

@@ -1,6 +1,6 @@
 ---
-title: "Pair Programming"
-subtitle: "Unit 1, Lab 2, Page 1"
+title: "Page 1: Pair Programming"
+subtitle: "Lab 2, Page 1"
 order: 1
 ---
 

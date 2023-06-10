@@ -1,6 +1,6 @@
 ---
-title: "Improving Your Game"
-subtitle: "Unit 1, Lab 1, Page 5"
+title: "Page 5: Improving Your Game"
+subtitle: "Lab 1, Page 5"
 order: 5
 ---
 

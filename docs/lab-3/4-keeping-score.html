@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp - Keeping Score with Global Variables</title>
+<title>CS Maker Camp - Page 4: Keeping Score with Global Variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../lab-6/index.html" rel="" target="">
- <span class="dropdown-text">Lab 6: Squaral</span></a>
+ <span class="dropdown-text">Lab 6: Squiral</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../lab-7/index.html" rel="" target="">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-3/index.html">Number Guessing Game</a></li><li class="breadcrumb-item"><a href="../lab-3/4-keeping-score.html">Keeping Score with Global Variables</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-3/index.html">Lab 3: Number Guessing Game</a></li><li class="breadcrumb-item"><a href="../lab-3/4-keeping-score.html">Page 4: Keeping Score with Global Variables</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../lab-3/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Number Guessing Game</span></a>
+ <span class="menu-text">Lab 3: Number Guessing Game</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -164,31 +164,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-3/1-number-guessing-game.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Starting a Number Guessing Game</span></a>
+ <span class="menu-text">Page 1: Starting a Number Guessing Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-3/2-checking-player-guess.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Checking the Player’s Guess</span></a>
+ <span class="menu-text">Page 2: Checking the Player’s Guess</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-3/3-debugging-extending.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Debugging and Extending Your Number Guessing Game</span></a>
+ <span class="menu-text">Page 3: Debugging and Extending Your Number Guessing Game</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-3/4-keeping-score.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Keeping Score with Global Variables</span></a>
+ <span class="menu-text">Page 4: Keeping Score with Global Variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lab-3/5-choosing-avatar.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Choosing a Costume</span></a>
+ <span class="menu-text">Page 5: Choosing a Costume</span></a>
   </div>
 </li>
       </ul>
@@ -206,8 +206,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Keeping Score with Global Variables</h1>
-<p class="subtitle lead">Unit 2, Lab 1, Page 4</p>
+<h1 class="title">Page 4: Keeping Score with Global Variables</h1>
+<p class="subtitle lead">Lab 3, Page 4</p>
 </div>
 
 
@@ -708,17 +708,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/camp\.echa\.ng\/custom");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="../lab-3/3-debugging-extending.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Debugging and Extending Your Number Guessing Game</span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 3: Debugging and Extending Your Number Guessing Game</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="../lab-3/5-choosing-avatar.html" class="pagination-link">
-        <span class="nav-page-text">Choosing a Costume</span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text">Page 5: Choosing a Costume</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

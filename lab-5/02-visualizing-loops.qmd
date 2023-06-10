@@ -1,5 +1,5 @@
 ---
-title: "Visualizing Loops"
+title: "Page 2: Visualizing Loops"
 subtitle: "Lab 5, Page 2"
 ---
 

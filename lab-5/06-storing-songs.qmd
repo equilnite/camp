@@ -1,5 +1,5 @@
 ---
-title: "Storing Songs"
+title: "Page 6: Storing Songs"
 subtitle: "Lab 5, Page 6"
 ---
 

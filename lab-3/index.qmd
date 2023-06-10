@@ -1,5 +1,5 @@
 ---
-title: "Number Guessing Game"
+title: "Lab 3: Number Guessing Game"
 ---
 
 In this lab we'll.....

@@ -1,5 +1,5 @@
 ---
-title: "Programming Styles"
+title: "Page 3: Programming Styles"
 subtitle: "Lab 5, Page 3"
 ---
 
