@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp - Page 4: Giving the Player Feedback</title>
+<title>CS Maker Camp - Page 6: Keeping Score with Global Variables</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../lab-1/5-finish-your-first-snap-app.html" rel="next">
-<link href="../lab-1/3-loading-mobile-device.html" rel="prev">
+<link href="../lab-1/5-finish-your-first-snap-app.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -140,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-1/index.html">Lab 1: Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-1/4-keeping-score.html">Page 4: Giving the Player Feedback</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-1/index.html">Lab 1: Click Alonso</a></li><li class="breadcrumb-item"><a href="../lab-1/6-keeping-score.html">Page 6: Keeping Score with Global Variables</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -181,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-1/4-keeping-score.html" class="sidebar-item-text sidebar-link active">
+  <a href="../lab-1/4-giving-feedback.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Page 4: Giving the Player Feedback</span></a>
   </div>
 </li>
@@ -189,6 +188,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../lab-1/5-finish-your-first-snap-app.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Page 5: Improving Your Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-1/6-keeping-score.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Page 6: Keeping Score with Global Variables</span></a>
   </div>
 </li>
       </ul>
@@ -206,8 +211,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Page 4: Giving the Player Feedback</h1>
-<p class="subtitle lead">Lab 1, Page 4</p>
+<h1 class="title">Page 6: Keeping Score with Global Variables</h1>
+<p class="subtitle lead">Lab 1, Page 6</p>
 </div>
 
 
@@ -223,105 +228,141 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <script type="text/javascript" src="../utilities/gifffer.min.js"></script>
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+<script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <p><link rel="stylesheet" type="text/css" href="../css/bjc-gifffer.css"></p>
 <div class="learn">
-<p>Now the game is challenging, but players can’t tell how well they’re doing because Alonzo jumps around whether the player clicks him or not. <strong>On this page</strong>, you will create a way for the player of your game to know how well they are doing.</p>
-</div>
-<h2 class="anchored">
-Confirming Whether Alonzo Was Clicked
-</h2>
 <p>
-First, the person playing your game wants to know right away whether they succeeded at clicking Alonzo before he moved out of the way.
+<strong>On this page,</strong> you will use a <em>global variable</em> to keep score in your Click Alonzo game.
+</p>
+</div>
+<p>
+In your Number Guessing Game, you used <em>script variables</em> to store information (the value of <var>secret number</var>) that was needed by only one script. To keep score in Click Alonzo, more than one script will need access to that information, so you’ll use a <em>global variable</em>.
 </p>
 <div class="vocabFullWidth">
-<p><strong>: Sprites and Costumes</strong></p>
+<p>: <strong>Global Variable</strong></p>
 <p>
-</p><p>The Alonzo character is named after Alonzo Church, a major contributor to early computer science. In this project, there are three objects related to Alonzo:</p>
-<ul>
+A <strong>global variable</strong> is a variable that is usable by all scripts in the program.
+</p>
+</div>
+<div class="endnote">
+<h3 class="anchored">
+<strong>When are global variables needed?</strong>
+</h3>
+<p>
+Most of the time, script variables are a better choice because they can’t be changed by some other part of the program, and so they reduce the chance of bugs. But <strong>if multiple scripts need access</strong> to a variable or <strong>if the information in that variable needs to be saved</strong> with your project, then use a global variable.
+</p>
+</div>
+<div id="first" class="forYouToDo">
+<ol>
 <li>
-One is a <em><strong>sprite</strong></em>, which is like an actor on the stage who knows how to do many different things, such as walk around the stage and speak the lines of the play.
+Open your U1L1-ClickAlonzo project, play the game, and review the code so you remember how it works.
 </li>
 <li>
-The other two are <em><strong>costumes</strong></em>, picture that can be “worn” by a sprite.
+<div class="saveAs">
+<p><span class="text">“U2L1-ClickAlonzo”</span><img src="../img/icons/save-this-as.png" title="Save your work as U2L1-ClickAlonzo" alt="Save your work as U2L1-ClickAlonzo"> Be sure to <strong>rename your project</strong> with “U2” in the filename.</p>
+</div>
+</li>
+<div class="takeNote">
+<p>If you save new work under an old filename, Snap<em>!</em> will overwrite your original project. Use “Save as…” from the Snap<em>!</em> File menu to save with the new name. When you load an older project and are about to make a big change, get in the habit of <em>saving first, with the new name, before you change anything</em>.</p>
+</div>
+<li>
+Create a global variable named <var>score</var>. Here’s how.
+</li>
+<div class="narrower">
+<h3 class="anchored">
+<strong>Making a Global Variable</strong>
+</h3>
+<ol type="a">
+<li>
+Click <img src="../img/1-introduction/make-a-variable.png" title="make a variable button" alt="make a variable button" class="inline"> in the Variables palette. (It’s not a block; you can’t drag it into the scripting area.)
+</li>
+<li>
+Type the title for your variable. In this case, it’s <var>score</var>.
+</li>
+<li>
+Click “OK.”
+</li>
+</ol>
+</div>
+<li>
+<p>Use the <var>score</var> variable to keep track of the player’s score:</p>
+<ol>
+<li>
+Initialize <var>score</var> to 0 at the beginning of the game.
+</li>
+<div class="vocabFullWidth">
+<p>
+Setting the starting value of a variable is known as <strong>initializing</strong><a name="initialize" class="anchor">&nbsp;</a>the variable.
+</p>
+</div>
+<div class="comment">
+<p>AAP-1.B.1</p>
+</div>
+<li>
+Make the program <code>change</code> the score by 1 whenever the sprite is clicked.
+</li>
+<div class="examFullWidth">
+<div class="pseudop">
+<p><img src="../img/2-complexity/change-score-by-1.png" title="change (score) by (1)" alt="change (score) by (1)" class="inline nopadtb" height="26"> (which means <img src="../img/2-complexity/set-score-to-score-plus-one.png" title="set(score) to (score+1)" alt="set(score) to (score+1)" height="40">) would be written as</p>
+<pre class="inline">score ← score + 1</pre>
+<p>or <img src="../img/2-complexity/score-increment-blocktran.png" title="score ← score + 1" alt="score ← score + 1" class="inline">.</p>
+</div>
+</div>
+</ol>
+</li>
+<p><img src="../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"></p>
+<li>
+<strong>Test and debug.</strong> Play the game enough to make sure that the score variable works. <img src="../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline">
+</li>
+<li>
+<img src="../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Right now, the game doesn’t have a way to win, but you’ll change that. Decide on the score that you will use to test whether the player has won.
+</li>
+<li>
+<p>Use a conditional to determine when the player reaches that score. When they do:</p>
+<ol>
+<li>
+Make Alonzo stop jumping around.
+</li>
+<li>
+Make Alonzo appear again. (You’ll have to reset the ghost effect.)
+</li>
+<li>
+Congratulate the player for a few seconds.
+</li>
+<!--<li>If necessary, use another <code>stop</code> block to stop the running script.  (Whether you need this will depend on your program structure.)</li>-->
+</ol>
+</li>
+<li>
+<p><strong>Test and debug.</strong> Take turns playing, and fix any bugs. <img src="../img/icons/save-mini.png" title="Save your work" alt="Save your work" class="inline"><br></p>
+<div class="takeNote">
+<h3 class="anchored">
+<strong>Debugging Tip: Display of Variables</strong>
+</h3>
+<p>
+</p><p>When you are debugging your code, it can help to see the value of a variable at different points in your program. This is done differently for local and global variables:</p>
+<ul>
+<li>
+Global variables have check-boxes that control the display of the variable <em>watcher</em> on the stage (shown below).<br> <img src="../img/2-complexity/Debugging/golbal-variables-checked.png" title="Checking the global variables in the palette." alt="Checking the global variables in the palette." class="indent" height="300"><img src="../img/2-complexity/Debugging/global-variables-displayed.png" title="Displaying the global variable on the stage" alt="Displaying the global variable on the stage" class="indent" height="300">
+</li>
+<li>
+If it’s a <em>local</em> (script) variable, you can <strong>use the <code>show variable</code> block</strong> inside the script to display a watcher on the stage (and use <code>hide variable</code> to hide it again).
 </li>
 </ul>
 <p></p>
 </div>
-<div class="forYouToDo">
-<p>Program Alonzo to face the other way when clicked. <img src="../img/1-introduction/alonzo.png" title="Alonzo character" alt="Alonzo character" height="60"> <img src="../img/1-introduction/alonzo-flipped-other-way.png" title="Alonzo character flipped to face the other way" alt="Alonzo character flipped to face the other way" height="60"> <!--<a class="index-term anchor" id="next costume</code>">&nbsp;</a>--></p>
-<ol>
-<li>
-The project you loaded has two Alonzo costumes—one facing right and the other facing left—so you can use the <img src="../img/blocks/next-costume.png" alt="next costume"> block to make the sprite face the other way. Add the <code>next costume</code> block to the place in your program where the user has just clicked on Alonzo.
-</li>
-<li>
-Test your program. Make sure Alonzo faces the other way when he is clicked but not when he jumps without being clicked.
 </li>
 </ol>
 </div>
-<h2 class="anchored">
-Keeping Score
-</h2>
-<!--<a class="index-term anchor" id="change effect</code>">&nbsp;</a>-->
-<p>
-The player will also want to know how much progress they have made in the game. The command <img src="../img/1-introduction/ghosteffect.png" title="change (ghost) effect by ()" alt="change (ghost) effect by ()"> can control Alonzo’s <em>transparency</em>.
-</p>
-<div class="vocabFullWidth">
-<p>
-The <strong>transparency</strong> of an image is how much you can see what’s behind it. For example, here is the Alonzo sprite shown with three different transparencies (which have been set using the <code>ghost effect</code> block).<br> <img src="../img/1-introduction/transparency2.png" title="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" alt="three pictures of Alonzo, with ghost effect 0%, 25%, and 50%, on a background of a brick wall" class="indent">
-</p>
-</div>
-<div class="forYouToDo">
-<p>
-Use transparency to tell the user how close they are to winning: every time they click, Alonzo gets more invisible, and when he disappears completely, they win the game.
-</p>
-<!--<a class="index-term anchor" id="clear graphics effects</code>">&nbsp;</a>-->
-<ol start="3">
+<div class="ifTime">
+<ol start="9">
 <li>
-Drag the <code>change (ghost) effect</code> block into the center scripting area, and experiment with different input numbers (clicking it repeatedly after each change) to see exactly what it does. At what ghost effect value does Alonzo become completely invisible? You can use the command <img src="../img/1-introduction/clear-graphic-effects.png" alt="clear graphic effects"> to make Alonzo fully opaque again.
+If the sprite moves without being clicked, make the score go down by 1.
 </li>
 <li>
-Then, modify your script so that every time Alonzo is clicked, he gets a little more ghostly. Think about how the input you use affects the length of the game. Try out your game.
+Game too hard? Increase the score by 2 for a hit. Too big a change? Increase by 3 for a hit, decrease by 2 for a miss. You can make arbitrarily fine adjustments. This process is called <em>playtuning</em> a game.
 </li>
 </ol>
 </div>
-<h2 class="anchored">
-Making the Game More Challenging
-</h2>
-<p>
-So far, even a bad player will <em>eventually</em> make Alonzo disappear. The game will be much more interesting if the player is penalized for missing a click.
-</p>
-<div class="forYouToDo">
-<ol start="5">
-<li>
-Figure out where to add a <code>change (ghost) effect by (-5)</code> block to your script to make Alonzo get less transparent any time he moves <em>without</em> being clicked.
-</li>
-<li>
-Play your game a few times, and adjust your code to get a level of difficulty that you like.
-</li>
-<div class="endnote">
-<p>You can change the <code>change effect</code> input number (for either instance of the block) and/or the <code>wait</code> time to make the game easier or harder.</p>
-</div>
-</ol>
-</div>
-<h2 class="anchored">
-Ending the Game
-</h2>
-<div class="forYouToDo">
-<p>
-When Alonzo is completely transparent, the game should <em>stop.</em>
-</p>
-<ol start="7">
-<li>
-Add this code to the right place in your script to end the game.<br> <img src="../img/1-introduction/if-done-stop.png" title="if ((ghost effect) = 100) {clear graphic effects, stop all}" alt="if ((ghost effect) = 100) {clear graphic effects, stop all}" class="indent">
-</li>
-<li>
-<img src="../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline">
-</li>
-</ol>
-</div>
-
-
 
 
 
@@ -690,14 +731,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lab-1/3-loading-mobile-device.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 3: Sharing Your Game</span>
+      <a href="../lab-1/5-finish-your-first-snap-app.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 5: Improving Your Game</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lab-1/5-finish-your-first-snap-app.html" class="pagination-link">
-        <span class="nav-page-text">Page 5: Improving Your Game</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

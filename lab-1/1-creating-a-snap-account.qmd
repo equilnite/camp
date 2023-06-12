@@ -5,8 +5,6 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this <em>lab</em>,</strong> you'll program an app that you can share with others and play on your phone.</p>
-
 <p><strong>On this <em>page</em>,</strong> you'll learn how to create your own account and how to log in and out.</p>
 :::
 

@@ -669,3 +669,51 @@ a.fa-external-link-alt:after { /* This is used on the /cur/solutions-assessments
 ul {
   margin-bottom: 0px !important;
 }
+
+/* Page element modifiers */
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/* TODO: Document THis.... */
+table .pre {
+  line-height: 1em;
+}
+
+.imageRight {
+  float: right;
+  margin: 0 20px 15px 15px;
+}
+
+.imageLeft {
+  float: left;
+  margin: 0 15px 15px 20px;
+}
+
+img.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.inline {
+  /* this works if the text isn't also vertical-align'ed!  */
+  vertical-align: middle;
+  display: inline;
+}
+
+img.indent, div.indent {
+  margin-left: 10%;
+}
+
+.step {
+  margin-left: 35px;
+  padding: 0 50px 5px 30px;
+  background-image: url(../img/lightning.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

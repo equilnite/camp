@@ -32,35 +32,35 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 <tr>
 <td class="tg-0lax">Monday</td>
 <td class="tg-0lax">6/12</td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Introductions</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-1/" target="_blank" rel="noopener noreferrer">Lab 1</a></td>
+<td class="tg-0lax"><span>Introductions</span></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-1/" target="_blank" rel="noopener noreferrer">Lab 1: Click Alonzo</a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Tuesday</td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">6/13</span></td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Variables</span></td>
-<td class="tg-zb5k"><a href="https://bjc.edc.org/bjc-r/cur/programming/2-complexity/1-variables-games/4-keeping-score.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Click Alonso 2</span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> (modified)</span><br><a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/1-pair-programming.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Gossip </span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">(</span><a href="https://snap.berkeley.edu/snap/snap.html#present:Username=chief%20o'keefe&ProjectName=U1L2-Gossip%20MAKER%20CAMP%20VERSION"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">modified</span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">)</span></td>
+<td class="tg-0lax"><span>6/13</span></td>
+<td class="tg-0lax"><span>Variables</span></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-1/6-keeping-score.html"><span>Lab 1 Continued, Page 6</span></a><span></span><br><a href="https://camp.echa.ng/lab-2/"><span>Lab 2: Gossip </span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Wednesday</td>
 <td class="tg-0lax">6/14</td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Conditionals / Debugging</span></td>
-<td class="tg-zb5k"><a href="https://bjc.edc.org/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Number Guessing Game</span></a></td>
-<td class="tg-zb5k"><a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/optional-projects/3-pong.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Pong</span></a></td>
+<td class="tg-0lax"><span>Conditionals / Debugging</span></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-3/"><span>Lab 3: Number Guessing Game</span></a></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-4/"><span>Lab 4: Pong</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">6/15</td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Iteration</span></td>
-<td class="tg-zb5k"><a href="https://bjc.berkeley.edu/bjc-r/sparks/student-pages/U2/L1/01-playing-notes.html?topic=sparks%2F2-sequencing-iteration.topic&course=sparks.html"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Song Player</span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> (pp 1 - 5)</span></td>
-<td class="tg-zb5k"><a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/3-drawing/6-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Squire</span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">l (End of Polygon Lab)</span></td>
+<td class="tg-0lax"><span>Iteration</span></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-5/"><span>Lab 5: Song Player, pp. 1 - 5</span></a></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-6"><span>Lab 6: Squiral</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
 <td class="tg-7un6"><span style="font-weight:400;font-style:normal;text-decoration:none">6/16</span></td>
-<td class="tg-7un6" colspan="3">Field Trip</td>
+<td class="tg-7un6" colspan="3">Field Trip to <a href="https://bampfa.org/">BAMPFA</a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Monday</td>
@@ -70,29 +70,29 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 <tr>
 <td class="tg-0lax">Tuesday</td>
 <td class="tg-0lax">6/20</td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Abstraction</span></td>
-<td class="tg-zb5k"><a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><span style="font-weight:400;font-style:normal;text-decoration:underline;color:#15C;background-color:transparent">Polygons</span></a><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent"> (pp 1 - 5)</span></td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Polygons TIF Page 6</span></td>
+<td class="tg-0lax"><span>Abstraction</span></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-7/"><span>Lab 7: Polygons</span></a></td>
+<td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Wednesday</td>
 <td class="tg-0lax">6/21</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Project (TBD)</span></td>
+<td class="tg-0lax"><span>Project (TBD)</span></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">6/22</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Project (TBD)</span></td>
+<td class="tg-0lax"><span>Project (TBD)</span></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
 <td class="tg-0lax">6/23</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Showcase Projects</span></td>
+<td class="tg-0lax"><span>Showcase Projects</span></td>
 <td class="tg-0lax"></td>
 </tr>
 </tbody>

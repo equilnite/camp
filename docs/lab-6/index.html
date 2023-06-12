@@ -318,59 +318,6 @@ Make sure your other work has been saved, then <a href="../prog/1-introduction/U
 </p>
 </ol>
 </div>
-<div class="takeItTeaser">
-<p><img src="../img/1-introduction/bh/Stage (16).png" title="Albers-style nested squares" alt="Albers-style nested squares" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/bh/Stage (22).png" title="Albers-style nested squares" alt="Albers-style nested squares" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/bh/Costume(4).png" title="Albers-style nested squares" alt="Albers-style nested squares" width="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/bh/Costume(7).png" title="Albers-style nested squares" alt="Albers-style nested squares" width="200"></p>
-</div>
-<div class="takeItTeased">
-<ol type="A">
-<li>
-Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br> <img src="../img/icons/tough-stuff.png" title="Tough Stuff" alt="Tough Stuff" class="imageRight"> <img src="../img/1-introduction/concentric-squares.png" title="concentric squares" alt="concentric squares" class="indent" width="219" height="170">
-</li>
-</ol>
-<p><img src="../img/1-introduction/Josef_Albers's_painting_'Homage_to_the_Square',_1965.jpg" title="painting-by-Josef-Albers" alt="painting-by-Josef-Albers" class="imageRight" height="150"></p>
-<p>
-On the right is a painting by Josef Albers. He was interested in experimenting with variations of color within a “family” of similar colors. Snap<i>!</i> will let you make similar experiments.
-</p>
-<ol type="A" start="2">
-<li>
-What is the favorite color of the author of this activity?
-</li>
-<li>
-If you didn’t do the Take It Further activity based on this Kazimir Malevich picture <img src="../img/1-introduction/Malevich-tiny.jpg"> then <a href="../cur/programming/1-introduction/3-drawing/1-exploring-motion.html">read it now</a> to learn about Snap<em>!</em> features for <em>solid rectangles</em> and <em>color families</em>.
-</li>
-<li>
-If you haven’t already, do If There Is Time #10, which shows a simple version of this project idea.
-</li>
-<li>
-<p>Okay, now dig in.</p>
-<div class="narrowpurple">
-<p><strong>Randomness:</strong> The four examples above are different from the actual Albers picture in that they include occasional colors that aren’t from the same family. This can make the pictures more interesting to someone who doesn’t share Albers’s interest in subtle differences in color. (Albers himself, in fact, had more color variation in other pictures of this type.) <em>Too much</em> randomness, though, can make the picture <em>less</em> interesting. Compare the last two examples above; the left one of those two is clearly based on the orange family, with rainbow-neighbors red and yellow, but the right one has violets, greens, oranges, a yellow—too much chaos, maybe. Look back at the Gossip project if you don’t remember how to choose something special once out of six times, or once out of 14 times. Other random choices you can make are the number of squares, how much to shrink the size from one square to the next, and how much to move the corner of the next square horizontally and vertically (the picture is more interesting if those two numbers are different, so the smallest square isn’t exactly in the center).</p>
-</div>
-</li>
-<li>
-<p><img src="../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> <img src="../img/icons/tough-stuff-mini.png" title="Tough Stuff" alt="Tough Stuff"> This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br> <img src="../img/1-introduction/inspi.png" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" class="indent" height="150"></p>
-<ol>
-<li>
-Try sketching what it will draw with an angle of 2.
-</li>
-<li>
-<p>Then build it, and try each of these tests:<br></p>
-<div class="sidenoteBig">
-<p>You can stop each test with the stop button <img src="../img/1-introduction/stop_button.png" title="stop button" alt="stop button" class="button"> when you’re sure nothing new will happen, but don’t decide that too quickly!</p>
-</div>
-<p><img src="../img/1-introduction/inspi-tests.png" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" class="indent"></p>
-</li>
-<!--<li>What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a id="hintbutton" onClick="document.getElementById('hintbutton').innerHTML='Think about divisibility.';">(Don't click unless you really, really need a super big hint.)</a></li>-->
-<li>
-<p>What’s going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a href="#hint-1" data-bs-toggle="collapse" class="collapsed" title="Hint">(Don’t click unless you need a big hint.)</a></p>
-<div id="hint-1" class="collapse">
-<p>Hint: Think about divisibility.</p>
-</div>
-</li>
-</ol>
-</li>
-</ol>
-</div>
 
 
 
