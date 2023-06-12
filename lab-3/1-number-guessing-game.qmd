@@ -21,7 +21,7 @@ order: 1
 <li>
 
 ::: newProject
-["U2L1-NumberGuessing"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called U2L1-NumberGuessing" alt="Create a new project called U2L1-NumberGuessing"/>
+["L3-NumberGuessing"]{.text}<img src="/img/icons/new-project-called.png" title="Create a new project called L3-NumberGuessing" alt="Create a new project called L3-NumberGuessing"/>
 :::
 
 </li>
@@ -43,7 +43,7 @@ AAP-1.A.1
 <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
 
 ::: endnote
-On <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
+On <a href="/lab-2/2-gossip.html" title="Lab 2 Page 2: Making Programs Talk">Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
 :::
 :::
 
@@ -89,20 +89,6 @@ The variable <var>secret number</var> is available in the <code>set</code> block
 </ol>
 :::
 
-::: examFullWidth
-::: comment
-AAP-1.B.2
-:::
-
-::: pseudop
-<img src="/img/2-complexity/set-secret-number-to-7.png" title="set (secret number) to (7)" alt="set (secret number) to (7)" class="inline"/> would be written as
-
-```{=html}
-<pre class="inline">secretNumber &leftarrow; 7</pre>
-```
-or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" alt="a white rounded rectangle containing the text &apos;secretNumber ← 7&apos;" class="nopadtb"/>.
-:::
-:::
 
 <p>Script variables are a kind of <em>local variable</em>; they work only within the script where they're created. If you drag one into a different script, it won't work. You've seen two kinds of local variables before: inputs to blocks and <code>for</code> counters.</p>
 
@@ -126,12 +112,8 @@ or <img src="/img/2-complexity/secret-number-assignment-blocktran.png" title="a 
 <p>In algebra, a variable is sometimes used for something whose value you don't know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.</p>
 :::
 
-::: comment
-AAP-1.A.1
-:::
-
 ::: sidenote
-You learned about input variables on <a href="/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 3 Page 3: Blocks with Inputs">Unit 1 Lab 3 Page 3: Blocks with Inputs</a>.
+You learned about input variables on <a href="/lab-1/6-keeping-score.html" title="Page 6: Keeping Score with Global Variables">Page 6: Keeping Score with Global Variables</a>.
 :::
 
 ::: pseudop
