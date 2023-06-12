@@ -450,10 +450,6 @@ CRD-2.B
 </ol>
 :::
 
-::: endnote
-Purple "Take It Further" boxes have more challenging activities that are <em>not required</em>. If you finish everything else on the page early, try these instead of jumping ahead to the next page.
-:::
-
 ::: takeItFurther
 <ol type="A">
 

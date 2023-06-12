@@ -96,62 +96,6 @@ A <strong>procedure</strong> is a named sequence of instructions that may take i
 </p>
 :::
 
-::: examFullWidth
-<ul>
-
-::: comment
-AAP-3.A.7, AAP-3.C.2
-:::
-
-<li>
-
-The procedure <img src="/img/1-introduction/double-block-definition.png" title="PROCEDURE double (x)
-{
-RETURN (2 * x)
-}" alt="PROCEDURE double (x)
-{
-RETURN (2 * x)
-}" class="inline"/> would be written as
-
-::: pre-container
-```{=html}
-<pre class="inline">PROCEDURE double(x)
-{
-RETURN(2 * x)
-}</pre>
-```
-:::
-
-or <img src="/img/1-introduction/double-blocktran.png" title="PROCEDURE double(x)
-{
-RETURN(2 * x)
-}" alt="PROCEDURE double(x)
-{
-RETURN(2 * x)
-}"/>.
-
-<p>Many languages (and the AP CS Principles Exam) use <code>return</code> instead of <code>report</code> as the name of the command to give a value back at the end of a function call.</p>
-
-</li>
-
-::: comment
-AAP-3.A.9
-:::
-
-<li>
-
-The exam uses "value of a procedure" to mean the value the procedure returns when called. For example, "the value of
-
-```{=html}
-<pre class="inline">double(5)</pre>
-```
-" means 10.
-
-</li>
-
-</ul>
-:::
-
 <h2>Debugging</h2>
 
 ::: forYouToDo
