@@ -40,7 +40,7 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 <td class="tg-0lax">Tuesday</td>
 <td class="tg-0lax"><span>6/13</span></td>
 <td class="tg-0lax"><span>Variables</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-1/6-keeping-score.html"><span>Lab 1 Continued, Page 6</span></a><span></span><br><a href="https://camp.echa.ng/lab-2/"><span>Lab 2: Gossip </span></a></td>
+<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-2/"><span>Lab 2: Variables and Gossip</span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>

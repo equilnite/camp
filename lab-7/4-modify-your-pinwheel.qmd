@@ -98,95 +98,6 @@ Change the <code>pinwheel</code> script so that it will accept a <em>positive</e
 </ol>
 :::
 
-::: examFullWidth
-::: comment
-AAP-3.C.1, AAP-2.K.2
-:::
-
-::: pseudop
-The procedure definition for the custom <code>pinwheel</code> command<br /> <img src="/img/1-introduction/pinwheel-definition.png" title="pinwheel, branches: (number of branches)
-{
-repeat(number of branches)
-{
-move (100) steps
-move (-37) steps
-turn clockwise (360 / number of branches) degrees
-}
-}" alt="pinwheel, branches: (number of branches)
-{
-repeat(number of branches)
-{
-move (100) steps
-move (-37) steps
-turn clockwise (360 / number of branches) degrees
-}
-}" class="indent"/><br /> would be written as<br />
-
-::: {.pre-container .indent}
-```{=html}
-<pre>
-PROCEDURE pinwheel(numberOfBranches)
-{
-REPEAT numberOfBranches TIMES
-{
-move(100)
-move(-37)
-turn_clockwise(360 / numberOfBranches)
-}
-}</pre>
-```
-:::
-
-or <img src="/img/1-introduction/pinwheel-blocktran.png" title="PROCEDURE pinwheel(numberOfBranches)
-{
-REPEAT numberOfBranches TIMES
-{
-move (100)
-move (-37)
-turn_clockwise (360 / numberOfBranches)
-}
-}" alt="PROCEDURE pinwheel(numberOfBranches)
-{
-REPEAT numberOfBranches TIMES
-{
-move (100)
-move (-37)
-turn_clockwise (360 / numberOfBranches)
-}
-}" class="inline"/>
-:::
-
-::: endnote
-::: pseudop
-The procedures
-
-```{=html}
-<pre class="inline">move()</pre>
-```
-and
-
-```{=html}
-<pre class="inline">turn_clockwise()</pre>
-```
-aren't built in to the AP's language so they are written in lower case like other programmer-defined procedures.
-:::
-
-::: pseudop
-Notice that the hat block, <img src="/img/1-introduction/pinwheel-hat-block.png" title="pinwheel, branches: (number of branches)" alt="pinwheel, branches: (number of branches)" class="inline nopadtb"/>, would be written as
-
-```{=html}
-<pre class="inline">PROCEDURE pinwheel(numberOfBranches)</pre>
-```
-. The word
-
-```{=html}
-<pre class="inline">PROCEDURE</pre>
-```
-tells you that that line of the code is like a hat block; the variable name in the parentheses on that line is the input that the procedure takes.
-:::
-:::
-:::
-
 ::: forYouToDo
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
 
@@ -233,23 +144,6 @@ One way to avoid having bugs in your program in the first place is to keep your 
 <li>Tidy up the code in your project, if necessary.</li>
 
 </ol>
-:::
-
-::: examFullWidth
-::: comment
-AAP-3.A.5
-:::
-
-::: pseudop
-This instruction <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L3-PinwheelwithInputs1.png" title=" pinwheel, branches: (6) size: (80) backup: (20)" alt="setup; pinwheel, branches: (6) size: (80) backup: (20)" class="inline" height="50"/> would be written as
-
-```{=html}
-<pre class="inline">Pinwheel(6, 80, 20)</pre>
-```
-or <img src="/img/2-complexity/pinwheel-blocktran.png" title="a white rounded rectangle containing first the word &apos;PINWHEEL&apos; in all caps and then a smaller white rectangle containing the inputs &apos;6, 80, 20&apos;" alt="a white rounded rectangle containing first the word &apos;PINWHEEL&apos; in all caps and then a smaller white rectangle containing the inputs &apos;6, 80, 20&apos;" class="nopadtb"/>.
-:::
-
-<p>You may hear people use the term "pseudocode" to refer to this pseudo-language used on the AP CS Principles exam, but it's <em>not</em> pseudocode. Pseudocode isn't a programming language at all, it's the use of normal human language to describe an algorithm.</p>
 :::
 
 ::: ifTime

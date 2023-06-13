@@ -21,7 +21,8 @@ order: 5
 
 <li>
 
-Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br /> <img src="/img/1-introduction/who.png" title="who block" alt="who block" class="indent"/> <img src="/img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"/> <img src="/img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"/>
+Open your L2-Gossip project.  Edit the “randomize variables” block to change the phrases that the program uses. (See the instructions in the box below to edit a block) Be creative and funny but thoughtful.
+<br /> <img src="/img/1-introduction/randomize-variables.png" title="randomize variables block" alt="randomize variables block" class="indent"/>
 
 ::: narrower
 <h3><strong>How to Edit a Block</strong></h3>
@@ -39,9 +40,6 @@ Open your U1L2-Gossip project. Edit these three reporter blocks to change the ph
 </ol>
 
 ::: endnote
-::: todo
-Brian, you need to redo this video with the plus signs on and with the space before the 2 in <code>who 2</code> (start from the starter file, please). --MF, 6/15/20
-:::
 
 <a href="#hint-edit-block" data-bs-toggle="collapse" title="Click for a video of these steps of how to edit a block.">Click for a video of these steps of how to edit a block.</a>
 
@@ -56,14 +54,6 @@ Brian, you need to redo this video with the plus signs on and with the space bef
 </li>
 
 </ol>
-:::
-
-::: endnote
-<a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="/img/blocks/report.png" title="report ()" alt="report ()" class="inline nopadtb"/>? Why not just use <img src="/img/blocks/say-empty-full-size.png" title="say ()" alt="say ()"/>?</a>
-
-::: {#hint-report .collapse}
-<p>The <code>report</code> and <code>say</code> blocks mean very different things. <code>Report</code> tells something to the computer, and that value can be used as input to another block, such as the <code>join</code> block inside <code>gossip</code>. <code>Say</code> just shows a value to the user in a speech bubble.</p>
-:::
 :::
 
 ::: vocabFullWidth
@@ -116,74 +106,6 @@ AAP-2.D.1, AAP-2.D.2
 <li>Make sure your program works. Test each block as well as the program as a whole. If something doesn't work, don't go on without fixing it.</li>
 
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"/>
-
-<li>
-
-<!-- Question 1 -->
-
-::: {.assessment-data type="multiplechoice" identifier="Which of the following sentences could be reported by gossip?" hasinlinefeedback="true" maxchoices="4" responseidentifier="ri1" shuffle="true"}
-::: prompt
-::: comment
-AAP-2.D
-:::
-
-Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br /> <img src="/img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="indent"/>
-
-::: endnote
-For reference:<br > <img src="/img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="indent" height="77px"/> <img src="/img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="indent" height="89px"/>
-:::
-:::
-
-::: {.choice identifier="c1"}
-::: text
-Señora and Ms. C helped.
-:::
-
-::: feedback
-It's true that there are two people (two "who"s) and one action (one "does what"), but they aren't in the right order. Also, the word "and" isn't anywhere in the program.
-:::
-:::
-
-::: {.choice identifier="c2"}
-::: text
-Señora ran away from my cat.
-:::
-
-::: feedback
-Correct! This follows the pattern: "who," "does what," "who."
-:::
-:::
-
-::: {.choice identifier="c3"}
-::: text
-Hannah listened to Hannah.
-:::
-
-::: feedback
-Correct! This follows the pattern: "who," "does what," "who."
-:::
-:::
-
-::: {.choice identifier="c4"}
-::: text
-Jake helped.
-:::
-
-::: feedback
-This sentence is missing the second "who."
-:::
-:::
-
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c2"}
-:::
-
-::: {.correctResponse identifier="c3"}
-:::
-:::
-:::
-
-</li>
 
 <li>
 

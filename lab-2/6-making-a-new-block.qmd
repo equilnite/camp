@@ -19,7 +19,7 @@ order: 6
 ::: {#first .forYouToDo}
 <ol>
 
-<li>If it isn't open already, open your U1L2-Gossip project.</li>
+<li>If it isn't open already, open your L2-Gossip project.</li>
 
 <li>Create the <img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block:</li>
 

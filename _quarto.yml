@@ -27,7 +27,7 @@ website:
         menu:
           - text: "Lab 1: Click Alonzo"
             file: lab-1/index.qmd
-          - text: "Lab 2: Gossip"
+          - text: "Lab 2: Variables and Gossip"
             file: lab-2/index.qmd
           - text: "Lab 3: Number Guessing Game"
             file: lab-3/index.qmd
@@ -44,7 +44,7 @@ website:
     - title: "Lab 1: Click Alonzo"
       style: "docked"
       contents: lab-1/
-    - title: "Lab 2: Gossip"
+    - title: "Lab 2: Variables and Gossip"
       style: "docked"
       contents: lab-2
     - title: "Lab 3: Number Guessing Game"
