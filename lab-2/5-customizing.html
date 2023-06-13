@@ -104,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
         <li>
     <a class="dropdown-item" href="../lab-2/index.html" rel="" target="">
- <span class="dropdown-text">Lab 2: Gossip</span></a>
+ <span class="dropdown-text">Lab 2: Variables and Gossip</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../lab-3/index.html" rel="" target="">
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-2/index.html">Lab 2: Gossip</a></li><li class="breadcrumb-item"><a href="../lab-2/5-customizing.html">Page 5: Customizing and Debugging</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-2/index.html">Lab 2: Variables and Gossip</a></li><li class="breadcrumb-item"><a href="../lab-2/5-customizing.html">Page 5: Customizing and Debugging</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../lab-2/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 2: Gossip</span></a>
+ <span class="menu-text">Lab 2: Variables and Gossip</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-<p>Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br> <img src="../img/1-introduction/who.png" title="who block" alt="who block" class="indent"> <img src="../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"></p>
+<p>Open your L2-Gossip project. Edit the “randomize variables” block to change the phrases that the program uses. (See the instructions in the box below to edit a block) Be creative and funny but thoughtful. <br> <img src="../img/1-introduction/randomize-variables.png" title="randomize variables block" alt="randomize variables block" class="indent"></p>
 <div class="narrower">
 <h3 class="anchored">
 <strong>How to Edit a Block</strong>
@@ -265,9 +265,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
 </ol>
 <div class="endnote">
-<div class="todo">
-<p>Brian, you need to redo this video with the plus signs on and with the space before the 2 in <code>who 2</code> (start from the starter file, please). –MF, 6/15/20</p>
-</div>
 <p><a href="#hint-edit-block" data-bs-toggle="collapse" title="Click for a video of these steps of how to edit a block.">Click for a video of these steps of how to edit a block.</a></p>
 <div id="hint-edit-block" class="collapse">
 <div style="display:block;">
@@ -278,14 +275,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </li>
 </ol>
-</div>
-<div class="endnote">
-<p><a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="../img/blocks/report.png" title="report ()" alt="report ()" class="inline nopadtb">? Why not just use <img src="../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()">?</a></p>
-<div id="hint-report" class="collapse">
-<p>
-The <code>report</code> and <code>say</code> blocks mean very different things. <code>Report</code> tells something to the computer, and that value can be used as input to another block, such as the <code>join</code> block inside <code>gossip</code>. <code>Say</code> just shows a value to the user in a speech bubble.
-</p>
-</div>
 </div>
 <div class="vocabFullWidth">
 <p>: <strong>Lists</strong>, <strong>Strings</strong>, and <strong>Concatenation</strong></p>
@@ -327,60 +316,6 @@ The process of testing, finding problems, and fixing them is called <strong>debu
 Make sure your program works. Test each block as well as the program as a whole. If something doesn’t work, don’t go on without fixing it.
 </li>
 <p><img src="../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
-<li>
-<!-- Question 1 -->
-<div class="assessment-data" type="multiplechoice" data-identifier="Which of the following sentences could be reported by gossip?" data-hasinlinefeedback="true" data-maxchoices="4" data-responseidentifier="ri1" data-shuffle="true">
-<div class="prompt">
-<div class="comment">
-<p>AAP-2.D</p>
-</div>
-<p>Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br> <img src="../img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="indent"></p>
-<div class="endnote">
-<p>For reference:<br> <img src="../img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="indent" height="77px"> <img src="../img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="indent" height="89px"></p>
-</div>
-</div>
-<div class="choice" data-identifier="c1">
-<div class="text">
-<p>Señora and Ms.&nbsp;C helped.</p>
-</div>
-<div class="feedback">
-<p>It’s true that there are two people (two “who”s) and one action (one “does what”), but they aren’t in the right order. Also, the word “and” isn’t anywhere in the program.</p>
-</div>
-</div>
-<div class="choice" data-identifier="c2">
-<div class="text">
-<p>Señora ran away from my cat.</p>
-</div>
-<div class="feedback">
-<p>Correct! This follows the pattern: “who,” “does what,” “who.”</p>
-</div>
-</div>
-<div class="choice" data-identifier="c3">
-<div class="text">
-<p>Hannah listened to Hannah.</p>
-</div>
-<div class="feedback">
-<p>Correct! This follows the pattern: “who,” “does what,” “who.”</p>
-</div>
-</div>
-<div class="choice" data-identifier="c4">
-<div class="text">
-<p>Jake helped.</p>
-</div>
-<div class="feedback">
-<p>This sentence is missing the second “who.”</p>
-</div>
-</div>
-<div class="responseDeclaration" data-identifier="ri1">
-<div class="correctResponse" data-identifier="c2">
-
-</div>
-<div class="correctResponse" data-identifier="c3">
-
-</div>
-</div>
-</div>
-</li>
 <li>
 <p>Change the costumes to anything you like.</p>
 <div class="narrower">
