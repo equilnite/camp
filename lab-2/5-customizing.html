@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CS Maker Camp - Page 2: Making Programs Talk</title>
+<title>CS Maker Camp - Page 5: Customizing and Debugging</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../lab-2/3-customizing.html" rel="next">
-<link href="../lab-2/1-pair-programming.html" rel="prev">
+<link href="../lab-2/6-making-a-new-block.html" rel="next">
+<link href="../lab-2/4-gossip.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-2/index.html">Lab 2: Gossip</a></li><li class="breadcrumb-item"><a href="../lab-2/2-gossip.html">Page 2: Making Programs Talk</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-2/index.html">Lab 2: Gossip</a></li><li class="breadcrumb-item"><a href="../lab-2/5-customizing.html">Page 5: Customizing and Debugging</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
@@ -169,26 +169,38 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-2/2-gossip.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Page 2: Making Programs Talk</span></a>
+  <a href="../lab-2/2-keeping-score.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Keeping Score with Global Variables</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-2/3-customizing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 3: Customizing and Debugging</span></a>
+  <a href="../lab-2/3-varying-alonzo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Adding More Variables to Alonzo</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-2/4-making-a-new-block.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 4: Making Your Own Block</span></a>
+  <a href="../lab-2/4-gossip.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Making Programs Talk</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lab-2/5-if-else.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Page 5: Adding Variety to <code>Gossip</code></span></a>
+  <a href="../lab-2/5-customizing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Page 5: Customizing and Debugging</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-2/6-making-a-new-block.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 6: Making Your Own Block</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-2/7-if-else.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 7: Adding Variety to <code>Gossip</code></span></a>
   </div>
 </li>
       </ul>
@@ -206,8 +218,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Page 2: Making Programs Talk</h1>
-<p class="subtitle lead">Lab 2, Page 2</p>
+<h1 class="title">Page 5: Customizing and Debugging</h1>
+<p class="subtitle lead">Lab 2, Page 5</p>
 </div>
 
 
@@ -227,94 +239,240 @@ ul.task-list li input[type="checkbox"] {
 <p><link rel="stylesheet" type="text/css" href="../css/bjc-gifffer.css"></p>
 <div class="learn">
 <p>
-<strong>In this lab,</strong> you will program two sprites to gossip.<br> <img src="../img/1-introduction/U1L2-Gossip.jpg" title="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" alt="Image of stage with two characters talking. One says, 'my cat is in a band with Jake,' and the other says 'Oh, but... Mr. C loves my cat.'" class="indent">
-</p>
-<p>
-<strong>On this page,</strong> you will experiment with an existing program as an introduction to the project.
+<strong>On this page,</strong> you will edit the word lists used by the sprites and debug any problems.
 </p>
 </div>
-<h2 class="anchored">
-Exploring Custom Blocks
-</h2>
 <div id="first" class="forYouToDo">
 <ol>
 <li>
-<a href="../prog/1-introduction/U1L2-Gossip.xml" class="run"><img src="../img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"></a>
+<p>Open your U1L2-Gossip project. Edit these three reporter blocks to change the phrases that the program uses. (See the instructions in the box below.) Be creative and funny but thoughtful.<br> <img src="../img/1-introduction/who.png" title="who block" alt="who block" class="indent"> <img src="../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../img/1-introduction/who2.png" title="who2 block" alt="who2 block" class="inline"></p>
+<div class="narrower">
+<h3 class="anchored">
+<strong>How to Edit a Block</strong>
+</h3>
+<ol type="a">
+<li>
+<strong>Find the block</strong> in the scripting area or the colored palettes on the left.
 </li>
+<li>
+<strong>Control-click</strong> (or right-click) on the block and choose “edit…”
+</li>
+<li>
+<strong>Make changes</strong> to the block’s internal code. (Instructions are already inside these blocks.)
+</li>
+<li>
+<strong>Click OK</strong> when you’re satisfied. (Or click “Cancel” if you don’t want to make changes.)
+</li>
+</ol>
 <div class="endnote">
-<p>You’ll need to be logged in to save to your account. You may wish to review how to log in at <a href="../lab-1/1-creating-a-snap-account.html" title="Getting Started with Snap!">Lab 1 Page 1: Getting Started with Snap<em>!</em></a></p>
+<div class="todo">
+<p>Brian, you need to redo this video with the plus signs on and with the space before the 2 in <code>who 2</code> (start from the starter file, please). –MF, 6/15/20</p>
+</div>
+<p><a href="#hint-edit-block" data-bs-toggle="collapse" title="Click for a video of these steps of how to edit a block.">Click for a video of these steps of how to edit a block.</a></p>
+<div id="hint-edit-block" class="collapse">
+<div style="display:block;">
+<p><img src="../img/1-introduction/U1ImageVideoAddendum_img/U1L2P2-EditABlock.gif" title="How to edit a block" alt="How to edit a block"></p>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="endnote">
+<p><a href="#hint-report" data-bs-toggle="collapse" title="Why do these blocks use report? Why not just use say?">Why do these blocks use <img src="../img/blocks/report.png" title="report ()" alt="report ()" class="inline nopadtb">? Why not just use <img src="../img/blocks/say-empty-full-size.png" title="say ()" alt="say ()">?</a></p>
+<div id="hint-report" class="collapse">
+<p>
+The <code>report</code> and <code>say</code> blocks mean very different things. <code>Report</code> tells something to the computer, and that value can be used as input to another block, such as the <code>join</code> block inside <code>gossip</code>. <code>Say</code> just shows a value to the user in a speech bubble.
+</p>
+</div>
+</div>
+<div class="vocabFullWidth">
+<p>: <strong>Lists</strong>, <strong>Strings</strong>, and <strong>Concatenation</strong></p>
+<ul>
+<!--<div class="index-term" id="report</code>"></div>-->
+<div class="comment">
+<p>AAP-1.C.1 first sentence</p>
 </div>
 <li>
-Perform each experiment (A-D) several times.
+<div class="sidenoteBig">
+<p><a href="#ordered" data-bs-toggle="collapse" title="What does &quot;ordered&quot; mean?">What does “ordered” mean?</a></p>
+<div id="ordered" class="collapse">
+<p>It doesn’t mean that the items have to appear in alphabetical or numeric order. It just means that <img src="../img/1-introduction/list-a-b.png" title="(list a b" alt="(list a b)" height="57"> is a different list from <img src="../img/1-introduction/list-b-a.png" title="(list b a)" alt="(list b a)" height="57">.</p>
+</div>
+</div>
+<p>A <strong>list</strong> is an ordered sequence of items. You’ve seen this example:<br> <img src="../img/1-introduction/list-from-who-result.png" title="list{Senora, Ms. C, my cat, Hannah, Jake}" alt="list{Senora, Ms. C, my cat, Hannah, Jake}" class="indent"></p>
+</li>
+<div class="comment">
+<p>AAP-2.D.1, AAP-2.D.2</p>
+</div>
+<li>
+The items of this list are <em>strings</em>. A <strong>string</strong> is a sequence of characters (letters, digits, punctuation, etc.). A <strong>substring</strong> is just a piece of some existing string. For example, “Hanna,” “anna”, and “nnah” are each substrings of the string “Hannah.” (The empty string as well as the original string are both also substrings.)
 </li>
 <li>
-<p><img src="../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"></p>
-<ul>
-<li>
-What does each <em>reporter</em> block report?<br> <img src="../img/1-introduction/who.png" title="who block" alt="who block" class="indent"> <img src="../img/1-introduction/does-what.png" title="does what block" alt="does what block" class="inline"> <img src="../img/1-introduction/gossip.png" title="gossip block" alt="gossip block" class="inline">
-</li>
-<li>
-What happens when you click this script (labeled D)?<br> <img src="../img/1-introduction/say-broadcast.png" title="say (gossip) broadcast (your turn)" alt="say (gossip) broadcast (your turn)" class="indent">
+To <strong>concatenate</strong> strings means to make a bigger string by connecting two or more smaller strings. In Snap<em>!</em>, the <img src="../img/blocks/join()().png" title="join () ()" alt="join () ()" class="inline nopadtb"> block lets you concatenate strings.
 </li>
 </ul>
-</li>
-</ol>
 </div>
-<div class="endnote">
-<p><a href="#hint-zoom" data-bs-toggle="collapse" title="Would you like to make the blocks bigger?">Would you like to make the blocks bigger?</a></p>
-<div id="hint-zoom" class="collapse">
-<p>
-In the Settings menu (<img src="../img/sys/settings.png" title="Settings menu gear icon" alt="Settings menu gear icon" class="inline">), choose “Zoom blocks…”, and adjust the slider.
-</p>
-</div>
-</div>
-<div class="takeNote">
-<p>
-<strong>Abstraction</strong> is the most fundamental idea in computer science, but it’s hard to define until you’ve seen some examples. The most basic kind of abstraction is to <em>give a name</em> to something in a program. For example, here we gave the name <code>who</code> to the idea “pick an item at random from this list of people (or cats).” This is called <strong><em>procedural</em> abstraction</strong> because we use a procedure (a block) to name the idea. This makes your code readable. You’ll see other kinds of abstraction later.
-</p>
-</div>
-<div class="comment">
-<p>AAP-3.B.7</p>
-</div>
-<p>
-If you find yourself wanting to copy and paste code from one place to another without changing it, then give it a name (open a Block Editor and paste the code there) and call your procedure in both places. If you discover later on that you need to fix a bug in this code, you only have to change it once instead of finding every copy throughout your program.
-</p>
-<h2 class="anchored">
-Exploring a Second Sprite<a name="second" class="anchor">&nbsp;</a>
-</h2>
 <div class="forYouToDo">
-<ol start="4">
-<li>
-<img src="../img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"> In the sprite corral, click on the green sprite named “Sprite(2)” to control its scripts and costumes.<br> <img src="../img/1-introduction/stage-and-sprite-corral.png" title="stage-and-sprite-corral" alt="stage-and-sprite-corral" class="indent">
-</li>
-<li>
-Perform each experiment (A-C) several times.
-</li>
-<li>
-<img src="../img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Write down what <code>broadcast</code> does.
-</li>
-<li>
-<img src="../img/icons/talk-with-your-partner-mini.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"> Discuss how <code>who2</code> compares to <code>who</code> and how <code>gossip2</code> compares to <code>gossip</code>.
-</li>
-<li>
-<img src="../img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"> Make Sprite(2) tell Sprite to respond. What happens?
-</li>
-<!--<div class="index-term anchor" id="when I receive</code>">&nbsp;</div>-->
-<div id="broadcast">
-<p>&nbsp;</p>
+<!--<div class="index-term" id="list</code>"></div>
+<div class="index-term" id="join</code>"></div>-->
+<ol start="2">
+<div class="vocabBig">
+<p>
+The process of testing, finding problems, and fixing them is called <strong>debugging</strong>.
+</p>
 </div>
+<li>
+Make sure your program works. Test each block as well as the program as a whole. If something doesn’t work, don’t go on without fixing it.
+</li>
+<p><img src="../img/icons/save-now.png" title="Save your work" alt="Save your work" class="inline"></p>
+<li>
+<!-- Question 1 -->
+<div class="assessment-data" type="multiplechoice" data-identifier="Which of the following sentences could be reported by gossip?" data-hasinlinefeedback="true" data-maxchoices="4" data-responseidentifier="ri1" data-shuffle="true">
+<div class="prompt">
+<div class="comment">
+<p>AAP-2.D</p>
+</div>
+<p>Which <em><strong>two</strong></em> of the following sentences could be reported by <code>gossip</code>?<br> <img src="../img/1-introduction/gossip-definition.png" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" class="indent"></p>
 <div class="endnote">
-<p>
-The <code>broadcast</code><!--class="index-term anchor"--><!--<img class="inline nopadtb" src="/img/blocks/broadcast.png" alt="broadcast ()" title="broadcast ()" />--> block sends a message to all the sprites. To set the message, click the down arrow and select “new…”<br> <img src="../img/1-introduction/broadcast-dropdown.png" title="broadcast block with menu open showing two options: your turn, new..." alt="broadcast block with menu open showing two options: your turn, new..." class="indent">
-</p>
-<p>
-For more information about the <code>when I receive</code> block, right-click (or control-click on a Mac) the block and select “help…”<br> <img src="../img/1-introduction/when-i-receive-dropdown.png" title="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." alt="when I receive block with right-click menu open showing four options: help..., duplicate, delete, script pic..." class="indent">
-</p>
+<p>For reference:<br> <img src="../img/1-introduction/who-block-definition.png" title="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" alt="who reporter block definition: report (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" class="indent" height="77px"> <img src="../img/1-introduction/does-what-block-definition.png" title="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" alt="does what reporter block definition: report (item (random) of (list (listened to) (loves) (ran away from) (helped) (is in a band with)))" class="indent" height="89px"></p>
 </div>
+</div>
+<div class="choice" data-identifier="c1">
+<div class="text">
+<p>Señora and Ms.&nbsp;C helped.</p>
+</div>
+<div class="feedback">
+<p>It’s true that there are two people (two “who”s) and one action (one “does what”), but they aren’t in the right order. Also, the word “and” isn’t anywhere in the program.</p>
+</div>
+</div>
+<div class="choice" data-identifier="c2">
+<div class="text">
+<p>Señora ran away from my cat.</p>
+</div>
+<div class="feedback">
+<p>Correct! This follows the pattern: “who,” “does what,” “who.”</p>
+</div>
+</div>
+<div class="choice" data-identifier="c3">
+<div class="text">
+<p>Hannah listened to Hannah.</p>
+</div>
+<div class="feedback">
+<p>Correct! This follows the pattern: “who,” “does what,” “who.”</p>
+</div>
+</div>
+<div class="choice" data-identifier="c4">
+<div class="text">
+<p>Jake helped.</p>
+</div>
+<div class="feedback">
+<p>This sentence is missing the second “who.”</p>
+</div>
+</div>
+<div class="responseDeclaration" data-identifier="ri1">
+<div class="correctResponse" data-identifier="c2">
+
+</div>
+<div class="correctResponse" data-identifier="c3">
+
+</div>
+</div>
+</div>
+</li>
+<li>
+<p>Change the costumes to anything you like.</p>
+<div class="narrower">
+<h3 class="anchored">
+<strong>Adding a Costume</strong>
+</h3>
+<ol type="a">
+<li>
+In the sprite corral, select the sprite you want to give costumes to.
+</li>
+<li>
+Choose “Costumes…” from the File (<img src="../img/1-introduction/file_button.png" title="File button" alt="File button" style="height:1.5em;">) menu.
+</li>
+<li>
+Choose a costume.
+</li>
+<li>
+Click “Import.”
+</li>
+<li>
+Click “Cancel” to close the dialog box.
+</li>
 </ol>
 </div>
-
-
+<div class="endnote">
+<p>You can use a photograph or picture from the Internet by dragging the image onto the Snap<i>!</i> window.</p>
+</div>
+</li>
+<li>
+<p>Fix any issues with your costumes.</p>
+<div class="narrower">
+<h3 class="anchored">
+<strong>Adjusting a Costume</strong>
+</h3>
+<!--<div class="index-term" id="set size</code>"></div>
+<div class="index-term" id="go to x y</code>"></div>
+<div class="index-term" id="point in direction</code>"></div>-->
+<ul>
+<li>
+You can change the size of your sprite using <img src="../img/blocks/set-size-empty.png" title="set size to ( ) %" alt="set size to ( ) %" class="inline nopadtb">.
+</li>
+<li>
+You can change the position of your sprite using <img src="../img/blocks/go-to-x-y.png" title="go to x: () y: ()" alt="go to x: () y: ()" class="inline nopadtb">.
+</li>
+<li>
+You can change the direction your sprite is facing:<br> <img src="../img/1-introduction/point-in-direction-menu-showing.png" title="point in direction (270) with menu open showing right left, up, down, random" alt="point in direction (270) with menu open showing right left, up, down, random" class="indent"><br>
+</li>
+</ul>
+</div>
+<!--<div class="endnote">You may also want to adjust the rotation style of your sprite using the buttons near the upper left corner of your scripting area.<br />
+<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate1.png"  height="100" alt="can rotate button" title="can rotate button" />
+<img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate1.gif"  height="100" alt="rotating puppy" title="rotating puppy"/><br />
+<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate2.png"  height="100" alt="only face left/right button" title="only face left/right button"/>
+<img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate2.gif" height="100" alt="left/right facing puppy" title="left/right facing puppy"/><br />
+<img class="indent" src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5-Rotate3.png"  height="100" alt="don't rotate button" title="don't rotate button"/>
+<img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-puppyrotate3.png"  height="95" alt="non-rotating puppy" title="non-rotating puppy"/>
+</div>-->
+</li>
+</ol>
+</div>
+<div class="ifTime">
+<ol start="6">
+<li>
+<p>Change the background on the Stage.<br></p>
+<div class="narrowblue">
+<h3 class="anchored">
+<strong>Adding a Stage Background</strong>
+</h3>
+<div class="endnote">
+<p>Changing a stage background is almost like changing a costume.</p>
+</div>
+<ol type="a">
+<li>
+In the sprite corral, <strong>select the stage.</strong>
+</li>
+<li>
+Choose “Backgrounds…” from the File (<img src="../img/1-introduction/file_button.png" title="File button" alt="File button" style="height:1.5em;">) menu.
+</li>
+<li>
+Choose a background.
+</li>
+<li>
+Click “Import.”
+</li>
+<li>
+Click “Cancel” to close the dialog box.
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
 
 
 
@@ -683,13 +841,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../lab-2/1-pair-programming.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 1: Pair Programming</span>
+      <a href="../lab-2/4-gossip.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Page 4: Making Programs Talk</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../lab-2/3-customizing.html" class="pagination-link">
-        <span class="nav-page-text">Page 3: Customizing and Debugging</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../lab-2/6-making-a-new-block.html" class="pagination-link">
+        <span class="nav-page-text">Page 6: Making Your Own Block</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
