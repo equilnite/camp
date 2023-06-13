@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>CS Maker Camp - Page 1: Playing Notes</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../lab-5/02-visualizing-loops.html" rel="next">
+<link href="../lab-5/index.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+<script type="text/javascript" src="../llab/loader.js"></script>
+
+
+<link rel="stylesheet" href="../css/bjc.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">CS Maker Camp</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://snap.berkeley.edu/snap/snap.html" rel="" target="">
+ <span class="menu-text">Snap<em>!</em></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-labs" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Labs</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-labs">    
+        <li>
+    <a class="dropdown-item" href="../lab-1/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 1: Click Alonzo</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-2/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 2: Gossip</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-3/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 3: Number Guessing Game</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-4/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 4: Pong</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-5/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 5: Song Player</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-6/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 6: Squiral</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../lab-7/index.html" rel="" target="">
+ <span class="dropdown-text">Lab 7: Polygon</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lab-5/index.html">Lab 5: Song Player</a></li><li class="breadcrumb-item"><a href="../lab-5/01-playing-notes.html">Page 1: Playing Notes</a></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../lab-5/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 5: Song Player</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/01-playing-notes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Page 1: Playing Notes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/02-visualizing-loops.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 2: Visualizing Loops</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/03-programming-styles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 3: Programming Styles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/04-mystery-song-game.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 4: Mystery Song Game</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/05-beat-repeat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 5: Beat Repeat</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/06-storing-songs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 6: Storing Songs</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/07-song-mapper.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 7: Song <code>Map</code>per</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/08-pitch-beat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 8: Songs with Pitches <em>and</em> Beats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../lab-5/09-map-pitch-beat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Page 9: <code>Map</code>ping over Pitches and Beats</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Page 1: Playing Notes</h1>
+<p class="subtitle lead">Lab 5, Page 1</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="todo">
+<p>Revision for 2022-2023:</p>
+<ul>
+<li>
+Check out <a class="js-run snap-project" href="../prog/U2/lab01/new/musical-improvisation-from-Jens.xml" target="_blank">Jens’ project</a>. As of March 2022, need to open it in <a href="https://snap.berkeley.edu/versions/dev" target="_blank">the current dev version</a>.
+</li>
+</ul>
+</div>
+<div class="todo">
+<p>Links:</p>
+<ul>
+<li>
+<a href="https://snap.berkeley.edu/versions/dev/snap.html#present:Username=mfries&amp;ProjectName=Music%3A%20play-chord-block_PG_MF" target="_blank">See also MF/PG project</a>
+</li>
+<li>
+Maybe use <code>keep</code> as in <a href="../cur/programming/new-ideas/aprilpd/processing-student-grades.html" target="_blank">old Processing Student Grades page</a> (as a cutoff)
+</li>
+<li>
+<a href="../cur/programming/new-ideas/graphics/colors-sound.html" target="_blank">old Looks and Sound stuff</a>
+</li>
+<li>
+<a href="https://docs.google.com/document/d/1ZGj6uApQUyQw3HByk-8tYOU-VPTwduLLbTMhW8LJrXw/edit#" title="Song Player Google Doc" target="_blank">Song Player Google Doc</a>
+</li>
+<li>
+<a href="https://localhost/cur/programming/3-lists/optional-projects/4-music-project.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" title="CSP Optional Music Project" target="_blank">CSP Optional Music Project</a>
+</li>
+<li>
+<a href="https://docs.google.com/document/d/1VZXWE0abTa6ndwKnCdQIszTmuPEuEJXn6nUHJrL1DCM/edit" title="U2/U3 Planning 2021 Dec" target="_blank">U2/U3 Planning 2021 Dec</a>
+</li>
+</ul>
+<p>See also:</p>
+<ul>
+<li>
+<a href="../cur/programming/3-lists/optional-projects/old/music-project-old.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment">Old sound content collected together</a>
+</li>
+<li>
+<a href="../cur/programming/new-ideas/graphics/colors-sound.html">Old Looks and Sound page</a>
+</li>
+<li>
+<a href="../cur/programming/2-complexity/old/new/map-music.html">The <code>Map</code> Block &amp; Music</a> (has invert and round)
+</li>
+</ul>
+</div>
+<div class="todo">
+<p>Pamela, I’m leaning toward dropping the <code>play ♪</code> block from the XML files. Not only is it easily confused with the <code>play ♪ pitch: () beats: ()</code> block (which I’ve been calling <code>play ♪</code> in the text), but also, it obscures understanding of what’s going with the processing of the table, which I’m explaining in the yellow box below. What do you think of this plan? –MF, 2/24/22</p>
+</div>
+<div class="learn">
+<p>In this activity, you’ll teach the computer to play some simple songs and move those songs up and down the musical scale.</p>
+</div>
+<div class="forYouToDo">
+<ol>
+<li>
+<img src="../img/icons/headphones.png" title="Set Up Your Headphones or Speakers" alt="Set Up Your Headphones or Speakers" class="inline">
+</li>
+<div class="vocabBig">
+<p>
+A <strong>command</strong> block tells the computer to do something <em>without reporting a value</em>.
+</p>
+</div>
+<div class="todo">
+<p>All these js-run things should be changed to plain old snap projects, because right now sbe/versions/v7 is the same as sbe/versions/dev, which is a not-for-users experiment right now. This is arguably a bug in the Snap<i>!</i> site, and I’ll work on getting it fixed, but since v7 is now regular Snap<i>!</i>, there’s no need to call it out specially. –bh 3/3/22</p>
+<p>
+I think this is a comment for Michael. –MF, 3/6/22
+</p>
+</div>
+<li>
+Open this <a class="js-run snap-project" href="../prog/U2/lab01/song-player.xml" title="Song Player - Snap! project" target="_blank">Song Player</a> project, and save it to your account. It includes a <img src="../img/U2/lab01/play-emoji-note.png" title="play ♪ pitch: () beats: ()" alt="play ♪ pitch: () beats: ()" class="inline nopadtb"> <em>command</em> block that takes two inputs: a note to play (<var>pitch</var>) and how long to play it (<var>beats</var>).
+</li>
+<div class="endnote" style="clear: right;">
+<div class="comment">
+<p>“click the triangle”: is it a policy to call it that, rather than a down-arrowhead? It took me a moment to figure out what triangle you meant. –bh 3/3/22</p>
+<p>
+That’s what we’ve been doing in CSP. I took Pamela’s suggestion and included the Unicode. –MF, 3/6/22
+</p>
+</div>
+<p>
+The <var>pitch</var> tells the computer which note to play. It can be any whole number from 0 to 127. The number 60 represents the note known as <a href="https://simple.wikipedia.org/wiki/Middle_C" title="middle C" target="_blank">middle C</a>. If you click the triangle (▼), a piano menu will open, and you can hear the note you are selecting.<br> <img src="../img/U2/lab01/play-emoji-note-piano-menu.png" title="image of 'play note (60) for (0.5) beats' block with piano menu open for first input slot and middle C selected and labeled 'C(60)'" alt="image of 'play note (60) for (0.5) beats' block with piano menu open for first input slot and middle C selected and labeled 'C(60)'" class="indent">
+</p>
+<p>
+The number of <var>beats</var> tells the computer how long to play the note. By default, Snap<em>!</em> plays 60 beats per minute (bpm), so playing a note for 1 beat takes 1 second. You can change the number of beats per minute by using <img src="../img/blocks/set-tempo.png" title="set tempo to () bpm" alt="set tempo to () bpm" class="inline nopadtb">.
+</p>
+</div>
+<div class="todo">
+<p>
+I find both of these inputs problematic. The first one is called “pitch” because you want “note” to mean something else. Avoiding “note” is fine, but “pitch” implies frequency, in Hz, not MIDI note number. I would suggest “note#” or I guess you could get away with “pitch#” or even “pianokey#” or “MIDI#”. But “note#” is closest to what the rest of the world calls it.
+</p>
+<p>
+As for the second input, when I learned about this stuff a million years ago, a “beat” meant one of whatever the denominator of the time in the key signature is, e.g., in 4/4 time it’s a quarter note. You’re using “beat” to mean a whole measure. The default of 60 bpm is something we inherited from Scratch, and they did it that way because at first they didn’t have a REST block in Sound, so they used WAIT () SECS for rests, so they wanted the unit of time to be seconds for music too. More typically, you see bpm=120 or 180 at the top of a score; it’s the number you tell your metronome, for how often it should tick. 120bpm means that a quarter note is 1/2 second, and a measure takes two seconds. That’s a fairly slow meter. 180bpm means a quarter note is 1/3 second, so a measure is 1.333 seconds, which is more lively. I suggest that the project should set tempo to 180.
+</p>
+<p>
+I can see that it makes a certain amount of sense to have an input value of 1/4 for a quarter note, but then “beats” is the wrong name. The really right thing, since you’re using a custom block anyway, is to have that input be a pulldown menu from which you can select quarter note, half note, etc., both spelled out and with the Unicode music symbol. And the label could be “note type” or “length” or “duration.” I know changing this means lots of changes throughout the lab, probably, but any kid who does know something about music, which is a lot of kids, will find this nomenclature strange. –bh 3/3/22
+</p>
+<p>i know nothing about music so I defer to brian’s expertise. –pf 3/3</p>
+<p>
+Thanks Brian. I’m leaving this for us to discuss next year as it’s a bit too late to change the whole lab now. I hear you on what’s wrong here, but I disagree with the dropdown as I find it limiting. Looking forward to discussing further when we come back around to this lab. After reading your paragraph, I’m leaning toward <code>play ♪ number: () length: ()</code>. Or even just <code>play note, number: () length: ()</code>. –MF, 3/6/22
+</p>
+</div>
+<li>
+Change the inputs to the <code>play ♪</code> block and then click it, and then change the inputs and click it again to see how the note changes.
+</li>
+<div class="sidenote">
+<p><strong>Tip:</strong> Right click a block and select “help” to see an explanation of how to use it.</p>
+</div>
+<li>
+<p>Attach several <code>play ♪</code> blocks together one after another to begin creating a song.</p>
+<ul>
+<li>
+You can use <img src="../img/blocks/rest.png" title="rest for () beats" alt="rest for () beats" class="inline nopadtb"> to create breaks in your song.
+</li>
+<li>
+You can use <img src="../img/blocks/repeat.png" title="repeat () {}" alt="repeat () {}" class="inline nopadtb"> block to repeat any command (or group of commands) a specific number of times. Any code you put inside the C-shape of the <code>repeat</code> block will be repeated.
+</li>
+<div class="todo">
+<p>Did an earlier lab already give repeat a thorough introduction? I was surprised to see it so casually introduced, since looping is usually A Big Deal when I teach it in text-based coding classes. It’s certainly easier in block-based, but I feel like it warrants its own section, so that you can talk about what goes in the loop vs.&nbsp;out of the loop (i.e.&nbsp;set-instrument can just be outside the loop, no need to repeat it twice). -PF 2/10/22</p>
+<p>
+This is here on the principle of “experience before formality.” The idea is that they have the opportunity (not required) to play with it and try to see what it does before it is formally thought. I thought that might work well with REPEAT since it does exactly what is says. ;) I added a little extra text to help. We can ask teacher for feedback about it… <strong>(Mary TODO)</strong> Does that seem sensible? What do you think, Brian? –MF, 2/10/22
+</p>
+<p>
+I think the informal introduction is fine, and I don’t think looping has to be such a big deal, but I really don’t like “Anything above it will happen before; anything below will happen after” because it makes it sound as if the REPEAT block somehow affects the sequencing of what comes before and after it. I would just not say it, but if you think something has to be said, it should be more like “the entire REPEAT loop counts as one step in the larger script of which it’s a part” or something like that, to make it clear that the overall sequence of steps <i>isn’t</i> messed up by the loop. -bh 3/3/22
+</p>
+<p>
+Hm, my point about not repeating set-instrument inside REPEAT is probably too subtle for an “experience before formality” type introduction to repeat. Maybe something to point out in the teachers guide, like “if you notice a student has nested blocks inside the repeat that don’t need to be repeated, you could suggest moving them out” with a screenshot of the set-instrument example. And then you can delete the “Any code….” line here since bh doesn’t like it and I also don’t think it adds much. -pf 3/3
+</p>
+<p>
+Brian, I took that out for now, but this is their first experience with sequencing, and I was trying to explain a bit about how it works. Pamela, I’m not convinced that the TG remark you suggested is needed because this is just a chance for them to play around. I’d rather the teacher <em>not</em> critique a fine point like that. I deleted the line Brian suggested; aren’t you asking for the “Any code you put inside the C-shape…” to be removed also? –MF, 3/6/22
+</p>
+</div>
+<li>
+You can also use <img src="../img/blocks/set-instrument-to.png" title="set instrument to (1)" alt="set instrument to (1)" class="inline nopadtb"> to change the instrument, <img src="../img/blocks/set-tempo.png" title="set tempo to () bpm" alt="set tempo to () bpm" class="inline nopadtb"> to change the tempo (beats per minute), or <img src="../img/blocks/set-volume-to-100.png" title="set volume to () %" alt="set volume to () %" class="inline nopadtb"> to change the volume. Wherever you put one of these blocks, the sound will change from that point on.
+</li>
+</ul>
+<div class="endnote">
+<p>Here are two examples:</p>
+<ul>
+<li>
+<div class="todo">
+<p>
+In little-lamb, the two notes just before the REST blur into one for me. Other instances of consecutive notes at the same pitch don’t do that. This sounds like a deficiency in Snap<i>!</i> music handling, but do you understand why? Also, I think that huge long rest sounds wrong; I would leave it out. -bh 3/3/22
+</p>
+<p>
+set-instrument-3 is a horrifying sound to me (sawtooth). really grating. I find 2 and 4 more soothing. -pf 3/3
+</p>
+<p>
+If you wanted an example song that didn’t feel like a lil kids song but that everyone knows, you could do Happy Birthday to You -pf 3/3
+</p>
+<p>
+I made no changes here because these are matters of taste, and I need to move on to the next lab. –MF, 3/6/22
+</p>
+</div>
+<p><a class="js-run snap-project" href="../prog/U2/lab01/sample-song-player-mary-lamb.xml" title="Sample Song Player: Mary Had a Little Lamb - Snap! project" target="_blank">Mary Had a Little Lamb</a></p>
+</li>
+<li>
+<a class="js-run snap-project" href="../prog/U2/lab01/sample-song-player-mario.xml" title="Sample Song Player: Super Mario Theme - Snap! project" target="_blank">Super Mario Theme</a>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<img src="../img/icons/save-now.png" title="Now Is a Good Time to Save" alt="Now Is a Good Time to Save" class="inline">
+</li>
+</ol>
+</div>
+<div class="learn">
+<p>In this activity, you <em>connected</em> several <em>command</em> blocks together to create a song.</p>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp("^(?:http:|https:)\/\/camp\.echa\.ng\/custom");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../lab-5/index.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lab 5: Song Player</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../lab-5/02-visualizing-loops.html" class="pagination-link">
+        <span class="nav-page-text">Page 2: Visualizing Loops</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">The curriculum and text on this website is adapted from <a href="https://bjc.edc.org/bjc-r/">The Beauty and Joy of Computing</a> by University of California, Berkeley and Education Development Center, Inc.&nbsp;which is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
