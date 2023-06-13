@@ -1,7 +1,7 @@
 ---
-title: "Page 5: Adding Variety to <code>Gossip</code>"
-subtitle: "Lab 2, Page 5"
-order: 5
+title: "Page 7: Adding Variety to <code>Gossip</code>"
+subtitle: "Lab 2, Page 7"
+order: 7
 ---
 
 ::: learn

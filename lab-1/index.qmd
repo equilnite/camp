@@ -3,7 +3,7 @@ title: "Lab 1: Click Alonso"
 ---
 
 ::: learn
-<p><strong>In this <em>lab</em>,</strong> you'll program an app that you can share with others and play on your phone.</p>
+<p><strong>In this <em>lab</em>,</strong> you'll program an app that you can share to your teachers and anyone that you want to show what you did!</p>
 
 As you work through any lab this summer, please feel free to join the help queue and ask any question that you have about making the programs that we task you to do. When you ask for help, be prepared to explain your problem fully, along with anything that you've already tried!
 :::

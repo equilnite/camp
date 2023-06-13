@@ -1,0 +1,27 @@
+---
+title: "Page 3: Adding More Variables to Alonzo"
+subtitle: "Lab 2, Page 3"
+order: 3
+---
+
+```{=html}
+<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
+```
+```{=html}
+<script type="text/javascript">window.onload = function() {Gifffer();}</script>
+```
+<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+
+::: learn
+<p><strong>On this page</strong>, you will add even more variables to your game to make the difficulty fully customizable. </p>
+:::
+
+::: {#first .forYouToDo}
+<ol>
+<li>There are lots of values in this game that can be varied to alter the gameplay, making it harder or easier, or making the game take more or less time to win. Choose one of those values and create a variable to represent the value, just as you did on the previous page. Name your variable something that makes it clear what purpose it is serving.</li>
+<li>When your new variable appears on the stage, right click on it to reveal a menu of options for modifying the way it's displayed. Choose the third option on the menu, which is "slider". This should add a slider feature to the variable display, as shown in the animation below.</br><img title="animation showing how to create a slider variable" alt="animation showing how to create a slider variable" class="indent" data-gifffer="/img/lab-2/slider.gif"/> </li>
+<li>Now right click to access the menu again. This time, choose "slider min..." and choose the minimum value you want to use. Then repeat this, but choose "slider max...". Test your variable by sliding the slider back and forth to make sure its possible values are between your chosen minimum and maximum. </li>
+<li>Find your new variable at the top of the orange variables palette, and drag the oval where it should go in your code. The goal is to have the code reflect the current value chosen on the slider.</li>
+<li>Test your game. While you are playing the game, adjust the slider and see what happens to the gameplay. </li>
+</ol>
+:::

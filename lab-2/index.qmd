@@ -3,5 +3,5 @@ title: "Lab 2: Gossip"
 ---
 
 ::: learn
-<p><strong>In this <em>lab</em>,</strong> you'll create a program that creates a fake human-like conversation using some new concepts, such as working with variables, creating blocks, and conditionals</p>
+<p><strong>In this <em>lab</em>,</strong> you'll work more on clicking our little yellow creature and also create a program that creates a fake human-like conversation using some new concepts, such as working with variables, creating blocks, and conditionals</p>
 :::

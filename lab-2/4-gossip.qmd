@@ -1,7 +1,7 @@
 ---
-title: "Page 2: Making Programs Talk"
-subtitle: "Lab 2, Page 2"
-order: 2
+title: "Page 4: Making Programs Talk"
+subtitle: "Lab 2, Page 4"
+order: 4
 ---
 
 ```{=html}

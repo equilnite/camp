@@ -1,7 +1,7 @@
 ---
-title: "Page 6: Keeping Score with Global Variables"
-subtitle: "Lab 1, Page 6"
-order: 6
+title: "Page 2: Keeping Score with Global Variables"
+subtitle: "Lab 2, Page 2"
+order: 2
 ---
 
 ```{=html}
@@ -33,19 +33,7 @@ order: 6
 ::: {#first .forYouToDo}
 <ol>
 
-<li>Open your U1L1-ClickAlonzo project, play the game, and review the code so you remember how it works.</li>
-
-<li>
-
-::: saveAs
-["U2L1-ClickAlonzo"]{.text}<img src="/img/icons/save-this-as.png" title="Save your work as U2L1-ClickAlonzo" alt="Save your work as U2L1-ClickAlonzo"/> Be sure to <strong>rename your project</strong> with "U2" in the filename.
-:::
-
-</li>
-
-::: takeNote
-If you save new work under an old filename, Snap<em>!</em> will overwrite your original project. Use "Save as..." from the Snap<em>!</em> File menu to save with the new name. When you load an older project and are about to make a big change, get in the habit of <em>saving first, with the new name, before you change anything</em>.
-:::
+<li>Open your L1-ClickAlonzo project, play the game, and review the code so you remember how it works.</li>
 
 <li>Create a global variable named <var>score</var>. Here's how.</li>
 
