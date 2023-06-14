@@ -5,10 +5,7 @@ order: 1
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will use local and global <em>variables</em> to store information. <!--<ul>
-<li><em>Script variables</em> (a kind of <em>local</em> variable) that can be used only within a single script, and</li>
-<li><em>Global variables</em> that can be set, used, or changed anywhere in the program.</li>
-</ul--></p>
+<p><strong>In this lab,</strong> you will use local and global <em>variables</em> to store information.</p>
 
 <p><strong>On this page,</strong> you will begin to develop a number guessing game that uses a <em>variable</em> to keep track of a secret number.</p>
 :::
@@ -35,10 +32,6 @@ order: 1
 
 ::: vocabFullWidth
 : <strong>Variable</strong>
-
-::: comment
-AAP-1.A.1
-:::
 
 <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
 
@@ -128,149 +121,4 @@ means something. (Suppose <var>a</var> = 8. First compute the value of
 <pre class="inline">a * 2</pre>
 ```
 , namely 16, and then replace the old value of <var>a</var> with 16). Up to now, the only variables you've used are input variables, and you never assign a value to an input because the value is given by the code that calls it. But a script variable won't have a value until you give it one with <code>set</code>.
-:::
-
-::: forYouToDo
-<ol start="5">
-
-::: comment
-AAP-1.B, AAP-1.B.3
-:::
-
-<li>
-
-<!-- Question 1 -->
-
-::: {.assessment-data type="multiplechoice" identifier="What value will this code return?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri1" shuffle="true"}
-::: prompt
-::: sidenote
-Examples like this one are useful to test your understanding of assignment to variables, but you wouldn't use a sequence of assignments like this in an actual program.
-:::
-
-What value will this code display?<br />
-
-```{=html}
-<pre>a &leftarrow; 3
-b &leftarrow; a
-a &leftarrow; 4
-DISPLAY(b)</pre>
-```
-:::
-
-::: {.choice identifier="c1"}
-::: text
-3
-:::
-
-::: feedback
-Correct! The variable <var>b</var> is assigned the <strong>value</strong> of the variable <var>a</var> (which is 3 when
-
-```{=html}
-<pre class="inline">b &leftarrow; a</pre>
-```
-is done).
-:::
-:::
-
-::: {.choice identifier="c2"}
-::: text
-4
-:::
-
-::: feedback
-The variable <var>b</var> is given the <strong>value</strong> of the variable <var>a</var> (which is 3 when
-
-```{=html}
-<pre class="inline">b &leftarrow; a</pre>
-```
-is done); <var>b</var> doesn't remember that the 3 came from <var>a</var> so it doesn't change when <var>a</var> is changed.
-:::
-:::
-
-::: {.choice identifier="c3"}
-::: text
-a
-:::
-
-::: feedback
-The variable <var>b</var> has been set to the <strong>value</strong> of the variable <var>a</var>, not the letter "a" itself.
-:::
-:::
-
-::: {.choice identifier="c4"}
-::: text
-b
-:::
-
-::: feedback
-The script will display the <strong>value of the variable <var>b</var></strong>, not the letter "b" itself.
-:::
-:::
-
-::: {.responseDeclaration identifier="ri1"}
-::: {.correctResponse identifier="c1"}
-:::
-:::
-:::
-
-</li>
-
-<li>
-
-<!-- Question 2 -->
-
-::: {.assessment-data type="multiplechoice" identifier="What value will this script report?" hasinlinefeedback="true" maxchoices="1" responseidentifier="ri2" shuffle="true"}
-::: prompt
-What value will this script report?<br /> <img src="/img/2-complexity/variable-assignment-quizlet.png" title="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" alt="set m to 9, set k to 5, set m to (m + 1), set k to (k - m), report k" class="indent"/>
-:::
-
-::: {.choice identifier="c1"}
-::: text
--5
-:::
-
-::: feedback
-Correct!
-:::
-:::
-
-::: {.choice identifier="c2"}
-::: text
-3
-:::
-
-::: feedback
-The value of the variable <var>m</var> is always greater than the value of the variable <var>k</var> in this script, so subtracting <var>m</var> from <var>k</var> will give a negative number.
-:::
-:::
-
-::: {.choice identifier="c3"}
-::: text
--4
-:::
-
-::: feedback
-The value of the variable <var>m</var> is 9 at the beginning, but it has been changed by the time it is subtracted from <var>k</var>.
-:::
-:::
-
-::: {.choice identifier="c5"}
-::: text
-5
-:::
-
-::: feedback
-The last <code>set</code> command sets the value of the variable <var>k</var> to the value <var>k</var> -- <var>m</var>, not <var>m</var> -- <var>k</var>.
-:::
-:::
-
-::: {.responseDeclaration identifier="ri2"}
-::: {.correctResponse identifier="c1"}
-:::
-:::
-:::
-
-</li>
-
-</ol>
 :::
