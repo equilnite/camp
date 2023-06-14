@@ -28,9 +28,7 @@ order: 1
 </ol>
 :::
 
-<p>In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /> <img src="/img/2-complexity/script-variables-secret-number.png" title="script variables (secret number)" alt="script variables (secret number)" class="indent"/></p>
-
-::: vocabFullWidth
+<p>In a number-guessing game, the player tries to guess the computer's secret number. The computer needs a way to store the secret number in a <em>variable</em> so that it can compare it to the player's guesses.<br /></p>
 : <strong>Variable</strong>
 
 <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
