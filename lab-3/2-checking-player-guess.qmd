@@ -94,19 +94,6 @@ report (who)
 :::
 :::
 
-::: forYouToDo
-<ol start="4">
-
-::: comment
-AAP-2.B
-:::
-
-<li>Now add some if blocks to give the player feedback. If the number is too high, have it say that. If the number is too low, have it say that as well.</li>
-
-<li><strong>Test again.</strong> Play the game some more!</li>
-
-</ol>
-:::
 
 ::: ifTime
 <ol start="7">
