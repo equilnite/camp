@@ -16,12 +16,12 @@ jobs:
         with:
           version: 1.3.353
 
-      - name: Render Book project
+      - name: Render Website
         uses: quarto-dev/quarto-actions/render@v2
         with:
           to: html
 
-      - name: Publish HTML book
+      - name: Publish Website
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
