@@ -32,19 +32,12 @@ order: 3
 </ol>
 :::
 
-::: atwork
-
-<p>Jerry Lawson (1940-2011) was an American electronic engineer and gaming pioneer who is dubbed the "father of the video game cartridge." Born in New York City, Jerry took classes at both Queens College and City College of New York. While working as a Chief Hardware Engineer at Fairchild Semiconductor, he led the development of the Channel F console and pioneered the technology of the video game cartridge, which was popularized with the Atari 2600.</p>
-
-<p><a href="https://www.cnbc.com/2021/10/30/jerry-lawson-black-silicon-valley-pioneer-changed-video-games-forever.html" title="Article: One of the most important Silicon Valley pioneers you've never heard of" target="_blank">Article: One of the most important Silicon Valley pioneers you've never heard of</a></p>
-:::
-
 <h2>Extending the Program with More Specific Responses</h2>
 
 ::: forYouToDo
 <ol start="3">
 
-<li>Use more conditional blocks and predicates to make the computer tell the player whether a guess is too big or too small: "That's too big. Try again." <br /><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Where in the code should these conditionals go?</li>
+<li>Use more conditional blocks and predicates to make the computer tell the player whether a guess is<b> too big or too small</b>: "That's too big. Try again." <br /><img src="/img/icons/talk-with-your-partner.png" title="Talk with Your Partner" alt="Talk with Your Partner" class="inline"/> Where in the code should these conditionals go?</li>
 
 <li>
 
@@ -65,11 +58,8 @@ order: 3
 </ol>
 :::
 
-<p>The script variable <var>secret number</var> exists only until the script finishes running. When the game is played again, the program will create a new <var>secret number</var> variable and give it a new random number.</p>
-
 <img src="/img/icons/save-now.png" title="Save your work" alt="Save your work" class="imageRight"/>
 
-<p>In a later unit, you will teach the computer how to guess a secret number that <em>you</em> have chosen.</p>
 
 ::: ifTime
 <ol start="5">
