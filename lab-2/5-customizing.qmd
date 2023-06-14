@@ -4,13 +4,7 @@ subtitle: "Lab 2, Page 5"
 order: 5
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will edit the word lists used by the sprites and debug any problems.</p>

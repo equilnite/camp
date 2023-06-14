@@ -4,13 +4,7 @@ subtitle: "Lab 2, Page 6"
 order: 6
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will create a new<img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block to make the program feel more like a conversation. <br /> <img src="/img/1-introduction/gossip2-reporting.png" title="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" alt="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" class="indent"/></p>

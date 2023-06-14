@@ -4,13 +4,7 @@ subtitle: "Lab 2, Page 1"
 order: 1
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <p><strong>On this page,</strong> you will learn about collaborating by using pair programming.</p>
