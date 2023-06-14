@@ -36,7 +36,7 @@ order: 1
 <p>A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what's inside as many times as you want.</p>
 
 ::: endnote
-On <a href="/lab-2/4-gossip.html" title="Lab 2 Page 4: Making Programs Talk">Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
+On <a href="/lab-2/4-gossip.html" title="Lab 2 Page 4: Making Programs Talk">Lab 2 Page 4: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.
 :::
 :::
 
@@ -93,10 +93,6 @@ The variable <var>secret number</var> is available in the <code>set</code> block
 
 ::: endnote
 <p>In algebra, a variable is sometimes used for something whose value you don't know yet, and the goal is to find out its value. In programming <em>you decide</em> the values of variables.</p>
-:::
-
-::: sidenote
-You learned about input variables on <a href="/lab-2/2-keeping-score.html" title="Lab 2 Page 2: Keeping Score with Global Variables">Lab 2 Page 2: Keeping Score with Global Variables</a>.
 :::
 
 ::: pseudop

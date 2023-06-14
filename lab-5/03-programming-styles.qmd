@@ -30,10 +30,6 @@ You learned about reporters in <a href="/lab-2/4-making-a-new-block.html" title=
 
 <p>A <strong>predicate</strong> is a special kind of reporter that asks a true/false question and reports either true or false. Predicates have a hexagon shape.<br /> <img src="/img/blocks/is-a-list.png" title="What does IS () A (LIST)? do?" alt="What does IS () A (LIST)? do?" class="indent"/> <img src="/img/blocks/mouse-down-full-size.png" title="mouse down?" alt="mouse down?" class="indent"/> <img src="/img/blocks/equal.png" title="() = ()" alt="() = ()" class="indent"/></p>
 
-::: sidenote
-You'll use commands much more in Unit 2.
-:::
-
 <p>A <strong>command</strong> block tells the computer to do something <em>without reporting a value</em>. Commands have a puzzle shape and can be snapped together one after another. <br /> <img src="/img/blocks/set-tempo-to-60-bpm.png" title="set tempo to () bpm" alt="set tempo to () bpm" class="indent"/> <img src="/img/blocks/repeat.png" title="repeat () {}" alt="repeat () {}" class="indent"/> <img src="/img/blocks/delete-empty.png" title="delete () from &apos;list input slot&apos;" alt="delete () from &apos;list input slot&apos;" class="indent"/></p>
 
 ::: {.endnote style="clear: right;"}

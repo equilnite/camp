@@ -5,27 +5,27 @@ Welcome to your computer science portion of the 2023 Maker Camp, in this session
 Here's the schedule for your computer science experience during this Maker Camp!
 
 <style type="text/css">
-.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;width:100%;}
-.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-7un6{background-color:#ffffff;color:#000000;text-align:center;vertical-align:top}
+.tg  {border-spacing:0;width:100%;}
+.tg td{border-width:1px;
+overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-width:1px;
+overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-7un6{text-align:center;vertical-align:top}
 .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top;}
-.tg .tg-4erg{border-color:inherit;font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-4erg{font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-6t3r{font-style:italic;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0lax{text-align:left;vertical-align:top}
-.tg .tg-zb5k{color:#15C;text-align:left;text-decoration:underline;vertical-align:top}
-.tg .tg-6qw1{background-color:#c0c0c0;text-align:center;vertical-align:top}
+.tg .tg-zb5k{text-align:left;text-decoration:underline;vertical-align:top}
+.tg .tg-6qw1{text-align:center;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
 <tr>
 <th class="tg-1wig">Day of Week</th>
-<th class="tg-4erg"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Day</span></th>
-<th class="tg-6t3r"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Big Idea</span></th>
-<th class="tg-6t3r"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lab</span></th>
-<th class="tg-6t3r"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Extension</span></th>
+<th class="tg-4erg"><span>Day</span></th>
+<th class="tg-6t3r"><span>Big Idea</span></th>
+<th class="tg-6t3r"><span>Lab</span></th>
+<th class="tg-6t3r"><span>Extension</span></th>
 </tr>
 </thead>
 <tbody>
@@ -33,33 +33,33 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 <td class="tg-0lax">Monday</td>
 <td class="tg-0lax">6/12</td>
 <td class="tg-0lax"><span>Introductions</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-1/" target="_blank" rel="noopener noreferrer">Lab 1: Click Alonzo</a></td>
+<td class="tg-zb5k"><a href="/lab-1/">Lab 1: Click Alonzo</a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Tuesday</td>
 <td class="tg-0lax"><span>6/13</span></td>
 <td class="tg-0lax"><span>Variables</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-2/"><span>Lab 2: Variables and Gossip</span></a></td>
+<td class="tg-zb5k"><a href="/lab-2/"><span>Lab 2: Variables and Gossip</span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Wednesday</td>
 <td class="tg-0lax">6/14</td>
 <td class="tg-0lax"><span>Conditionals / Debugging</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-3/"><span>Lab 3: Number Guessing Game</span></a></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-4/"><span>Lab 4: Pong</span></a></td>
+<td class="tg-zb5k"><a href="/lab-3/"><span>Lab 3: Number Guessing Game</span></a></td>
+<td class="tg-zb5k"><a href="/lab-4/"><span>Lab 4: Pong</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">6/15</td>
 <td class="tg-0lax"><span>Iteration</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-5/"><span>Lab 5: Song Player, pp. 1 - 5</span></a></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-6"><span>Lab 6: Squiral</span></a></td>
+<td class="tg-zb5k"><a href="/lab-5/"><span>Lab 5: Song Player, pp. 1 - 5</span></a></td>
+<td class="tg-zb5k"><a href="/lab-6"><span>Lab 6: Squiral</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
-<td class="tg-7un6"><span style="font-weight:400;font-style:normal;text-decoration:none">6/16</span></td>
+<td class="tg-0lax"><span>6/16</span></td>
 <td class="tg-7un6" colspan="3">Field Trip to <a href="https://bampfa.org/">BAMPFA</a></td>
 </tr>
 <tr>
@@ -71,7 +71,7 @@ font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;
 <td class="tg-0lax">Tuesday</td>
 <td class="tg-0lax">6/20</td>
 <td class="tg-0lax"><span>Abstraction</span></td>
-<td class="tg-zb5k"><a href="https://camp.echa.ng/lab-7/"><span>Lab 7: Polygons</span></a></td>
+<td class="tg-zb5k"><a href="/lab-7/"><span>Lab 7: Polygons</span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>

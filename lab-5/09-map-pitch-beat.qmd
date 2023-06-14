@@ -119,7 +119,7 @@ Needs alt-title text. (copy from above once written) --MF, 2/27/22
 Create a longer song by playing different versions of the same song at different pitches.
 
 ::: endnote
-<p><strong>Example:</strong> <a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-mario-map.xml" title="Sample Song Player: Mario Theme Mapped- Snap! project" target="_blank">Mario Theme Mapped</a></p>
+<p><strong>Example:</strong> <a class="js-run snap-project" href="/prog/lab-5/sample-song-player-mario-map.xml" title="Sample Song Player: Mario Theme Mapped- Snap! project" target="_blank">Mario Theme Mapped</a></p>
 
 <p><strong>Tip:</strong> Try shifts like 1, 4, 7 and see which sound good to you. What about other shifts?</p>
 :::

@@ -8,7 +8,7 @@ Revision for 2022-2023:
 
 <ul>
 
-<li>Check out <a class="js-run snap-project" href="/prog/U2/lab01/new/musical-improvisation-from-Jens.xml" target="_blank">Jens' project</a>. As of March 2022, need to open it in <a href="https://snap.berkeley.edu/versions/dev" target="_blank">the current dev version</a>.</li>
+<li>Check out <a class="js-run snap-project" href="/prog/lab-5/new/musical-improvisation-from-Jens.xml" target="_blank">Jens' project</a>. As of March 2022, need to open it in <a href="https://snap.berkeley.edu/versions/dev" target="_blank">the current dev version</a>.</li>
 
 </ul>
 :::
@@ -36,7 +36,7 @@ All these js-run things should be changed to plain old snap projects, because ri
 <p>I think this is a comment for Michael. --MF, 3/6/22</p>
 :::
 
-<li>Open this <a class="js-run snap-project" href="/prog/U2/lab01/song-player.xml" title="Song Player - Snap! project" target="_blank">Song Player</a> project, and save it to your account. It includes a <img src="/img/U2/lab01/play-emoji-note.png" title="play ♪ pitch: () beats: ()" alt="play ♪ pitch: () beats: ()" class="inline nopadtb"/> <em>command</em> block that takes two inputs: a note to play (<var>pitch</var>) and how long to play it (<var>beats</var>).</li>
+<li>Open this <a class="js-run snap-project" href="/prog/lab-5/song-player.xml" title="Song Player - Snap! project" target="_blank">Song Player</a> project, and save it to your account. It includes a <img src="/img/U2/lab01/play-emoji-note.png" title="play ♪ pitch: () beats: ()" alt="play ♪ pitch: () beats: ()" class="inline nopadtb"/> <em>command</em> block that takes two inputs: a note to play (<var>pitch</var>) and how long to play it (<var>beats</var>).</li>
 
 ::: {.endnote style="clear: right;"}
 ::: comment
@@ -111,11 +111,11 @@ Here are two examples:
 <p>I made no changes here because these are matters of taste, and I need to move on to the next lab. --MF, 3/6/22</p>
 :::
 
-<a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-mary-lamb.xml" title="Sample Song Player: Mary Had a Little Lamb - Snap! project" target="_blank">Mary Had a Little Lamb</a>
+<a class="js-run snap-project" href="/prog/lab-5/sample-song-player-mary-lamb.xml" title="Sample Song Player: Mary Had a Little Lamb - Snap! project" target="_blank">Mary Had a Little Lamb</a>
 
 </li>
 
-<li><a class="js-run snap-project" href="/prog/U2/lab01/sample-song-player-mario.xml" title="Sample Song Player: Super Mario Theme - Snap! project" target="_blank">Super Mario Theme</a></li>
+<li><a class="js-run snap-project" href="/prog/lab-5/sample-song-player-mario.xml" title="Sample Song Player: Super Mario Theme - Snap! project" target="_blank">Super Mario Theme</a></li>
 
 </ul>
 :::

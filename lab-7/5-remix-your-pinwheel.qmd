@@ -4,13 +4,7 @@ subtitle: "Lab 7, Page 5"
 order: 5
 ---
 
-```{=html}
-<script type="text/javascript" src="/utilities/gifffer.min.js"></script>
-```
-```{=html}
-<script type="text/javascript">window.onload = function() {Gifffer();}</script>
-```
-<link rel="stylesheet" type="text/css" href="/css/bjc-gifffer.css">
+{{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
 <strong>On this page,</strong> you will use your existing <code>pinwheel</code> block to make <code>asterisk</code> and <code>polygon</code> blocks.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/asteriskpolygonCycle.gif" title="Animation cycle from Asterisk to Polygon" alt="Animation cycle from Asterisk to Polygon" class="indent" height="250"/>
@@ -31,7 +25,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 
 <ol>
 
-<li>First, make a new block called <code>asterisk</code> with two inputs: one for the <var>number of branches</var> and one for the <var>length</var> of each branch. You may wish to review how to make a new block at <a href="/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 4: Making Your Own Block">Unit 1 Lab 2 Page 4: Making Your Own Block</a>.</li>
+<li>First, make a new block called <code>asterisk</code> with two inputs: one for the <var>number of branches</var> and one for the <var>length</var> of each branch. You may wish to review how to make a new block at <a href="/lab-2/6-making-a-new-block.html" title="Lab 2 Page 6: Making Your Own Block">Lab 2 Page 6: Making Your Own Block</a>.</li>
 
 <img src="/img/1-introduction/asterisk-using-pinwheel.png" title="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" alt="asterisk, branches:(branches) branch length:(length){pinwheel, branches: ( ) size:( ) backup:( )}" width="507" height="106"/>
 
@@ -56,7 +50,7 @@ Use your <code>pinwheel</code> block to create a more specialized <code>asterisk
 
 ::: takeNote
 ::: sidenoteBig
-<p>On page <a href="/cur/programming/1-introduction/2-gossip-and-greet/2-gossip.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 1 Lab 2 Page 2: Making Programs Talk">Unit 1 Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.</p>
+<p>On page <a href="/lab-2/4-gossip.html" title="Lab 2 Page 4: Making Programs Talk">Lab 2 Page 4: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving a code segment a name (making it a block). That way you can call it more than once instead of copying and pasting.</p>
 :::
 
 ::: comment
