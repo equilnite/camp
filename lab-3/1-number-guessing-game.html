@@ -240,7 +240,7 @@ In a number-guessing game, the player tries to guess the computer’s secret num
 A <strong>variable</strong> is like a labeled box that can hold one value at a time, such as one word, one costume, or one list (which can contain many things). You can look at what’s inside as many times as you want.
 </p>
 <div class="endnote">
-<p>On <a href="../lab-2/2-gossip.html" title="Lab 2 Page 2: Making Programs Talk">Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.</p>
+<p>On <a href="../lab-2/4-gossip.html" title="Lab 2 Page 4: Making Programs Talk">Lab 2 Page 2: Making Programs Talk</a>, you learned about <em>procedural abstraction:</em> giving scripts names by putting them in new blocks. Here, we are starting to look at <em>data abstraction</em>, giving names to numbers, text, lists, etc. When you give something a name, you can refer to it without knowing exactly what the value is.</p>
 </div>
 </div>
 <div class="forYouToDo" style="clear: right;">
@@ -275,21 +275,8 @@ A <strong>variable</strong> is like a labeled box that can hold one value at a t
 </ol>
 </div>
 <p>
-Script variables are a kind of <em>local variable</em>; they work only within the script where they’re created. If you drag one into a different script, it won’t work. You’ve seen two kinds of local variables before: inputs to blocks and <code>for</code> counters.
+Script variables are a kind of <em>local variable</em>; they work only within the script where they’re created. If you drag one into a different script, it won’t work.
 </p>
-<div class="endnote">
-<p>
-<a href="#hint-inputs" data-bs-toggle="collapse" title="Examples you've seen before.">Examples you’ve seen before.</a>
-</p>
-<div id="hint-inputs" class="collapse">
-<p>
-You have created variables as inputs to blocks that you made:<br> <img src="../img/2-complexity/input-variable-for-pinwheelbranches-commented.png" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" class="indent noshadow">
-</p>
-<p>
-You have used the counter variable that the <code>for</code> block gave you:<br> <img src="../img/2-complexity/local-variable-created-by-for-block-commented.png" title="local variable created by for block" alt="local variable created by for block" class="indent noshadow">
-</p>
-</div>
-</div>
 <div class="vocabFullWidth">
 <p>: <strong>Local Variable</strong></p>
 <p>
@@ -302,7 +289,7 @@ In algebra, a variable is sometimes used for something whose value you don’t k
 </p>
 </div>
 <div class="sidenote">
-<p>You learned about input variables on <a href="../lab-1/6-keeping-score.html" title="Page 6: Keeping Score with Global Variables">Page 6: Keeping Score with Global Variables</a>.</p>
+<p>You learned about input variables on <a href="../lab-2/2-keeping-score.html" title="Lab 2 Page 2: Keeping Score with Global Variables">Lab 2 Page 2: Keeping Score with Global Variables</a>.</p>
 </div>
 <div class="pseudop">
 <p>When you assign a value to a variable, the variable holds that value, not where it came from. For example, if <var>apples</var> = 2 and you <img src="../img/2-complexity/set-bananas-to-apples.png" title="set (bananas) to (apples)" alt="set (bananas) to (apples)">, then <var>bananas</var> will hold the value 2 and have no memory of it having come from <var>apples</var>. This is why</p>
