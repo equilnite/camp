@@ -26,7 +26,7 @@ order: 2
 ::: endnote
 <ul>
 
-<li>Drag the <var>secret number</var> variable out of the <code>script variables</code> block to use it.</li>
+<li>Drag the <var>secret number</var> variable out of the <code>variables</code> palette to use it.</li>
 
 <li>The <code>ask</code> and <code>answer</code> blocks go together. If you use <code>ask</code> to ask a question, the user's answer will be reported by <code>answer</code>.</li>
 
@@ -92,6 +92,20 @@ report (who)
 }" class="indent"/></a>
 :::
 :::
+:::
+
+::: forYouToDo
+<ol start="4">
+
+::: comment
+AAP-2.B
+:::
+
+<li>Now add some if blocks to give the player feedback. If the number is too high, have it say that. If the number is too low, have it say that as well.</li>
+
+<li><strong>Test again.</strong> Play the game some more!</li>
+
+</ol>
 :::
 
 ::: ifTime
