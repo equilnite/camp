@@ -10,7 +10,7 @@ order: 2
 <p><strong>On this page,</strong> you'll build a simple game in which the player tries to click a character that's jumping around.</p>
 :::
 
-<h2>Making a Character Move</h2>
+## Making a Character Move
 
 ::: forYouToDo
 <ol>
@@ -22,7 +22,7 @@ order: 2
 <a href="/prog/L1-ClickAlonzo.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a>
 
 ::: narrower
-<h3><strong>Saving a Snap<em>!</em> Project</strong></h3>
+### <strong>Saving a Snap<em>!</em> Project</strong>
 
 <p>Choose "Save" from the Snap<em>!</em> File menu, <img src="/img/1-introduction/file_button.png" title="File menu button" alt="File menu button"/>.</p>
 :::
@@ -124,7 +124,7 @@ CRD-2.C.2, CRD-2.C.3, CRD-2.C.5
 </ol>
 :::
 
-<h2>Making the Game Challenging</h2>
+## Making the Game Challenging
 
 <!--<div class="index-term" id="forever</code> loop" />-->
 

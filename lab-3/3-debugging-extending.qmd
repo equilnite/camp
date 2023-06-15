@@ -30,7 +30,7 @@ order: 3
 </ol>
 :::
 
-<h2>Extending the Program with More Specific Responses</h2>
+## Extending the Program with More Specific Responses
 
 ::: forYouToDo
 <ol start="3">

@@ -3,5 +3,5 @@ title: "Lab 3: Number Guessing Game"
 ---
 
 ::: learn
-<p><strong>In this lab,</strong> you will use create a game where the player's objective is to guess a number that the game randomly generates. You will use local and global <em>variables</em> to store information for the game and learn how to debug in Snap<em>!</em></p>
+<p><strong>In this lab,</strong> you will use create a game where the player's objective is to guess a number that the game randomly generates. You will use <em>variables</em> to store information for the game and learn how to debug in Snap<em>!</em></p>
 :::

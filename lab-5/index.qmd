@@ -2,4 +2,10 @@
 title: "Lab 5: Song Player"
 ---
 
-In this lab, we'll...
+::: learn
+
+In this activity, you'll teach the computer to play some simple songs and move those songs up and down the musical scale.
+
+To do this, you'll learn more how to make your code reusable for different situations and using <em>iteration</em>.
+
+:::

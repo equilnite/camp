@@ -7,9 +7,9 @@ subtitle: "Lab 5, Page 3"
 In this activity, you'll learn about the difference between programming by nesting reporter blocks inside each other and programming by stacking command blocks top to bottom.
 :::
 
-<h3>Commands Versus Reporters</h3>
+### Commands Versus Reporters
 
-<p>Before this unit, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as <em>functional programming</em>, and in Snap<em>!</em>, it uses <em>reporter</em> blocks. A reporter computes a value and reports it (to you or to other blocks).<br /> <img src="/img/U2/lab01/emoji-example.png" title="songify (emojify (uppercase (&apos;They love soccer so much that it&apos;s funny&apos;))) reporting &apos;🎶 THEY ❤️ ⚽️ SO MUCH THAT IT&apos;S 😂  🎶&apos;" alt="songify (emojify (uppercase (&apos;They love soccer so much that it&apos;s funny&apos;))) reporting &apos;🎶 THEY ❤️ ⚽️ SO MUCH THAT IT&apos;S 😂  🎶&apos;" class="indent"/></p>
+<p>Before this unit, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as <em>functional programming</em>, and in Snap<em>!</em>, it uses <em>reporter</em> blocks. A reporter computes a value and reports it (to you or to other blocks).<br /> <img src="/img/gossip-result.png" class="indent"/></p>
 
 <p>In this unit, you've been stacking blocks that carry out <em>actions,</em> such as playing a note. This style of programming is called <em>imperative programming</em>. In Snap<em>!</em>, imperative programming uses <em>command</em> blocks. A command tells the computer to do something, (play a sound, draw, move, change something, etc.). Commands have <em>effects.</em><br /> <img src="/img/U2/lab01/fur-elise-snippet.png" alt="repeat (2) {
 play ♪ pitch: (64) beats: (0.5)
@@ -23,7 +23,7 @@ play ♪ pitch: (59) beats: (0.5)
 
 ::: vocabFullWidth
 ::: sidenote
-You learned about reporters in <a href="/lab-2/4-making-a-new-block.html" title="Lab 2 Page 4: Making Your Own Block">Lab 2 Page 4: Making Your Own Block</a>.
+You learned about reporters in <a href="/lab-2/6-making-a-new-block.html" title="Lab 2 Page 6: Making Your Own Block">Lab 2 Page 4: Making Your Own Block</a>.
 :::
 
 <p>A <strong>reporter</strong> block does a calculation and reports the result. Reporters have an oval shape. <br /> <img src="/img/blocks/item.png" title="item () of &apos;list input slot&apos;" alt="item () of &apos;list input slot&apos;" class="indent"/> <img src="/img/blocks/join.png" title="join () ()" alt="join () ()" class="indent"/> <img src="/img/blocks/reporter-if.png" title="if &apos;predicate input slot&apos; then () else ()" alt="if &apos;predicate input slot&apos; then () else ()" class="indent"/></p>
@@ -37,7 +37,7 @@ Unlike reporters, a command block doesn't report anything, so you can't use its 
 :::
 :::
 
-<h3>Creating a Command Block</h3>
+### Creating a Command Block
 
 <p>You've created a reporter block before. You can create a command block in almost exactly the same way.</p>
 

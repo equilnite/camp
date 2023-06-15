@@ -76,7 +76,7 @@ AAP-2.B.3, AAP-2.B.4
 </ol>
 :::
 
-<h2>Making a Block Call Itself</h2>
+## Making a Block Call Itself
 
 ::: forYouToDo
 <ol start="8">

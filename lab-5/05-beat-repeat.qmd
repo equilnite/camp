@@ -21,7 +21,7 @@ I made a really nice FOR EACH animation that is buried in a yellow box on page 8
 In this activity, you will make it easier to play a song by putting the notes in a list.
 :::
 
-<h3>Using <code>For Each</code> to Traverse a List</h3>
+### Using <code>For Each</code> to Traverse a List
 
 ::: todo
 <p>The paragraph below is well-intentioned, but it doesn't belong here. Maybe after your sample song that uses REPEAT?</p>
@@ -145,7 +145,7 @@ Tips for working with the <code>list</code> block:
 Maybe add a page break here in the future? --MF, 2/28/22
 :::
 
-<h3>Using <code>For Each</code> to Play <em>Any</em> List of Pitches</h3>
+## Using <code>For Each</code> to Play <em>Any</em> List of Pitches
 
 <p>You can create a <code>play song</code> block that will apply this script to any input song.<br /> <img src="/img/U2/lab01/play-song-with-inputs.png" title="play song (list (60) (60) (67) (67) (69) (69) (67))" alt="play song (list (60) (60) (67) (67) (69) (69) (67))" class="indent"/></p>
 

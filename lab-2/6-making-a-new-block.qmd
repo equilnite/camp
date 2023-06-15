@@ -20,7 +20,7 @@ order: 6
 </ol>
 
 ::: narrower
-<h3><strong>Making a New Block</strong></h3>
+### <strong>Making a New Block</strong>
 
 <ol type="a">
 
@@ -40,7 +40,7 @@ order: 6
 <p>Because you chose the reporter shape, the block editor opens with a <img src="/img/blocks/report.png" title="report" alt="report" class="inline nopadtb"/> block already attached to the hat block. Whatever input you give to <code>report</code> will become the value reported by your new block.</p>
 :::
 
-<h3><strong>Coding the Block's Script</strong></h3>
+### <strong>Coding the Block's Script</strong>
 
 <ol type="a" start="5">
 
@@ -90,7 +90,7 @@ A <strong>procedure</strong> is a named sequence of instructions that may take i
 </p>
 :::
 
-<h2>Debugging</h2>
+## Debugging
 
 ::: forYouToDo
 <ol start="3">

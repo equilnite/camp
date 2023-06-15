@@ -16,7 +16,7 @@ The game isn't nearly finished, but it's finished <em>enough</em>. <strong>On th
 Create a link to share your app.
 
 ::: narrower
-<h3><strong>Creating a Link</strong></h3>
+### <strong>Creating a Link</strong>
 
 <img src="/img/1-introduction/U1ImageVideoAddendum_img/U1L1P7_OpenFile.png" title="Open Project dialog box" alt="Open Project dialog box" class="imageRight" height="350"/>
 
@@ -56,7 +56,7 @@ To locate a file, you can type in the search bar at the top to see only a list o
 If you are working with a partner, make sure you both have a copy.
 
 ::: narrower
-<h3><strong>Saving a Copy of a Project</strong></h3>
+### <strong>Saving a Copy of a Project</strong>
 
 <ol type="a">
 

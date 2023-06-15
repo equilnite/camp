@@ -35,7 +35,7 @@ The "your latest project" below has to be changed to go along with whatever deci
 Create a global variable to store your song. Here's how...
 
 ::: narrower
-<h4><strong>Making a Global Variable</strong></h4>
+#### <strong>Making a Global Variable</strong>
 
 <ol type="a">
 
@@ -55,7 +55,7 @@ Create a global variable to store your song. Here's how...
 Set your global variable to store your song. Here's how...
 
 ::: narrower
-<h4><strong>Setting a Global Variable</strong></h4>
+#### <strong>Setting a Global Variable</strong>
 
 <ol type="a">
 

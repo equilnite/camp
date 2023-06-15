@@ -97,7 +97,7 @@ play ♪ pitch: (pitch from ♪ (♪)) beats: (beats from ♪ (♪))
 <li>
 
 ::: sidenote
-You learned how to create a global variable in <a href="/lab-5/06-storing-songs.html" title="Lab 5 Page 6: Storing Songs">Lab 5 Page 6: Storing Songs</a>.
+You learned how to create a global variable in <a href="/lab-2/2-keeping-score.html" title="Lab 2 Page 2: Keeping Score with Global Variables">Lab 2 Page 2: Keeping Score with Global Variables</a>.
 :::
 
 Create a new global variable to store a song with both pitch and beat information.

@@ -12,7 +12,7 @@ order: 4
 <p><strong>On this page,</strong> you will experiment with an existing program as an introduction to the project.</p>
 :::
 
-<h2>Exploring Custom Blocks</h2>
+## Exploring Custom Blocks
 
 ::: {#first .forYouToDo}
 <ol>
@@ -57,7 +57,7 @@ Now click on <img src="/img/1-introduction/randomize-variables.png" title="rando
 :::
 :::
 
-<h2>Exploring a Second Sprite<a name="second" class="anchor"> </a></h2>
+## Exploring a Second Sprite<a name="second" class="anchor"> </a>
 
 ::: forYouToDo
 <ol start="4">

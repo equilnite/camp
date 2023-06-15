@@ -19,7 +19,7 @@ Open your L2-Gossip project.  Edit the “randomize variables” block to change
 <br /> <img src="/img/1-introduction/randomize-variables.png" title="randomize variables block" alt="randomize variables block" class="indent"/>
 
 ::: narrower
-<h3><strong>How to Edit a Block</strong></h3>
+### <strong>How to Edit a Block</strong>
 
 <ol type="a">
 
@@ -106,7 +106,7 @@ AAP-2.D.1, AAP-2.D.2
 Change the costumes to anything you like.
 
 ::: narrower
-<h3><strong>Adding a Costume</strong></h3>
+### <strong>Adding a Costume</strong>
 
 <ol type="a">
 
@@ -134,7 +134,7 @@ You can use a photograph or picture from the Internet by dragging the image onto
 Fix any issues with your costumes.
 
 ::: narrower
-<h3><strong>Adjusting a Costume</strong></h3>
+### <strong>Adjusting a Costume</strong>
 
 ```{=html}
 <!--<div class="index-term" id="set size</code>"></div>
@@ -175,7 +175,7 @@ Fix any issues with your costumes.
 Change the background on the Stage.<br />
 
 ::: narrowblue
-<h3><strong>Adding a Stage Background</strong></h3>
+### <strong>Adding a Stage Background</strong>
 
 ::: endnote
 Changing a stage background is almost like changing a costume.

@@ -7,7 +7,7 @@ subtitle: "Lab 5, Page 2"
 In this activity, you will experiment with <em>loops</em> and see how they control the order in which the commands are run.
 :::
 
-<h3>Using Visible Stepping</h3>
+## Using Visible Stepping
 
 <p>Snap<em>!</em> has a tool called <strong>Visible Stepping</strong> that allows you to watch Snap<em>!</em> process the blocks of your code in order.</p>
 
@@ -49,7 +49,7 @@ What's the point of this box? Does it say anything that isn't obvious? That the 
 Visible Stepping (<img src="/img/2-complexity/visible-stepping.png" title="Visible Stepping button with two footprints" alt="Visible Stepping button with two footprints" class="inline nopadtb"/>) can be useful when reading code because you can see what block is running.
 :::
 
-<h3>Looping Your Song</h3>
+## Looping Your Song
 
 ::: forYouToDo
 <ol start="4">
@@ -79,10 +79,4 @@ The sequence of blocks <em>inside</em> the <code>forever</code> block will repea
 
 ::: learn
 In this activity, you used <em>iteration</em> to repeat a set of commands.
-
-::: todo
-What? You used iteration <em>by repeating</em> a set of commands, if anything. Does this box really mean "In this activity you learned the word 'iteration'"? (And, Mary, aren't you the comma minimalist in our gang?) --bh 3/3/22
-
-<p>I'm not sure what the issue is here, Brian. Could you please suggest an alternative? --MF, 3/6/22</p>
-:::
 :::
