@@ -1,0 +1,38 @@
+---
+title: "Page 6: Nested Polygons"
+---
+
+::: learn
+
+<strong>On this page,</strong> you will use <code>for</code> loops as a counter to draw shapes with nested polygons<br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent"/>
+
+:::
+
+:::: forYouToDo
+
+1. Remind yourself how to use <img src="/img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="imageCenter"/> from [Lab 6: Squiral](/lab-6/).
+
+2. Open your L7-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent"/>
+
+3. Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.
+
+4. Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br /> <img src="/img/1-introduction/polygons.png" title="polygons: triangle through decagon" alt="polygons: triangle through decagon" class="indent"/> <br/>
+Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="indent" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"/><br/>
+
+::: endnote
+
+The following code may give you ideas about how to create animations. The <code>warp</code> block allows the drawing of the pinwheel all at once.
+
+<img src="/img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="indent" height="150"/>
+
+:::
+
+<img src="/img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="imageRight" height="180"/>
+
+5. Make sure your other work has been saved, then <a href="/prog/L6-mini-Albers.xml" class="run"><img src="/img/icons/load-save.png" title=" Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br />Experiment with the script. Could you change the sizes or colors to make it more interesting?
+
+<p style="clear: both; height: 0px;">
+
+</p>
+
+::::

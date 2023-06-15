@@ -3,7 +3,7 @@ title: "Lab 6: Squiral"
 ---
 
 ::: learn
-<p><strong>On this page,</strong> you will use <code>for</code> loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="indent"/> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent"/></p>
+<strong>On this lab,</strong> you will use <code>for</code> loops not only to repeat, but also to count the repetitions and then use that counter to draw shapes with repeated patterns:<br /> <img src="/img/prog/spiral.png" title="spiral" alt="spiral" class="indent"/>
 :::
 
 <p>
@@ -26,30 +26,6 @@ The <code>forever</code> block generates an <em>infinite loop</em> that goes on 
 
 </p>
 
-::: vocabFullWidth
-: <strong>Iteration</strong>
-
-::: comment
-AAP-2.J.1
-:::
-
-<p>Computer scientists describe a repeating program structure as <em>looping</em>, <em>repetition</em>, or <strong>iteration</strong>.</p>
-
-::: comment
-AAP-2.K.1
-:::
-
-<p>The code can be repeated <code>forever</code>, a specific number of times (such as when using <code>repeat</code>), or until something specific happens (such as when using <code>repeat until</code> as you'll see in Lab 5). <br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="indent"/> <img src="/img/1-introduction/move-tiny-no-hat.png" title="repeat until (touching (Leader)?)
-{
-point towards (Leader)
-move (1) steps
-}" alt="repeat until (touching (Leader)?)
-{
-point towards (Leader)
-move (1) steps
-}" class="indent"/></p>
-:::
-
 <p>Sometimes the script inside a loop needs to know which time through the loop it's in (first, second, etc.). You can use <img src="/img/prog/for.png" title="for(i)=(1) to (10){}" alt="for(i)=(1) to (10){}" class="imageCenter"/> to keep track, and you can use its counter (the default name is <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/>) in the repeated script. For example, the <code>for</code> block lets you simplify long scripts like: <br /> <img src="/img/looping/for-loop-equivalent.png" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" class="indent"/>\
       to\
 <img src="/img/looping/for-loop-drag-i.gif" title="for (i)= (1) to (10) {say (i) for (2) secs}" alt="for (i)= (1) to (10) {say (i) for (2) secs}" class="noshadow"/></p>
@@ -57,7 +33,7 @@ move (1) steps
 <p>Each time the <code>for</code> block runs the script inside, it changes the value of the counter by 1, beginning with the first input number and ending after the second.</p>
 
 ::: takeNote
-The <code>for</code> block's default counter name, <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/> stands for "index." You can change this name by clicking it. To use the counter, drag it into the script.
+The <code>for</code> block's default counter name, <img src="/img/blocks/variable-i.png" title="i" alt="i" class="inline"/> stands for "index." You can change this name by <strong>clicking it</strong>. To use the counter, drag it into the script.
 :::
 
 ::: {#first .forYouToDo}
@@ -110,50 +86,22 @@ This design got the nickname "squiral" because it's a <strong>squ</strong>are sp
 <li>
 
 ::: saveAs
-["U1L3-Squiral"]{.text}<img src="/img/icons/save-this-as.png" title="Save your work as U1L3-Squiral" alt="Save your work as U1L3-Squiral" class="inline"/>
+["L6-Squiral"]{.text}<img src="/img/icons/save-this-as.png" title="Save your work as L6-Squiral" alt="Save your work as L6-Squiral" class="inline"/>
 :::
 
 </li>
-
-<li>Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> <img src="/img/1-introduction/nested-squares.png" title="nested squares" alt="nested squares" class="indent"/></li>
 
 </ol>
 :::
 
 ::: ifTime
-<ol start="5">
-
-<li>Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.</li>
-
-<li>Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br /> <img src="/img/1-introduction/polygons.png" title="polygons: triangle through decagon" alt="polygons: triangle through decagon" class="indent"/></li>
+<ol start="4">
 
 <li>Predict what this script will do before you try it:<br /><img src="/img/1-introduction/nested-fors.png" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" class="indent" width="399" height="147"/></li>
 
 <li>Build a script that counts down by 10 from 100 to 0 (that is, 100, 90, 80, etc.).</li>
 
-<!--<li><img class="inline" src="/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /> Build a <em>block</em> with inputs that let you specify how to count. If you say <img src="/img/1-introduction/count-by-10-from-100-to-0.png" alt="count-by-10-from-100-to-0">, it counts 100, 90, 80, etc., but if you say <img src="/img/1-introduction/count-by-2-from-0-to-30.png" alt="count-by-2-from-0-to-30">, it counts 0, 2, 4, 6, ..., 28, 30.</li>-->
 
-<!--<div class="comment">We might want to teach them about sliders as part of the TiF. It is useful here, not essential (so TiF) and cool (so TiF). </div>-->
-
-<li>
-
-Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br /> <img src="/img/1-introduction/Blockswith-Inputs_img/pinwheelArray.gif" title="Array of pinwheels animation" alt="Array of pinwheels animation" class="indent" height="200"/> <img src="/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif" title="Pinwheel wreath animation" alt="Pinwheel wreath animation" height="200"/><br />
-
-::: endnote
-<p>The following code may give you ideas about how to create animations. The <code>warp</code> block allows the drawing of the pinwheel all at once.</p>
-
-<img src="/img/1-introduction/Blockswith-Inputs_img/animationCode.png" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" class="indent" height="150"/>
-:::
-
-</li>
-
-<img src="/img/1-introduction/mini-Albers-picture.png" alt="mini-Albers-style picture" class="imageRight" height="180"/>
-
-<li>Make sure your other work has been saved, then <a href="/prog/L6-mini-Albers.xml" class="run"><img src="/img/icons/load-save.png" title=" Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file. Then save it to your Snap! account." class="inline"/></a><br />Experiment with the script. Could you change the sizes or colors to make it more interesting?</li>
-
-<p style="clear: both; height: 0px;">
-
-</p>
 
 </ol>
 :::
