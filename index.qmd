@@ -54,7 +54,7 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">6/15</td>
 <td class="tg-0lax"><span>Iteration</span></td>
-<td class="tg-zb5k"><a href="/lab-5/"><span>Lab 5: Song Player, pp. 1 - 5</span></a></td>
+<td class="tg-zb5k"><a href="/lab-5/">Lab 5: Song Player, pp. 1 - 5</a><br/>[Submit your Mystery Song Snap link here](https://forms.gle/Y48YSM2PvXcV6qop8)</td>
 <td class="tg-zb5k"><a href="/lab-6"><span>Lab 6: Squiral</span></a></td>
 </tr>
 <tr>
