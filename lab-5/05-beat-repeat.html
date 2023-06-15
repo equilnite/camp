@@ -267,15 +267,6 @@ ul.task-list li input[type="checkbox"] {
 <script type="text/javascript" src="../utilities/gifffer.min.js"></script>
 <script type="text/javascript">window.onload = function() {Gifffer();};</script>
 <p><link rel="stylesheet" type="text/css" href="../css/bjc-gifffer.css"></p>
-<div class="todo">
-<p>I love this name, but I don’t think it goes well with this particular page anymore. Thoughts? “Listing the Notes of a Song”? “Simplifying Your Song”? “Programming a Song More Efficiently” “Playing Each Note in a List”? I like “<strong>Playing Each Note in a List</strong>” best. Thoughts? –MF, 2/12/22 +1 bh</p>
-<p>
-To do for next year. –MF, 3/6/22
-</p>
-</div>
-<div class="todo">
-<p>I made a really nice FOR EACH animation that is buried in a yellow box on page 8. I should make another one for this page. It should probably go just before the second header (after exercise 3). –MF, 2/27/22</p>
-</div>
 <div class="learn">
 <p>In this activity, you will make it easier to play a song by putting the notes in a list.</p>
 </div>
@@ -311,7 +302,7 @@ play ♪ pitch: (pitch) beats: (0.5)
 A <strong>list</strong> is an ordered sequence of items. You’ve been using lists throughout this course: to store words for a story, to manipulate the letters of a secret message, and even to store lists such as each individual’s responses to the question in a survey.
 </p>
 <div class="endnote">
-<p><a href="#ordered" data-toggle="collapse" title="What does 'ordered' mean?">What does “ordered” mean?</a></p>
+<p><a href="#ordered" data-bs-toggle="collapse" title="What does 'ordered' mean?">What does “ordered” mean?</a></p>
 <div id="ordered" class="collapse">
 <p>
 It doesn’t mean that the items have to appear in alphabetical or numeric order. It just means that these are different lists:<br> <img src="../img/1-introduction/list-a-b.png" title="(list a b" alt="(list a b)" class="indent"> <img src="../img/1-introduction/list-b-a.png" title="(list b a)" alt="(list b a)" class="indent">
@@ -427,7 +418,7 @@ To revisit… –MF, 3/6/22
 </div>
 <div class="endnote">
 <p>
-<a href="#hint-new-block" data-toggle="collapse" title="Click for a hint about creating a new command block that takes a list of notes as input and plays each note in the list using FOR EACH.">Click for a hint.</a>
+<a href="#hint-new-block" data-bs-toggle="collapse" title="Click for a hint about creating a new command block that takes a list of notes as input and plays each note in the list using FOR EACH.">Click for a hint.</a>
 </p>
 <div id="hint-new-block" class="collapse">
 <p>
@@ -444,7 +435,7 @@ Remove the list block containing your previous song, drag the <var>song</var> va
 </ol>
 <p></p>
 <p>
-<a href="#hint-new-block-animation" data-toggle="collapse" title="Click for a video showing how to create the new command block.">Click for a video.</a>
+<a href="#hint-new-block-animation" data-bs-toggle="collapse" title="Click for a video showing how to create the new command block.">Click for a video.</a>
 </p>
 <div id="hint-new-block-animation" class="collapse">
 <p><img title="animation showing the steps for creating a new command block that takes a list of notes as input and plays each note in the list: 1) Create a new block called PLAY SONG that takes one input called SONG, which will be a list of pitches; 2) Duplicate your FOR EACH PITCH, PLAY ♪ code by right-clicking the FOR EACH block and selecting 'duplicate,' and then attach the copied code to the PLAY SONG hat block in the block editor; 3) Remove the list block containing your previous song, drag the SONG variable into the FOR EACH block where SONG had been, and click, 'OK.'" alt="animation showing the steps for creating a new command block that takes a list of notes as input and plays each note in the list: 1) Create a new block called PLAY SONG that takes one input called SONG, which will be a list of pitches; 2) Duplicate your FOR EACH PITCH, PLAY ♪ code by right-clicking the FOR EACH block and selecting 'duplicate,' and then attach the copied code to the PLAY SONG hat block in the block editor; 3) Remove the list block containing your previous song, drag the SONG variable into the FOR EACH block where SONG had been, and click, 'OK.'" class="indent" data-gifffer="/img/U2/lab01/play-song-block-animation.gif"></p>
@@ -476,7 +467,7 @@ Try out your <code>play song</code> block with at least two different lists of p
 </div>
 <div class="endnote">
 <p>
-<a href="#hint-target" data-toggle="collapse" title="Does my play song block have to play every note for the same length of time?">Does my <code>play song</code> block have to play every note for the same length of time?</a>
+<a href="#hint-target" data-bs-toggle="collapse" title="Does my play song block have to play every note for the same length of time?">Does my <code>play song</code> block have to play every note for the same length of time?</a>
 </p>
 <div id="hint-target" class="collapse">
 <p>
@@ -487,13 +478,19 @@ No.&nbsp;On a later page, you can learn a way to store and play songs with both 
 <div class="learn">
 <p>In this activity, you used <code>for each</code> to play each pitch in a list and created a <code>play song</code> block that will work with any list of pitches.</p>
 </div>
-<div class="todo">
-<p>
-This is a more general problem, but it looks particularly bad here: When a &lt;code&gt; text embedded in a line includes spaces, the spaces are way too big compared to all the other spaces on the line. Ideally you’d say <code>&lt;code&gt;for&lt;/code&gt; &lt;code&gt;each&lt;/code&gt;</code> but that’s too horrible to contemplate, so somehow it should be fixed in the Javascript. –bh 3/3/22
-</p>
-<p>
-Go for it! :) –MF, 3/6/22
-</p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The next pages are extra content with concepts that you do not have to learn, but if you’re done with these first 5 pages (pages 1 to 5), we encourage you to work on the next 4 pages of this lab. Ask any questions that you may have!</p>
+<p>Otherwise, the expectation is that you continue off of pages 1-5 and work making your current code more creative. Explore making other tunes/songs, putting a spin on what you already have, etc.</p>
+</div>
 </div>
 
 
