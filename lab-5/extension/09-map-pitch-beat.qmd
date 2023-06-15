@@ -95,7 +95,7 @@ Use the structure of the code shown above as a guide, and transpose one of your 
 <p>I included this here so they don't have to scroll around to find it. If the are looking for a hint, it's because scrolling up didn't work somehow. Feel free to suggest a tweak, but that's the idea behind having it. --MF, 3/6/22</p>
 :::
 
-<p><a href="#hint-transpose" data-toggle="collapse" title="Need a hint about how to transpose one of your songs?">Need a hint?</a></p>
+<p><a href="#hint-transpose" data-bs-toggle="collapse" title="Need a hint about how to transpose one of your songs?">Need a hint?</a></p>
 
 ::: {#hint-transpose .collapse}
 <p>

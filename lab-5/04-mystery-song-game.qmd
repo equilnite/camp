@@ -9,19 +9,19 @@ In this activity, you will use your <code>mystery song</code> block to create a 
 
 <p>
 
-There are command block versions of two blocks you've already seen:
+There are command blocks that are essential to what we'll be doing here:
 
 <ul>
 
 <li>
 
-You've used the <img src="/img/blocks/reporter-if.png" title="if &apos;predicate input slot&apos; then () else ()" alt="if &apos;predicate input slot&apos; then () else ()" class="inline nopadtb"/> reporter. Snap<em>!</em> also has a built-in command version: <img src="/img/blocks/if-else-full-size.png" title="if &apos;predicate input slot&apos; then &apos;C-shaped input slot&apos; else &apos;C-shaped input slot&apos;" alt="if &apos;predicate input slot&apos; then &apos;C-shaped input slot&apos; else &apos;C-shaped input slot&apos;" class="inline"/>
+<img src="/img/blocks/if-else-full-size.png" title="if &apos;predicate input slot&apos; then &apos;C-shaped input slot&apos; else &apos;C-shaped input slot&apos;" alt="if &apos;predicate input slot&apos; then &apos;C-shaped input slot&apos; else &apos;C-shaped input slot&apos;" class="inline"/>
 
 </li>
 
 <li>
 
-You've used the <img src="/img/U1/lab07/ask.png" title="ask ()" alt="ask ()" class="inline"/> reporter. Snap<em>!</em> has a built-in command version: <img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/>, which uses <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"/> to report the user's response.
+<img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/>, which uses <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"/> to report the user's response.
 
 </li>
 
@@ -50,7 +50,8 @@ This needs to be fixed in all XML files, but for now, I fixed the starter file a
 Create a script that plays your mystery song, asks the user what song they think it is, and then tells them whether they are right or wrong.
 
 ::: takeNote
-<p><a href="#hint-mistake" data-toggle="collapse" title="Is your project missing the 'say,' 'ask () and wait' and 'answer' blocks?">Is your project missing the <img src="/img/blocks/say-empty-full-size.png" title="say ()" alt="say ()" class="nopadtb"/>, <img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/> and <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"/> blocks?</a></p>
+
+<a href="#hint-mistake" data-bs-toggle="collapse" title="Is your project missing the 'say,' 'ask () and wait' and 'answer' blocks?">Is your project missing the <img src="/img/blocks/say-empty-full-size.png" title="say ()" alt="say ()" class="nopadtb"/>, <img src="/img/blocks/ask-empty-full-size.png" title="ask () and wait" alt="ask () and wait" class="inline nopadtb"/> and <img src="/img/blocks/answer-full-size.png" title="answer" alt="answer" class="inline nopadtb"/> blocks?</a></p>
 
 ::: {#hint-mistake .collapse}
 <p>There was a mistake! If these blocks are not in your project, go back to <a href="/lab-5/01-playing-notes.html" title="the first activity: for recovering the missing 'say,' 'ask () and wait' and 'answer' blocks">the first activity</a>, press and hold the shift key while you reload the page, open the project in exercise #2, choose "Save As..." from the Snap<em>!</em> File menu, and save <em>with a new name</em> (so you don't lose your prior work).</p>
@@ -62,7 +63,7 @@ Create a script that plays your mystery song, asks the user what song they think
 
 <p>You can use <code>ask and wait</code> to ask the user a question (and store their response), and you can use <img src="/img/blocks/say-empty-full-size.png" title="say ()" alt="say ()" class="nopadtb"/> to tell the user something that isn't a question.</p>
 
-<p><a href="#hint-guessing-hint1" data-toggle="collapse" title="Click for another hint about building the song-guessing-script.">Click for another hint.</a></p>
+<p><a href="#hint-guessing-hint1" data-bs-toggle="collapse" title="Click for another hint about building the song-guessing-script.">Click for another hint.</a></p>
 
 ::: {#hint-guessing-hint1 .collapse}
 <p>
@@ -81,12 +82,12 @@ The script for your game needs to do three things:
 
 </p>
 
-<p><a href="#hint-guessing-hint3" data-toggle="collapse" title="Click for a third hint about building the song-guessing-script.">Click for a third hint.</a></p>
+<p><a href="#hint-guessing-hint3" data-bs-toggle="collapse" title="Click for a third hint about building the song-guessing-script.">Click for a third hint.</a></p>
 
 ::: {#hint-guessing-hint3 .collapse}
 <p>Use the <code>if else</code> command block to test whether the guess is correct with a predicate like <img src="/img/U2/lab01/answer-equals-stronger.png" title="(answer) = (&apos;Stronger&apos;)" alt="(answer) = (&apos;Stronger&apos;)" class="inline nopadtb"/>. If the guess is correct, then use <code>say</code> to tell the user they are correct; if it's not correct, then use <code>say</code> to tell them that.</p>
 
-<p><a href="#hint-guessing-hint4" data-toggle="collapse" title="Click for a fourth hint about building the song-guessing-script.">Click for a fourth hint.</a></p>
+<p><a href="#hint-guessing-hint4" data-bs-toggle="collapse" title="Click for a fourth hint about building the song-guessing-script.">Click for a fourth hint.</a></p>
 
 ::: {#hint-guessing-hint4 .collapse}
 <p>Try making code that's something like this:<br /> <img src="/img/U2/lab01/ask-if-example.png" title="partial script with the code:
