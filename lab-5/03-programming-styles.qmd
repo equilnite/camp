@@ -9,9 +9,9 @@ In this activity, you'll learn about the difference between programming by nesti
 
 ### Commands Versus Reporters
 
-<p>Before this unit, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as <em>functional programming</em>, and in Snap<em>!</em>, it uses <em>reporter</em> blocks. A reporter computes a value and reports it (to you or to other blocks).<br /> <img src="/img/gossip-result.png" class="indent"/></p>
+<p>Before this lab, you nested blocks inside each other so that the output reported by one block became the input to another. That style of programming is known as <em>functional programming</em>, and in Snap<em>!</em>, it uses <em>reporter</em> blocks. A reporter computes a value and reports it (to you or to other blocks).<br /> <img src="/img/gossip-result.png" class="indent"/></p>
 
-<p>In this unit, you've been stacking blocks that carry out <em>actions,</em> such as playing a note. This style of programming is called <em>imperative programming</em>. In Snap<em>!</em>, imperative programming uses <em>command</em> blocks. A command tells the computer to do something, (play a sound, draw, move, change something, etc.). Commands have <em>effects.</em><br /> <img src="/img/U2/lab01/fur-elise-snippet.png" alt="repeat (2) {
+<p>In this lab, you've been stacking blocks that carry out <em>actions,</em> such as playing a note. This style of programming is called <em>imperative programming</em>. In Snap<em>!</em>, imperative programming uses <em>command</em> blocks. A command tells the computer to do something, (play a sound, draw, move, change something, etc.). Commands have <em>effects.</em><br /> <img src="/img/U2/lab01/fur-elise-snippet.png" alt="repeat (2) {
 play ♪ pitch: (64) beats: (0.5)
 play ♪ pitch: (63) beats: (0.5)
 }

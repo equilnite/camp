@@ -7,7 +7,7 @@ order: 2
 {{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
-<p><strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you'll draw various asterisks, like these: <br /> <img src="/img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="indent"/> <img src="/img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"/> <img src="/img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"/></p>
+<strong>On this page,</strong> you will learn about sprite turning angles, which are needed for drawing polygons. For starters, you'll draw various asterisks, like these: <br /> <img src="/img/1-introduction/Three-spokes.png" title="three spokes" alt="asterisk with three spokes" class="indent"/> <img src="/img/1-introduction/Five-spokes.png" title="asterisk with five spokes" alt="asterisk with five spokes"/> <img src="/img/1-introduction/Eight-spokes.png" title="asterisk with eight spokes" alt="asterisk with eight spokes"/>
 :::
 
 <p>When you were trying to draw an equilateral triangle on the previous page, you might have tried code like this:<br /> <img src="/img/1-introduction/half-hex-code.png" title="repeat (3) {move (100) steps; turn right (60) degrees}" alt="repeat (3) {move (100) steps; turn right (60) degrees}" class="indent"/> and seen a result like this: <img src="/img/1-introduction/half-hex-pic.png" title="three sides of a regular hexagon" alt="three sides of a regular hexagon"/><br /> It's common to try this if you've learned that the angles in an equilateral triangle are all 60 degrees. However, the angle that the <em>sprite</em> needs to turn to make a triangle is actually 120 degrees, and it's important to understand why that is and how to find the correct angle for other polygons (five-sided, eleven-sided, etc.).</p>
@@ -60,10 +60,6 @@ At the top of the page you were thinking about triangles. As a step in that dire
 A 360° turn is a full turn. Half of that (180°) is a half turn. A fourth of 360° <img src="/img/1-introduction/360-divided-by-4-with-result-90.png" title="360-divided-by-4-with-result-90" alt="360-divided-by-4-with-result-90"/> is a quarter turn. You don't have to do the division yourself. Snap<em>!</em> can compute it for you. You can use <img src="/img/1-introduction/turn-360-divided-by-7-degrees.png" title="turn-360-divided-by-7-degrees" alt="turn-360-divided-by-7-degrees"/> or <img src="/img/1-introduction/turn-360-divided-by-3-degrees.png" title="turn-360-divided-by-3-degrees" alt="turn-360-divided-by-3-degrees"/> to get a seventh of a turn or a third of a turn.
 :::
 
-```{=html}
-<!--                        <li>Try completely removing the second <code>move</code> block (right-click or control-click and then choose "delete"). Try some of the turning experiments again.</li>
--->
-```
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="inline"/>
 
 <p>At the beginning of this page, you knew that to make a triangle you need 120° turns, but maybe you weren't sure why. Now you know why a <em>three-spoke asterisk</em> takes 120° turns, but what does that have to do with triangles?</p>
@@ -73,16 +69,6 @@ A 360° turn is a full turn. Half of that (180°) is a half turn. A fourth of 36
 
 <li>Try different negative input values for the <code>move</code> <var>-100</var> <code>steps</code> block (first -90, then -50, then -10), and do some of the turning experiments (above) with each value. Does this change the values needed for the <code>repeat</code> or <code>turn</code> blocks? These pictures are called "pinwheels."</li>
 
-```{=html}
-<!--Commenting out for now. --MF, 9/2/19
-<li><img class="inline" src="/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Fill in the blanks:  A pinwheel with <code>move -90 steps</code> looks almost like a(n) ________, but a pinwheel with <code>move -10 steps</code> looks almost like a(n) _________.</li>
-<li>Find the <code>pinwheel, ( ) spokes</code> block, and try a three-spoke pinwheel with it.  Are the colored angles the same as for the three-spoke asterisk?</li>
-<li>How many degrees has the sprite turned altogether when drawing a pinwheel?  (Just watch the turning, not the moving.)</li>
-<li>
-<img class="inline" src="/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-Find the blocks <code>all3</code> and <code>slide</code> at the bottom of the scripting area.  Try them with an input of <code>3</code>.  Which animation do you find more helpful in explaining turning angles in triangles?
-</li>-->
-```
 <li>
 
 <a href="/prog/L7-AngleExperiments2.xml" class="run"><img src="/img/icons/load-save.png" title="Click here to load this file. Then save it to your Snap! account." alt="Click here to load this file for the second set of experiments. Then save it to your Snap! account." class="inline"/></a><br />Now, run script (A) in the file and experiment:
@@ -143,9 +129,9 @@ Make another copy of the three-branch script you built, and then:
 :::
 
 ::: takeNote
-### <strong>Debugging with <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="48"/> </strong>
+### <strong>Debugging with `say for`</strong>
 
-<p>You can use <code>say for</code> to get information about the state of your program while it's running.</p>
+<p>You can use <img src="/img/2-complexity/Debugging/say-for-secs-block.png" title="say for" alt="say for" height="48"/> to get information about the state of your program while it's running.</p>
 
 <p>
 
@@ -158,14 +144,6 @@ Make another copy of the three-branch script you built, and then:
 </p>
 :::
 
-```{=html}
-<!--Commenting out for now. --MF, 9/2/19
-<div class="forYouToDo">
-<ol start="11">
-<li>Fix the bug in the animation above.</li>
-</ol>
-</div>-->
-```
 ::: ifTime
 <ol start="5">
 
@@ -304,7 +282,7 @@ Betsy: Alphie, you worry too much. But to make <em>you</em> happy, once we have 
 
 <div>
 
-Gamal: Hey! Gang! Remember we imported that crayon library? Guess what! There's a "World Map" library, too! And it makes "watercolor" maps like this:<br /> <img src="/img/1-introduction/water.png" title="vague map of a town" alt="vague map of a town" class="indent"/><br /> And then I went over every dot on the stage using <img src="/img/1-introduction/my-brightness.png" title="(brightness) at (myself)" alt="(brightness) at (myself)"/> and <img src="/img/1-introduction/my-hue.png" title="(hue) at (myself)" alt="(hue) at (myself)"/> to decide whether to make each dot white or brown:<br /> <img src="/img/1-introduction/painted.png" title="same vague map of a town but now in brown and white" alt="same vague map of a town but now in brown and white" class="indent"/>
+Gamal: Hey! Gang! There's a "World Map" library! And it makes "watercolor" maps like this:<br /> <img src="/img/1-introduction/water.png" title="vague map of a town" alt="vague map of a town" class="indent"/><br /> And then I went over every dot on the stage using <img src="/img/1-introduction/my-brightness.png" title="(brightness) at (myself)" alt="(brightness) at (myself)"/> and <img src="/img/1-introduction/my-hue.png" title="(hue) at (myself)" alt="(hue) at (myself)"/> to decide whether to make each dot white or brown:<br /> <img src="/img/1-introduction/painted.png" title="same vague map of a town but now in brown and white" alt="same vague map of a town but now in brown and white" class="indent"/>
 
 </div>
 :::
@@ -315,7 +293,3 @@ Gamal: Hey! Gang! Remember we imported that crayon library? Guess what! There's 
 
 </ol>
 :::
-
-</body>
-
-</html>

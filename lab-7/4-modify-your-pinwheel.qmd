@@ -10,7 +10,7 @@ order: 4
 <strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br /> <img src="/img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"/>
 :::
 
-<h2>Adding Multiple Inputs
+## Adding Multiple Inputs
 
 <p>Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.</p>
 
@@ -149,7 +149,7 @@ One way to avoid having bugs in your program in the first place is to keep your 
 :::
 
 ::: takeItTeaser
-<img src="/img/1-introduction/Kandinsky/Stage (1).png" title="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness" alt="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness"/>       <img src="/img/1-introduction/Kandinsky/Stage (2).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky"/>       <img src="/img/1-introduction/Kandinsky/Stage (3).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky"/>       <img src="/img/1-introduction/Kandinsky/Stage (7).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky"/>
+![Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness](/img/1-introduction/Kandinsky/Stage (1).png) ![another Snap! drawing in the style of Kandinsky](/img/1-introduction/Kandinsky/Stage (2).png) ![another Snap! drawing in the style of Kandinsky](/img/1-introduction/Kandinsky/Stage (3).png) ![another Snap! drawing in the style of Kandinsky](/img/1-introduction/Kandinsky/Stage (7).png)
 :::
 
 ::: takeItTeased

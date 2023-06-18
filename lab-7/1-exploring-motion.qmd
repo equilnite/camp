@@ -5,72 +5,20 @@ order: 1
 ---
 
 ::: learn
-<p>These are works by artists Josef Albers, Maya Hayuk, Vassily Kandinsky, Atta Kwami, Kazimir Malevich, Alma Thomas, and Theo van Doesburg. The styles are different, but all of them are based on polygons or circles.</p>
-
-<p><img src="/img/1-introduction/Josef_Albers&apos;s_painting_&apos;Homage_to_the_Square&apos;,_1965.jpg" title="art by Josef Albers" alt="art by Josef Albers" height="130"/> <img src="/img/1-introduction/GraphicArt_img/MayaHayuk1.jpg" title="art by Maya Hayuk" alt="art by Maya Hayuk" height="150"/> <img src="/img/1-introduction/kandinsky-several-circles.jpg" title="art by Kandinsky" alt="art by Kandinsky" height="180"/> <img src="/img/1-introduction/GraphicArt_img/AttaKwami_bobbo.jpg" title="art by Atta Kwami" alt="art by Atta Kwami" height="150"/> <img src="/img/1-introduction/1024px-Suprematist_Composition_-_Kazimir_Malevich.jpg" title="art by Malevich" alt="art by Malevich" height="180"/> <img src="/img/1-introduction/GraphicArt_img/alma-big.jpg" title="Alma Thomas painting" alt="Alma Thomas painting" height="150"/> <img src="/img/1-introduction/Theo_van_Doesburg_Composition_VII_(the_three_graces).jpg" title="art by van Doesburg" alt="art by van Doesburg" height="130"/></p>
-
-<p>
-
-<a href="#hint-credits" data-bs-toggle="collapse" title="Click for art credits.">Click for art credits.</a>
-
-::: {#hint-credits .collapse}
-<ul>
-
-<li>Josef Albers, "Homage to the Square," 1965. More: <a href="https://albersfoundation.org/art/josef-albers/paintings/homages-to-the-square/index/" target="_blank" title="Albers Foundation">Albers Foundation</a>, <a href="https://smarthistory.org/albers-homage-to-the-square/" target="_blank" title="smarthistory.org">smarthistory.org</a></li>
-
-<li>Maya Hayuk, "Chemtrails Miami," 2013. More: <a href="http://mayahayuk.com/" target="_blank" title="mayahayuk.com">mayahayuk.com</a>, <a href="https://en.wikipedia.org/wiki/Maya_Hayuk" target="_blank" title="Wikipedia">Wikipedia</a></li>
-
-<li>Vassily Kandinsky, "Several Circles," 1926. More: <a href="https://www.wassilykandinsky.net/" title="wassilykandinsky.net" target="_blank">wassilykandinsky.net</a></li>
-
-<li>Atta Kwami, "Bobbo," 2012. More: <a href="http://attakwami.com/" title="attakwami.com" target="_blank">attakwami.com</a></li>
-
-<li>Kazimir Malevich, "Suprematist Composition," 1915. More: <a href="https://www.kazimir-malevich.org/" title="kazimir-malevich.org" target="_blank">kazimir-malevich.org</a>, <a href="https://en.wikipedia.org/wiki/Kazimir_Malevich" title="Wikipedia" target="_blank">Wikipedia</a></li>
-
-<li>Alma Thomas, "Untitled (Music Series)," 1978. Copyright Smithsonian American Art Museum. More: <a href="https://www.wikiart.org/en/alma-woodsey-thomas" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://www.georgiaencyclopedia.org/articles/arts-culture/alma-thomas-1891-1978" title="Wikipedia" target="_blank">Wikipedia</a></li>
-
-<li>Theo van Doesburg, "Composition VII (the three graces)," 1917. More: <a href="https://www.wikiart.org/en/theo-van-doesburg" title="wikiart.org" target="_blank">wikiart.org</a>, <a href="https://en.wikipedia.org/wiki/Theo_van_Doesburg" title="Wikipedia" target="_blank">Wikipedia</a></li>
-
-</ul>
-:::
-
-</p>
-
-<p><strong>In this lab,</strong> you'll draw polygons so you can create your own art: <img src="/img/1-introduction/polygon-row.png" title="regular polygons" alt="regular polygons" class="noshadow" width="20%"/></p>
 
 <p><strong>On this page,</strong> you will explore the basics of drawing a shape in Snap<em>!</em> by using the <code>repeat</code> block to loop through the same code multiple times.</p>
 :::
 
-```{=html}
-<!-- We've gone back and forth on this, and we're out of time. This version still reads like an informal soap box and not like a curriculum. We can discuss it more after the standards go in. --MF, 9/2/19
--->
-```
 ::: {.vocabFullWidth .AP-only}
-<strong>: Algorithm</strong> and <strong>Pseudocode</strong>
+<strong>: Algorithm</strong>
 
-::: comment
-AAP-2.A.1, AAP-2.A.2, AAP-2.A.3
-:::
+<p>An <strong>algorithm</strong> is a sequence of steps that are usually performed by a computer. The algorithm doesn't have to be written in any particular programming language or even in a programming language at all; you can write your algorithm in English or any other human language. Once you know the steps that the computer will take, you can code your algorithm in the programming language of your choice.</p>
 
-<p>An <strong>algorithm</strong> is a sequence of steps that are usually performed by a computer. The algorithm doesn't have to be written in any particular programming language or even in a programming language at all; you can write your algorithm in English or any other human language. Some people call an algorithm written in human language <strong>pseudocode</strong>. Once you know the steps that the computer will take, you can code your algorithm in the programming language of your choice.</p>
-
-::: endnote
-What's the purpose of "pseudocode"? Why write an algorithm vaguely in English when you could write it precisely in Snap<em>!</em>? If you were programming in a punctuation-heavy language, designing your program in pseudocode would help you focus on the important ideas instead of on details like quotation marks and semicolons. But pseudocode isn't as necessary with a language like Snap<em>!</em>, and pseudocode can make it easy for you to fall into wishful thinking about what the computer is capable of (such as writing "Pick tomorrow's winning lottery numbers" or "Here's the melody; write the harmony").
-:::
 :::
 
 ::: {#first .forYouToDo}
 <ol>
 
-::: comment
-AAP-2.A, AAP-3.A part b
-:::
-
-```{=html}
-<!-- <div class="sidenote">
-<img class="imageCenter" src="/img/1-introduction/motion-palette-categories.jpg" alt="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" title="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" /><br />
-The blocks' colors match their palettes: blue for Motion, green for Pen, etc.
-</div> -->
-```
 <li><img src="/img/icons/work-with-a-partner.png" title="Work with a Partner" alt="Work with a Partner" class="inline"/> <img src="/img/icons/write-out-thoughts.png" title="Write Out Your Thoughts" alt="Write Out Your Thoughts" class="inline"/> Describe what this algorithm will make the sprite do:<br /> <img src="/img/1-introduction/repeat-4(move-100-turn-right-90).png" title="repeat (4) (move (100), turn clockwise (90))" alt="repeat (4) (move (100), turn clockwise (90))" class="indent"/></li>
 
 <li>

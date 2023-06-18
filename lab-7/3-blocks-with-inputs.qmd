@@ -222,7 +222,7 @@ Adding comments to your code may help you remember what your code does, helps ot
 </ol>
 :::
 
-<h2>More About Program Documentation
+## More About Program Documentation
 
 ::: comment
 CRD-2.G.1, CRD-2.G.5
