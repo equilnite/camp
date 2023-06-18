@@ -209,7 +209,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#debugging-tip-organizing-your-code" id="toc-debugging-tip-organizing-your-code" class="nav-link active" data-scroll-target="#debugging-tip-organizing-your-code"><strong>Debugging Tip: Organizing Your Code</strong></a></li>
+  <li><a href="#adding-multiple-inputs" id="toc-adding-multiple-inputs" class="nav-link active" data-scroll-target="#adding-multiple-inputs">Adding Multiple Inputs</a>
+  <ul class="collapse">
+  <li><a href="#debugging-tip-organizing-your-code" id="toc-debugging-tip-organizing-your-code" class="nav-link" data-scroll-target="#debugging-tip-organizing-your-code"><strong>Debugging Tip: Organizing Your Code</strong></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -240,8 +243,8 @@ ul.task-list li input[type="checkbox"] {
 <div class="learn">
 <p><strong>On this page,</strong> you will modify your existing <code>pinwheel</code> block so that you can use it to draw a variety of shapes.<br> <img src="../img/1-introduction/assorted-pinwheels.png" title="assortment of pinwheels" alt="assortment of pinwheels" class="indent"></p>
 </div>
-<h2 class="anchored">
-<p>Adding Multiple Inputs</p>
+<section id="adding-multiple-inputs" class="level2">
+<h2 class="anchored" data-anchor-id="adding-multiple-inputs">Adding Multiple Inputs</h2>
 <p>
 Recall how you first <em>generalized</em> your original pinwheel script: you added an input called <var>number of branches</var> that controlled the turning angle of the sprite. By adding <em>more</em> inputs, you can generalize other aspects of your program.
 </p>
@@ -352,7 +355,7 @@ Find inputs to <code>pinwheel</code> that make the result look like a circle.
 </ol>
 </div>
 <div class="takeItTeaser">
-<p><img src="../img/1-introduction/Kandinsky/Stage (1).png" title="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness" alt="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/Kandinsky/Stage (2).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/Kandinsky/Stage (3).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../img/1-introduction/Kandinsky/Stage (7).png" title="another Snap! drawing in the style of Kandinsky" alt="another Snap! drawing in the style of Kandinsky"></p>
+<p><img src="../img/1-introduction/Kandinsky/Stage (1).png" class="img-fluid" alt="Snap! drawing in the style of Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness"> <img src="../img/1-introduction/Kandinsky/Stage (2).png" class="img-fluid" alt="another Snap! drawing in the style of Kandinsky"> <img src="../img/1-introduction/Kandinsky/Stage (3).png" class="img-fluid" alt="another Snap! drawing in the style of Kandinsky"> <img src="../img/1-introduction/Kandinsky/Stage (7).png" class="img-fluid" alt="another Snap! drawing in the style of Kandinsky"></p>
 </div>
 <div class="takeItTeased">
 <p><img src="../img/1-introduction/kandinsky-several-circles.jpg" title="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" alt="Painting by Kandinsky: overlapping circles of various colors on a black background; some circles are filled in with a solid color, some are filled in with a translucent color, others are just the outline of a circle with various outline thickness, some filled circles have a border of a different color; the black background has some variations in darkness" class="imageRight" width="300"></p>
@@ -378,8 +381,9 @@ It doesn’t have to look exactly like the photo. But each arm of a pinwheel is 
 </div>
 
 
+</section>
 
-</h2></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
