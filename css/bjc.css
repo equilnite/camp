@@ -477,7 +477,7 @@ div.saveAs span.text {
 div.newProject span.text {
   position: absolute;
   margin-left: 323px;
-  padding-top: 1.05em;
+  padding-top: .65em;
   z-index:2;
   color: #333;
 }
