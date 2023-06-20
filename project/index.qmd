@@ -1,0 +1,43 @@
+---
+title: "eCard Project"
+---
+
+::: learn
+
+<strong>In this project,</strong> you will apply your current knowledge of computer science towards creating an <em>eCard</em> of your choice following the guidelines listed on this page.
+
+On the last day of this week, we will have a gallery walk to show everyone the progress that you've made!
+
+:::
+
+## eCard Guidelines
+
+Create an eCard ([see what an eCard is](https://en.wikipedia.org/wiki/E-card)) that meets all of the following specifications:
+
+(@) Uses ![the green flag](/img/sys/button-green-flag.png) or has a button in the card to start the eCard.
+(@) Has a message for the viewer (such as "Happy New Year," "Happy Birthday," "Get Well Soon," etc.)
+(@) Has a theme (such as holiday, sports, TV show, a photo, original art, etc.)
+(@) Has stage and sprite costumes
+(@) Makes use of as many of these 5 big ideas as possible:
+    1. Algorithms
+    2. Variables
+    3. Conditionals
+    4. Iteration
+    5. Abstraction
+(@) Lets the user interact (e.g., by clicking a sprite, pressing a key, or moving the mouse)
+(@) Don't forget, you can use the following to make your eCard better!
+    - Sounds or music (using the `play` block and/or the "Sounds" tab) 
+    - The `random` block
+
+::: callout-important
+
+You will submit your Snap<en>!</em> project using [this Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdQz0pb5MNfuWqP7IxFnf4mpXfxPF1SgjQ7y5Rk91wnQG3T7Q/viewform?usp=sf_link)
+
+:::
+
+## Examples
+
+{{< video https://youtu.be/USiwX0t5xRQ >}}
+
+{{< video https://youtu.be/Pk4PjhbQ2JU >}}
+

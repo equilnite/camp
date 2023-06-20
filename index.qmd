@@ -78,21 +78,21 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <td class="tg-0lax">Wednesday</td>
 <td class="tg-0lax">6/21</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span>Project (TBD)</span></td>
+<td class="tg-0lax"><span>[eCard Project](/project/)</span></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">6/22</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span>Project (TBD)</span></td>
+<td class="tg-0lax"><span>BHS Campus tour<br/>[eCard Project](/project/)</span></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
 <td class="tg-0lax">6/23</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span>Showcase Projects</span></td>
+<td class="tg-0lax"><span>Gallery Walk</span></td>
 <td class="tg-0lax"></td>
 </tr>
 </tbody>

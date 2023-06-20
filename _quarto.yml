@@ -39,11 +39,13 @@ website:
             file: lab-6/index.qmd
           - text: "Lab 7: Polygon"
             file: lab-7/index.qmd
+          - text: "eCard Project"
+            file: project/index.qmd
 
   sidebar:
     - title: "Lab 1: Click Alonzo"
       style: "docked"
-      contents: lab-1/
+      contents: lab-1
     - title: "Lab 2: Variables and Gossip"
       style: "docked"
       contents: lab-2
