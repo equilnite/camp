@@ -86,7 +86,15 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <td class="tg-0lax">6/22</td>
 <td class="tg-0lax"></td>
 <td class="tg-0lax"><span>BHS Campus tour<br/>[eCard Project](/project/)</span></td>
-<td class="tg-0lax"></td>
+<td class="tg-0lax"> <p>If you're done early, create one of the following</p>
+<ul>
+<li>Pong</li>
+<li>Maze</li>
+<li>Asteroid Blaster</li>
+<li>Space Invaders</li>
+<li>Apple Catcher</li>
+<li>Madlib</li>
+ </ul></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
