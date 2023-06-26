@@ -31,59 +31,59 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <tbody>
 <tr>
 <td class="tg-0lax">Monday</td>
-<td class="tg-0lax">6/12</td>
+<td class="tg-0lax">6/26</td>
 <td class="tg-0lax"><span>Introductions</span></td>
 <td class="tg-zb5k"><a href="/lab-1/">Lab 1: Click Alonzo</a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Tuesday</td>
-<td class="tg-0lax"><span>6/13</span></td>
+<td class="tg-0lax"><span>6/27</span></td>
 <td class="tg-0lax"><span>Variables</span></td>
 <td class="tg-zb5k"><a href="/lab-2/"><span>Lab 2: Variables and Gossip</span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Wednesday</td>
-<td class="tg-0lax">6/14</td>
+<td class="tg-0lax">6/28</td>
 <td class="tg-0lax"><span>Conditionals / Debugging</span></td>
 <td class="tg-zb5k"><a href="/lab-3/"><span>Lab 3: Number Guessing Game</span></a></td>
 <td class="tg-zb5k"><a href="/lab-4/"><span>Lab 4: Pong</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
-<td class="tg-0lax">6/15</td>
+<td class="tg-0lax">6/29</td>
 <td class="tg-0lax"><span>Iteration</span></td>
 <td class="tg-zb5k"><a href="/lab-5/">Lab 5: Song Player, pp. 1 - 5</a><br/>[Submit your Mystery Song Snap link here](https://forms.gle/Y48YSM2PvXcV6qop8)</td>
 <td class="tg-zb5k"><a href="/lab-6"><span>Lab 6: Squiral</span></a></td>
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
-<td class="tg-0lax"><span>6/16</span></td>
-<td class="tg-7un6" colspan="3">Field Trip to <a href="https://bampfa.org/">BAMPFA</a></td>
-</tr>
-<tr>
-<td class="tg-0lax">Monday</td>
-<td class="tg-0lax">6/19</td>
-<td class="tg-6qw1" colspan="3">Juneteenth Holiday</td>
-</tr>
-<tr>
-<td class="tg-0lax">Tuesday</td>
-<td class="tg-0lax">6/20</td>
+<td class="tg-0lax">6/30</td>
 <td class="tg-0lax"><span>Abstraction</span></td>
 <td class="tg-zb5k"><a href="/lab-7/"><span>Lab 7: Polygons</span></a></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
+<td class="tg-0lax">Monday</td>
+<td class="tg-0lax">7/3</td>
+<td class="tg-6qw1" colspan="3">July 3rd Holiday</td>
+</tr>
+<tr>
+<td class="tg-0lax">Tuesday</td>
+<td class="tg-0lax">7/4</td>
+<td class="tg-6qw1" colspan="3">July 4th Holiday</td>
+</tr>
+<tr>
 <td class="tg-0lax">Wednesday</td>
-<td class="tg-0lax">6/21</td>
+<td class="tg-0lax">7/5</td>
 <td class="tg-0lax"></td>
 <td class="tg-0lax"><span>[eCard Project](/project/)</span></td>
 <td class="tg-0lax"></td>
 </tr>
 <tr>
 <td class="tg-0lax">Thursday</td>
-<td class="tg-0lax">6/22</td>
+<td class="tg-0lax">7/6</td>
 <td class="tg-0lax"></td>
 <td class="tg-0lax"><span>BHS Campus tour<br/>[eCard Project](/project/)</span></td>
 <td class="tg-0lax"> <p>If you're done early, create one of the following</p>
@@ -98,7 +98,7 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 </tr>
 <tr>
 <td class="tg-0lax">Friday</td>
-<td class="tg-0lax">6/23</td>
+<td class="tg-0lax">7/7</td>
 <td class="tg-0lax"></td>
 <td class="tg-0lax"><span>Gallery Walk</span></td>
 <td class="tg-0lax"></td>
