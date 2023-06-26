@@ -7,7 +7,7 @@ order: 6
 {{< include /utilities/includes/gif.qmd >}}
 
 ::: learn
-<p><strong>On this page,</strong> you will create a new<img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block to make the program feel more like a conversation. <br /> <img src="/img/1-introduction/gossip2-reporting.png" title="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" alt="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" class="indent"/></p>
+<p><strong>On this page,</strong> you will create a new <img src="/img/1-introduction/gossip-response.png" title="gossip response" alt="gossip response" class="inline"/> block to make the program feel more like a conversation. <br /> <img src="/img/1-introduction/gossip2-reporting.png" title="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" alt="gossip2 reporting &apos;Guess what. Gabrielle helped Señora&apos;" class="indent"/></p>
 :::
 
 ::: {#first .forYouToDo}
@@ -97,7 +97,7 @@ A <strong>procedure</strong> is a named sequence of instructions that may take i
 
 <img src="/img/icons/pair-programming-swap.png" title="Pair Programming Swap" alt="Pair Programming Swap" class="imageRight"/>
 
-<li>Test your custom <code>gossip response</code> block by clicking it several times. It should behave like the <code>who</code>, <code>does what</code>, and <code>who 2</code> blocks. Debug any problems before moving on.</li>
+<li>Test your custom <code>gossip response</code> block by clicking it several times. It should behave like the <code>who</code>, <code>does what</code>, and <code>who 2</code> variables when you click on randomize variable then the block. Debug any problems before moving on.</li>
 
 ::: sidenote
 Review how to edit a block in <a href="/lab-2/5-customizing.html" title="Customizing and Debugging">Lab 2 Page 5: Customizing and Debugging</a>, if needed.

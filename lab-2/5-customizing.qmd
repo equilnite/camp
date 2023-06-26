@@ -16,7 +16,8 @@ order: 5
 <li>
 
 Open your L2-Gossip project.  Edit the “randomize variables” block to change the phrases that the program uses. (See the instructions in the box below to edit a block) Be creative and funny but thoughtful.
-<br /> <img src="/img/1-introduction/randomize-variables.png" title="randomize variables block" alt="randomize variables block" class="indent"/>
+<br /> <img src="/img/1-introduction/randomize-variables.png" title="randomize variables block" alt="randomize variables block" class="indent"/> <br />
+You will see this in the block, only edit these to change the phrases that the program uses. ![what to edit in the randomize variables block](/img/1-introduction/randomize-variables-edit-reference.png)
 
 ::: narrower
 ### <strong>How to Edit a Block</strong>
