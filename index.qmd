@@ -32,7 +32,7 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <tr>
 <td class="tg-0lax">Monday</td>
 <td class="tg-0lax">6/26</td>
-<td class="tg-0lax"><span>Introductions</span></td>
+<td class="tg-0lax"><span>Algorithms</span></td>
 <td class="tg-zb5k"><a href="/lab-1/">Lab 1: Click Alonzo</a></td>
 <td class="tg-0lax"></td>
 </tr>
@@ -85,7 +85,7 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <td class="tg-0lax">Thursday</td>
 <td class="tg-0lax">7/6</td>
 <td class="tg-0lax"></td>
-<td class="tg-0lax"><span>BHS Campus tour<br/>[eCard Project](/project/)</span></td>
+<td class="tg-0lax"><span>[eCard Project](/project/)</span></td>
 <td class="tg-0lax"> <p>If you're done early, create one of the following</p>
 <ul>
 <li>Pong</li>
@@ -99,9 +99,16 @@ overflow:hidden;padding:10px 5px;word-break:normal;}
 <tr>
 <td class="tg-0lax">Friday</td>
 <td class="tg-0lax">7/7</td>
-<td class="tg-0lax"></td>
-<td class="tg-0lax"><span>Gallery Walk</span></td>
-<td class="tg-0lax"></td>
+<td class="tg-6qw1" colspan="3" style="text-align: left;">
+
+**Agenda:**
+
+1. Fill out [this survey for the Maker Camp](https://forms.gle/npMpjH2eyHEPDZ499) to let us know how we can improve in the future.
+2. Finish up projects
+3. Gallery Walk
+4. Field Day
+
+</td>
 </tr>
 </tbody>
 </table>
